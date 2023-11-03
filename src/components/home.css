@@ -1,0 +1,15 @@
+.containerlogo {
+    position: relative;
+    overflow: hidden; /* Evita los desplazamientos verticales */
+}
+
+.containernamelogo {
+    position: absolute;
+    left: 50%;
+    bottom: 28%;
+    width: 48%;
+}
+
+.developimage{
+    width: 95%;
+}
