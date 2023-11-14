@@ -17,16 +17,16 @@ const Home = () => {
       text-white rounded-lg 
       pr-4">
         <div className="containername flex">
-          <h1 className="firsttext font-mono font-bold text-green-400 text-xl m-2">
-            Hola, mi nombre es:
+          <h1 className="firsttext font-mono font-bold text-green-400 text-xl m-3">
+            Bienvenido..!, mi nombre es:
           </h1>
         </div>
-        <div className="myname font-arial font-bold text-4xl m-2 flex">
+        <div className="myname font-arial font-bold text-5xl m-3 flex">
           <h1>Paola Otamendi ;)</h1>
         </div>
         <br />
-        <div className="container text-base m-2">
-          <p className="font-mono">
+        <div className="container text-xl m-3">
+          <p className="font-arial">
             "Women FrontEnd Developer 👩‍💻 integrada de curiosidad e impulso por el
             aprendizaje continuo, apasionada por creatividad y lógica como
             aliados, creyente en desarrollar soluciones dinámicas y con valor."
@@ -44,13 +44,13 @@ const Home = () => {
             tecnología.
           </p>*/}
           <br />
-          <p className="font-bold text-xl font-mono text-green-400">
+          <p className="font-bold text-3xl font-mono text-green-400">
             Trabajemos como un equipo! 🤸‍♀️💪
           </p>
         </div>
-        <di>
-          <button className="bg-white text-black font-bold m-2">Let´s Go! ✨</button>
-        </di>
+        <div>
+          <button className="bg-white text-black text-lg rounded-lg p-2 font-bold m-3">Let´s Go! ✨</button>
+        </div>
       </div>
         <div className="containerlogo relative flex-1">
           <img
