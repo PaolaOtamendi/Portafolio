@@ -1,6 +1,7 @@
 import developImage from "../assets/devW.png";
 import frontEnd from "../assets/frontE.png";
 import "./home.css";
+import { BotonLets } from '/src/components/Boton.jsx';
 
 const Home = () => {
   return (
@@ -26,30 +27,18 @@ const Home = () => {
         </div>
         <br />
         <div className="container text-xl m-3">
-          <p className="font-arial">
+          <p className="font-arial font-semibold">
             "Women FrontEnd Developer 👩‍💻 integrada de curiosidad e impulso por el
             aprendizaje continuo, apasionada por creatividad y lógica como
             aliados, creyente en desarrollar soluciones dinámicas y con valor."
           </p>
-          {/* <br />
-          <p className="font-mono">
-            Impulsada por los desafíos me desarrolle como ingeniera industrial
-            donde tuve la oportunidad de analizar y crear soluciones a problemas
-            de forma simple, automatizada y colaborativa con el equipo de IT.
-          </p>
-          <br />
-          <p className="font-mono">
-            Mi enfoque actual como Developer es desarrollar creativamente
-            soluciones para todas las personas que interactúan día a día con la
-            tecnología.
-          </p>*/}
           <br />
           <p className="font-bold text-3xl font-mono text-green-400">
             Trabajemos como un equipo! 🤸‍♀️💪
           </p>
         </div>
         <div>
-          <button className="bg-white text-black text-lg rounded-lg p-2 font-bold m-3">Let´s Go! ✨</button>
+            <BotonLets />
         </div>
       </div>
         <div className="containerlogo relative flex-1">
