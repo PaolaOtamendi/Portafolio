@@ -1,0 +1,97 @@
+/* body {
+    margin: 0;
+  } */
+
+.Me{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.lenguajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.softwares {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin: 0;
+}
+
+.softwares > * {
+    margin: 0;
+    gap: 1rem;
+}
+
+.softskills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 0;
+}
+
+/* Agregar reglas de estilo responsivas */
+@media (max-width: 768px) {
+    .Me {
+      grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
+    }
+
+    .lenguajes {
+      grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
+    }
+
+    .softwares {
+      grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
+    }
+
+    .softskills {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .Me {
+      grid-template-columns: 1fr; /* Cambiar a una columna en pantallas aún más pequeñas */
+    }
+
+    .lenguajes,
+    .softwares,
+    .softskills {
+      grid-template-columns: 1fr; /* Cambiar a una columna en pantallas aún más pequeñas */
+    }
+}
+
+.title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #32f57c;
+    letter-spacing: 0.05em;
+    max-width: 36rem;
+}
+
+.texto {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: arial;
+    text-align: justify;
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titeltools {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: justify;
+    margin-top: 0.5rem;
+} 
