@@ -17,12 +17,12 @@ import { faMarkdown } from "@fortawesome/free-brands-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 import { faTeamspeak } from "@fortawesome/free-brands-svg-icons";
 import { faArrowsSplitUpAndLeft } from "@fortawesome/free-solid-svg-icons";
 import { faLeanpub } from "@fortawesome/free-brands-svg-icons";
 
+import { BotonCv } from '/src/components/Boton.jsx';
 import "./aboutme.css";
 import "animate.css/animate.css";
 
@@ -44,18 +44,7 @@ const AboutMe = () => {
             de valor para todas las personas que interactúan día a día con la
             tecnología.
           </p>
-          <button
-            className="transition ease-in-out delay-150 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-purple-500 hover:text-white duration-300
-          bg-white text-black text-lg rounded-lg p-2 font-bold m-3 flex items-center cursor-pointer"
-          >
-            Abrir mi CV
-            <FontAwesomeIcon
-              icon={faFileArrowDown}
-              fade
-              style={{ color: "#00ff91" }}
-              className="ml-2"
-            />
-          </button>
+          <BotonCv />
         </div>
 
         <div className="information2 p-4">
@@ -87,8 +76,17 @@ const AboutMe = () => {
             />
             Dirección: Saltillo, Coahuila, México
           </p>
-          <div className="contacto">
-            <a className="texto mb-4 m-2 break-words">Linkedin</a>
+          <div className="contacto m-2 flex items-center">
+            <a
+              href="https://www.linkedin.com/in/paola-otamendi-frontenddeveloper/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="links m-2 break-words w-24 
+              bg-blue-500 
+              hover:bg-blue-700 
+              active:bg-blue-800 
+              text-white font-bold py-2 px-4 rounded">
+              Linkedin</a>
             <FontAwesomeIcon
               icon={faLinkedin}
               beat
@@ -97,8 +95,15 @@ const AboutMe = () => {
               className="linkedin"
             />
           </div>
-          <div className="contacto">
-            <a className="texto mb-4 m-2 break-words">GitHub</a>
+          <div className="contacto m-2 flex items-center">
+            <a href="https://github.com/PaolaOtamendi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="links m-2 break-words w-24
+              bg-blue-500 
+              hover:bg-blue-700 
+              active:bg-blue-800 
+              text-white font-bold py-2 px-4 rounded">GitHub</a>
             <FontAwesomeIcon
               icon={faGithub}
               flip
