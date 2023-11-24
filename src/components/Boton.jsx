@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faHandSparkles } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
+import "./botones.css";
 
 export const BotonLets = () => {
   return (
@@ -33,7 +36,7 @@ export const BotonCv = () => {
       rel="noopener noreferrer"
     >
       <button
-        className="transition ease-in-out delay-150 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-purple-500 hover:text-white duration-300
+        className="transition ease-in-out delay-150 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 hover:text-white duration-300
           bg-white text-black text-lg rounded-lg p-2 font-bold m-3 flex items-center cursor-pointer"
       >
         Abrir mi CV
@@ -45,5 +48,23 @@ export const BotonCv = () => {
         />
       </button>
     </a>
+  );
+};
+
+export const BotonNext = () => {
+  return (
+    <div>
+      <Link to="/Proyectos">
+        <button className="button_slide slide_down flex">
+          Proyectos
+          <FontAwesomeIcon
+            icon={faHandSparkles}
+            fade
+            style={{ color: "#3dffcf" }}
+            className="ml-2"
+          />
+        </button>
+      </Link>
+    </div>
   );
 };

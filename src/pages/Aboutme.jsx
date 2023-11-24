@@ -21,8 +21,9 @@ import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 import { faTeamspeak } from "@fortawesome/free-brands-svg-icons";
 import { faArrowsSplitUpAndLeft } from "@fortawesome/free-solid-svg-icons";
 import { faLeanpub } from "@fortawesome/free-brands-svg-icons";
+/* import { faHandSparkles } from "@fortawesome/free-solid-svg-icons"; */
 
-import { BotonCv } from '/src/components/Boton.jsx';
+import { BotonCv, BotonNext } from "/src/components/Boton.jsx";
 import "./aboutme.css";
 import "animate.css/animate.css";
 
@@ -84,9 +85,12 @@ const AboutMe = () => {
               className="links m-2 break-words w-24 
               bg-blue-500 
               hover:bg-blue-700 
-              active:bg-blue-800 
-              text-white font-bold py-2 px-4 rounded">
-              Linkedin</a>
+              active:bg-blue-800
+              hover:text-white 
+              text-white font-bold py-2 px-4 rounded"
+            >
+              Linkedin
+            </a>
             <FontAwesomeIcon
               icon={faLinkedin}
               beat
@@ -96,14 +100,19 @@ const AboutMe = () => {
             />
           </div>
           <div className="contacto m-2 flex items-center">
-            <a href="https://github.com/PaolaOtamendi"
+            <a
+              href="https://github.com/PaolaOtamendi"
               target="_blank"
               rel="noopener noreferrer"
               className="links m-2 break-words w-24
               bg-blue-500 
               hover:bg-blue-700 
               active:bg-blue-800 
-              text-white font-bold py-2 px-4 rounded">GitHub</a>
+              hover:text-white
+              text-white font-bold py-2 px-4 rounded"
+            >
+              GitHub
+            </a>
             <FontAwesomeIcon
               icon={faGithub}
               flip
@@ -234,18 +243,18 @@ const AboutMe = () => {
         </div>
         <div className="softskills p-4">
           <div className="icono">
-            <p className="titeltools">Compañerismo</p>
+            <p className="titeltools">Colaborativo</p>
             <FontAwesomeIcon
               icon={faPeopleGroup}
-              size="3x"
+              size="2x"
               style={{ color: "#49bc95" }}
             />
           </div>
           <div className="icono">
-            <p className="titeltools">Comunicación</p>
+            <p className="titeltools">Escucha</p>
             <FontAwesomeIcon
               icon={faTeamspeak}
-              size="3x"
+              size="2x"
               style={{ color: "#49bc95" }}
             />
           </div>
@@ -253,24 +262,24 @@ const AboutMe = () => {
             <p className="titeltools">Scrum</p>
             <FontAwesomeIcon
               icon={faArrowsSplitUpAndLeft}
-              size="3x"
+              size="2x"
               style={{ color: "#49bc95" }}
             />
           </div>
           <div className="icono">
-            <p className="titeltools">Autoaprendizaje</p>
+            <p className="titeltools">Autonomo</p>
             <FontAwesomeIcon
               icon={faLeanpub}
-              size="3x"
+              size="2x"
               style={{ color: "#49bc95" }}
             />
           </div>
         </div>
       </div>
 
-      {/*       <div>
-        <button>hola</button>
-      </div> */}
+      <div className="siguiente fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+        <BotonNext />
+      </div>
     </section>
   );
 };
