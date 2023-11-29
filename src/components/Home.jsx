@@ -2,6 +2,7 @@ import developImage from "../assets/devW.png";
 import frontEnd from "../assets/frontE.png";
 import "./home.css";
 import { BotonLets } from '/src/components/Boton.jsx';
+import "animate.css/animate.css";
 
 const Home = () => {
   return (
@@ -16,7 +17,8 @@ const Home = () => {
       m-4 
       bg-black bg-black-800 bg-opacity-50 
       text-white rounded-lg 
-      pr-4">
+      pr-4
+      animate__animated animate__backInDown">
         <div className="containername flex">
           <h1 className="firsttext font-mono font-bold text-green-400 text-xl m-3">
             Bienvenido..!, mi nombre es:
@@ -37,16 +39,15 @@ const Home = () => {
             Trabajemos como un equipo! 🤸‍♀️💪
           </p>
         </div>
-        <div>
+        {/* <div>
             <BotonLets />
-        </div>
+        </div> */}
       </div>
         <div className="containerlogo relative flex-1">
           <img
             src={developImage}
             alt="develop"
-            className="developimage sm:w-1/2 lg:w-1/2 w-full h-auto mx-auto ml-0 sm:ml-2"
-          />
+            className="developimage sm:w-1/2 lg:w-1/2 w-full h-auto mx-auto ml-0 sm:ml-2 "/>
           <div className="containernamelogo flex">
             <img
               src={frontEnd}
@@ -56,6 +57,9 @@ const Home = () => {
             />
           </div>
         </div>
+        <div className="siguiente fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+        <BotonLets />
+      </div>
     </section>
   );
 };
