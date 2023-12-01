@@ -7,7 +7,7 @@ import movie from "../assets/movie.png";
 import social from "../assets/social.png";
 import mdlinks from "../assets/mdlinks.png";
 import datalovers from "../assets/datalovers.png";
-/* import { BotonProject } from "/src/components/Boton.jsx"; */
+import cardvalid from "../assets/cardvalid.png";
 import { Proyecto } from "/src/components/Proyecto.jsx";
 
 import "./proyectos.css";
@@ -25,7 +25,7 @@ const Proyectos = () => {
       <div className="proyectos">
         <Proyecto
           titulo="BurguerQueen - Api Client"
-          descripcion="EEsta es una aplicación diseñada para un restaurante de 
+          descripcion="Esta es una aplicación diseñada para un restaurante de 
           hamburguesas, concebida con la finalidad de proporcionar al 
           administrador herramientas para gestionar eficientemente el 
           control de usuarios y el inventario. La aplicación se ha 
@@ -90,7 +90,7 @@ const Proyectos = () => {
       <Proyecto
           titulo="MD-Links"
           descripcion="
-          Esta herramienta CLI analiza documentos Markdown para proporcionar estadísticas 
+          Herramienta CLI que analiza documentos Markdown para proporcionar estadísticas 
           sobre enlaces, incluyendo enlaces válidos e inválidos, cantidad total 
           de enlaces y rutas de documentos vinculados. Su propósito es facilitar 
           la obtención de datos valiosos sin comprometer la integridad de la 
@@ -130,19 +130,19 @@ const Proyectos = () => {
 
       <Proyecto
           titulo="Card Validation"
-          descripcion=" Dirigida a los fanáticos de Rick and Morty, la página proporciona 
-          información detallada sobre los personajes, organizada por multiversos, 
-          el diseño adopta un enfoque minimalista para equilibrar la extravagancia 
-          de los personajes. 
-          Se incorporan diferentes filtros por multiversos y personajes, ademas de 
-          animaciones a las tarjetas botones para agregar dinamismo a la experiencia 
-          del usuario."
+          descripcion=" 
+          La interfaz está diseñada para ser amigable y predictiva. Esta aplicación web 
+          permite al usuario verificar la validez de un número de tarjeta
+          de crédito.
+          Se concluyó enfocar la página en una fundación dedicada al cáncer 
+          de mama, dirigida a aquellos que deseen brindar apoyo económico 
+          a mujeres que lo necesiten."
           herramientas={[
             "HTML",
             "JavaScript",
-            "CSS",
+            "CSS Flexbox",
           ]}
-          imagen={datalovers}
+          imagen={cardvalid}
           githubLink="https://github.com/PaolaOtamendi/DEV007-card-validation"
           demoLink="https://paolaotamendi.github.io/DEV007-card-validation/"
         />
