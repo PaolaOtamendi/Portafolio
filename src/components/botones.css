@@ -18,22 +18,23 @@
     box-shadow: inset 0 100px 0 0 #D80286;
   }
 
-.button_nav {
+.button_href {
     color: #ffffff;
-    background-color: #00000000;
-    border: 1.5px solid #02c3d8;
+    background-color: #d80286;
+    border: 1.5px solid #000000;
     border-radius: 0.5rem;
     padding: 0.2rem 1rem;
+    margin: 1rem;
     display: inline-block;
     font-family: Arial;
     font-size: 1rem;
     font-weight:normal;
     letter-spacing: 0.2rem;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 #02c3d8;
+    box-shadow: inset 0 0 0 0 #000000;
     transition: ease-out 0.4s;
 }
 
-.slide_nav:hover {
-  box-shadow: inset 0 100px 0 0 #02c3d8;
+.slide_href:hover {
+  box-shadow: inset 0 100px 0 0 #000000;
 }

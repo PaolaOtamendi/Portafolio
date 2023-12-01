@@ -1,31 +1,33 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { faHandSparkles } from "@fortawesome/free-solid-svg-icons";
+import {
+  faStar,
+  faFileArrowDown,
+  faHandSparkles,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 import "./botones.css";
 
 export const BotonLets = () => {
-    return (
-      <div>
-        <Link to="/Me">
-          <button
-            className="button_slide slide_down flex"
-          >
-            Let´s Go!
-            <FontAwesomeIcon
-              icon={faStar}
-              spin
-              size="lg"
-              style={{ color: "#00ff91" }}
-              className="ml-2"
-            />
-          </button>
-        </Link>
-      </div>
-    );
-  };
+  return (
+    <div>
+      <Link to="/Me">
+        <button className="button_slide slide_down flex">
+          Let´s Go!
+          <FontAwesomeIcon
+            icon={faStar}
+            spin
+            size="lg"
+            style={{ color: "#00ff91" }}
+            className="ml-2"
+          />
+        </button>
+      </Link>
+    </div>
+  );
+};
 
 export const BotonCv = () => {
   return (
@@ -64,6 +66,25 @@ export const BotonNext = () => {
           />
         </button>
       </Link>
+    </div>
+  );
+};
+
+export const BotonProject = ({ githubLink, demoLink }) => {
+  return (
+    <div className="containbutton">
+      <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        <button className="button_href slide_href">
+          Github
+          <FontAwesomeIcon icon={faSquareGithub} size="lg" className="ml-1" />
+        </button>
+      </a>
+      <a href={demoLink} target="_blank" rel="noopener noreferrer">
+        <button className="button_href slide_href">
+          Abrir Demo
+          <FontAwesomeIcon icon={faPlay} size="sm" className="ml-1" />
+        </button>
+      </a>
     </div>
   );
 };

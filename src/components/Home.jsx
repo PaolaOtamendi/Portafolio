@@ -30,7 +30,7 @@ const Home = () => {
         <br />
         <div className="container text-xl m-3">
           <p className="font-arial font-semibold">
-            "Women FrontEnd Developer 👩‍💻 integrada de curiosidad e impulso por el
+            "Woman FrontEnd Developer 👩‍💻 integrada de curiosidad e impulso por el
             aprendizaje continuo, apasionada por creatividad y lógica como
             aliados, creyente en desarrollar soluciones dinámicas y con valor."
           </p>

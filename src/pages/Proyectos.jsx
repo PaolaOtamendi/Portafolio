@@ -1,10 +1,14 @@
 import { Navbar } from "/src/components/Nav.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 
-import burguer from "../assets/burguer.PNG";
+import burguer from "../assets/burguer.png";
+import movie from "../assets/movie.png";
+import social from "../assets/social.png";
+import mdlinks from "../assets/mdlinks.png";
+import datalovers from "../assets/datalovers.png";
+/* import { BotonProject } from "/src/components/Boton.jsx"; */
+import { Proyecto } from "/src/components/Proyecto.jsx";
 
 import "./proyectos.css";
 
@@ -19,135 +23,129 @@ const Proyectos = () => {
         </h1>
       </div>
       <div className="proyectos">
-        {/*         <h1 className="title">Proyectos</h1> */}
-        <div className="proyecto">
-          <h1 className="titleApp">BurguerQueen - Api Client</h1>
-          <div className="dataBurguer">
-            {/* <h1 className="titleApp">BurguerQueen - Api Client</h1> */}
-            <div className="containerdata">
-              <p className="description">
-                App diseñada para un restaurante de hamburguesas que permite al
-                administrador llevar el contro de los usuarios y el inventario;
-                al cocinero manejar el estado de las ordenes y al mesero tomar
-                el pedido del cliente. La app fue desarrollada con React y está
-                conectada a una API que funciona de manera local.
-              </p>
-              <div className="herramientas">
-                <p className="tool1">
-                  <FontAwesomeIcon
-                    icon={faSquareCheck}
-                    style={{ color: "#ac1ee0" }}
-                    className="mr-3"/>
-                  HTML
-                </p>
-                <p className="tool2">
-                  <FontAwesomeIcon
-                    icon={faSquareCheck}
-                    style={{ color: "#ac1ee0" }}
-                    className="mr-3"/>
-                  JavaScript
-                </p>
-                <p className="tool3">
-                  <FontAwesomeIcon
-                    icon={faSquareCheck}
-                    style={{ color: "#ac1ee0" }}
-                    className="mr-3"/>
-                  CSS
-                </p>
-                <p className="tool4">
-                  <FontAwesomeIcon
-                    icon={faSquareCheck}
-                    style={{ color: "#ac1ee0" }}
-                    className="mr-3"/>
-                  API
-                </p>
-                <p className="tool5">
-                  <FontAwesomeIcon
-                    icon={faSquareCheck}
-                    style={{ color: "#ac1ee0" }}
-                    className="mr-3"/>
-                  JEST
-                </p>
-              </div>
-            </div>
-            <div className="containerimage">
-              <img src={burguer} alt="burguer" className="image"></img>
-            </div>
-          </div>
-          <div className="containbutton">
-              <button className="button">Abrir proyecto</button>
-            </div>
-        </div>
+        <Proyecto
+          titulo="BurguerQueen - Api Client"
+          descripcion="EEsta es una aplicación diseñada para un restaurante de 
+          hamburguesas, concebida con la finalidad de proporcionar al 
+          administrador herramientas para gestionar eficientemente el 
+          control de usuarios y el inventario. La aplicación se ha 
+          desarrollado utilizando la biblioteca React y se encuentra 
+          integrada con una API que opera de manera local."
+          herramientas={[
+            "HTML",
+            "JavaScript",
+            "CSS Grid",
+            "REACT",
+            "API",
+            "JEST",
+          ]}
+          imagen={burguer}
+          githubLink="https://github.com/PaolaOtamendi/DEV007-burger-queen-api-client"
+          demoLink="https://dev-007-burger-queen-api-client-beta.vercel.app/"
+        />
 
-        <div className="proyecto">
-          <div className="dataMovie">
-            <h1 className="titleApp">Movie challenge</h1>
-            <p className="description">
-              App diseñada para un restaurante de hamburguesas que permite al
-              administrador llevar el contro de los usuarios y el inventario; al
-              cocinero manejar el estado de las ordenes y al mesero tomar el
-              pedido del cliente. La app fue desarrollada con React y está
-              conectada a una API que funciona de manera local.
-            </p>
-            <p className="tools">HTML, JavaScript, CSS, REACT, API, JEST.</p>
-          </div>
-        </div>
+        <Proyecto
+          titulo="Movie Challenge"
+          descripcion="Este proyecto utiliza React y Tailwind CSS para desarrollar una 
+          aplicación web que aprovecha datos de películas de una API. 
+          Se desarrolló con funciones clave, como un filtro de búsqueda 
+          y la reutilización inteligente de componentes. Nuestro enfoque 
+          se centra en ofrecer una experiencia atractiva para los usuarios, 
+          simplificando el proceso de exploración y disfrute de contenido 
+          cinematográfico."
+          herramientas={[
+            "HTML",
+            "JavaScript",
+            "CSS Flex",
+            "Tailwind CSS",
+            "REACT",
+            "API",
+          ]}
+          imagen={movie}
+          githubLink="https://github.com/PaolaOtamendi/DEV005-movie-challenge-fw"
+          demoLink="https://dev-005-movie-challenge-fw-flame.vercel.app/Home"
+        />
 
-        <div className="proyecto">
-          <div className="dataSocial">
-            <h1 className="titleApp">Social Network</h1>
-            <p className="description">
-              App diseñada para un restaurante de hamburguesas que permite al
-              administrador llevar el contro de los usuarios y el inventario; al
-              cocinero manejar el estado de las ordenes y al mesero tomar el
-              pedido del cliente. La app fue desarrollada con React y está
-              conectada a una API que funciona de manera local.
-            </p>
-            <p className="tools">HTML, JavaScript, CSS, REACT, API, JEST.</p>
-          </div>
-        </div>
+      <Proyecto
+          titulo="Social Network"
+          descripcion="MountainMe es una red social enfocada a senderistas y montañistas. 
+          El diseño se adapta a formato móvil y de escritorio. Cuenta con una 
+          interfaz dinámica e intuitiva que permite al usuario iniciar sesión con 
+          una cuenta de Google, hacer publicaciones con fotografías e información 
+          sobre sus experiencias, además de interactuar con las publicaciones de
+          los demás usuarios."
+          herramientas={[
+            "HTML",
+            "JavaScript",
+            "CSS Grid",
+            "Firebase",
+            "Firestore",
+            "JEST"
+          ]}
+          imagen={social}
+          githubLink="https://github.com/PaolaOtamendi/DEV007-social-network"
+          demoLink="https://dev-007-social-network.vercel.app/"
+        />
 
-        <div className="proyecto">
-          <div className="dataSocial">
-            <h1 className="titleApp">MD-Links</h1>
-            <p className="description">
-              App diseñada para un restaurante de hamburguesas que permite al
-              administrador llevar el contro de los usuarios y el inventario; al
-              cocinero manejar el estado de las ordenes y al mesero tomar el
-              pedido del cliente. La app fue desarrollada con React y está
-              conectada a una API que funciona de manera local.
-            </p>
-            <p className="tools">HTML, JavaScript, CSS, REACT, API, JEST.</p>
-          </div>
-        </div>
+      <Proyecto
+          titulo="MD-Links"
+          descripcion="
+          Esta herramienta CLI analiza documentos Markdown para proporcionar estadísticas 
+          sobre enlaces, incluyendo enlaces válidos e inválidos, cantidad total 
+          de enlaces y rutas de documentos vinculados. Su propósito es facilitar 
+          la obtención de datos valiosos sin comprometer la integridad de la 
+          información, ejecutándose en Node.js para versatilidad en entornos de 
+          ejecución."
+          herramientas={[
+            "JavaScript",
+            "CLI",
+            "HTTP",
+            "NPM",
+            "JEST"
+          ]}
+          imagen={mdlinks}
+          githubLink="https://github.com/PaolaOtamendi/DEV007-md-links"
+          demoLink="https://www.npmjs.com/package/md-links-pao-otamendi"
+        />
 
-        <div className="proyecto">
-          <div className="dataSocial">
-            <h1 className="titleApp">Data Lovers</h1>
-            <p className="description">
-              App diseñada para un restaurante de hamburguesas que permite al
-              administrador llevar el contro de los usuarios y el inventario; al
-              cocinero manejar el estado de las ordenes y al mesero tomar el
-              pedido del cliente. La app fue desarrollada con React y está
-              conectada a una API que funciona de manera local.
-            </p>
-            <p className="tools">HTML, JavaScript, CSS, REACT, API, JEST.</p>
-          </div>
-        </div>
+      <Proyecto
+          titulo="Data Lovers"
+          descripcion=" Dirigida a los fanáticos de Rick and Morty, la página proporciona 
+          información detallada sobre los personajes, organizada por multiversos, 
+          el diseño adopta un enfoque minimalista para equilibrar la extravagancia 
+          de los personajes. 
+          Se incorporan diferentes filtros por multiversos y personajes, ademas de 
+          animaciones a las tarjetas botones para agregar dinamismo a la experiencia 
+          del usuario."
+          herramientas={[
+            "HTML",
+            "JavaScript",
+            "CSS Flexbox",
+            "JEST"
+          ]}
+          imagen={datalovers}
+          githubLink="https://github.com/PaolaOtamendi/DEV007-data-lovers"
+          demoLink="https://paolaotamendi.github.io/DEV007-data-lovers/"
+        />
 
-        <div className="proyecto">
-          <div className="dataSocial">
-            <h1 className="titleApp">Card Validation</h1>
-            <p className="description">
-              App diseñada para un restaurante de hamburguesas que permite al
-              administrador llevar el contro de los usuarios y el inventario; al
-              cocinero manejar el estado de las ordenes y al mesero tomar el
-              pedido del cliente. La app fue desarrollada con React y está
-              conectada a una API que funciona de manera local.
-            </p>
-            <p className="tools">HTML, JavaScript, CSS, REACT, API, JEST.</p>
-          </div>
-        </div>
+      <Proyecto
+          titulo="Card Validation"
+          descripcion=" Dirigida a los fanáticos de Rick and Morty, la página proporciona 
+          información detallada sobre los personajes, organizada por multiversos, 
+          el diseño adopta un enfoque minimalista para equilibrar la extravagancia 
+          de los personajes. 
+          Se incorporan diferentes filtros por multiversos y personajes, ademas de 
+          animaciones a las tarjetas botones para agregar dinamismo a la experiencia 
+          del usuario."
+          herramientas={[
+            "HTML",
+            "JavaScript",
+            "CSS",
+          ]}
+          imagen={datalovers}
+          githubLink="https://github.com/PaolaOtamendi/DEV007-card-validation"
+          demoLink="https://paolaotamendi.github.io/DEV007-card-validation/"
+        />
       </div>
     </section>
   );

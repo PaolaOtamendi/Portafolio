@@ -1,26 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faNode } from "@fortawesome/free-brands-svg-icons";
-import { faNpm } from "@fortawesome/free-brands-svg-icons";
-import { faVialCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faSquareGit } from "@fortawesome/free-brands-svg-icons";
-import { faFireFlameCurved } from "@fortawesome/free-solid-svg-icons";
-import { faSlack } from "@fortawesome/free-brands-svg-icons";
-import { faFigma } from "@fortawesome/free-brands-svg-icons";
-import { faMarkdown } from "@fortawesome/free-brands-svg-icons";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
-import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
-import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
-import { faTeamspeak } from "@fortawesome/free-brands-svg-icons";
-import { faArrowsSplitUpAndLeft } from "@fortawesome/free-solid-svg-icons";
-import { faLeanpub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faReact,
+  faNode,
+  faNpm,
+  faSquareGit,
+  faSlack,
+  faFigma,
+  faMarkdown,
+  faHtml5,
+  faCss3Alt,
+  faSquareJs,
+  faTeamspeak,
+  faLeanpub,
+} from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+  faVialCircleCheck,
+  faCode,
+  faFireFlameCurved,
+  faPeopleGroup,
+  faArrowsSplitUpAndLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { BotonCv, BotonNext } from "/src/components/Boton.jsx";
 import { Navbar } from "/src/components/Nav.jsx";
