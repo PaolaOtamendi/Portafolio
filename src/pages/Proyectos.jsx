@@ -1,6 +1,8 @@
 import { Navbar } from "/src/components/Nav.jsx";
+import { Contactome } from "/src/components/Contactome.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faThumbsUp, /* faEnvelope, faPhone */ } from "@fortawesome/free-solid-svg-icons";
+import { /* faLinkedin, faGithub */ } from "@fortawesome/free-brands-svg-icons";
 
 import burguer from "../assets/burguer.png";
 import movie from "../assets/movie.png";
@@ -8,6 +10,7 @@ import social from "../assets/social.png";
 import mdlinks from "../assets/mdlinks.png";
 import datalovers from "../assets/datalovers.png";
 import cardvalid from "../assets/cardvalid.png";
+import flowise from "../assets/flowise.png";
 import { Proyecto } from "/src/components/Proyecto.jsx";
 
 import "./proyectos.css";
@@ -63,10 +66,10 @@ const Proyectos = () => {
           ]}
           imagen={movie}
           githubLink="https://github.com/PaolaOtamendi/DEV005-movie-challenge-fw"
-          demoLink="https://dev-005-movie-challenge-fw-flame.vercel.app/Home"
+          demoLink="https://dev-005-movie-challenge-fw-flame.vercel.app/"
         />
 
-      <Proyecto
+        <Proyecto
           titulo="Social Network"
           descripcion="MountainMe es una red social enfocada a senderistas y montañistas. 
           El diseño se adapta a formato móvil y de escritorio. Cuenta con una 
@@ -80,14 +83,14 @@ const Proyectos = () => {
             "CSS Grid",
             "Firebase",
             "Firestore",
-            "JEST"
+            "JEST",
           ]}
           imagen={social}
           githubLink="https://github.com/PaolaOtamendi/DEV007-social-network"
           demoLink="https://dev-007-social-network.vercel.app/"
         />
 
-      <Proyecto
+        <Proyecto
           titulo="MD-Links"
           descripcion="
           Herramienta CLI que analiza documentos Markdown para proporcionar estadísticas 
@@ -96,19 +99,13 @@ const Proyectos = () => {
           la obtención de datos valiosos sin comprometer la integridad de la 
           información, ejecutándose en Node.js para versatilidad en entornos de 
           ejecución."
-          herramientas={[
-            "JavaScript",
-            "CLI",
-            "HTTP",
-            "NPM",
-            "JEST"
-          ]}
+          herramientas={["JavaScript", "CLI", "HTTP", "NPM", "JEST"]}
           imagen={mdlinks}
           githubLink="https://github.com/PaolaOtamendi/DEV007-md-links"
           demoLink="https://www.npmjs.com/package/md-links-pao-otamendi"
         />
 
-      <Proyecto
+        <Proyecto
           titulo="Data Lovers"
           descripcion=" Dirigida a los fanáticos de Rick and Morty, la página proporciona 
           información detallada sobre los personajes, organizada por multiversos, 
@@ -117,18 +114,13 @@ const Proyectos = () => {
           Se incorporan diferentes filtros por multiversos y personajes, ademas de 
           animaciones a las tarjetas botones para agregar dinamismo a la experiencia 
           del usuario."
-          herramientas={[
-            "HTML",
-            "JavaScript",
-            "CSS Flexbox",
-            "JEST"
-          ]}
+          herramientas={["HTML", "JavaScript", "CSS Flexbox", "JEST"]}
           imagen={datalovers}
           githubLink="https://github.com/PaolaOtamendi/DEV007-data-lovers"
           demoLink="https://paolaotamendi.github.io/DEV007-data-lovers/"
         />
 
-      <Proyecto
+        <Proyecto
           titulo="Card Validation"
           descripcion=" 
           La interfaz está diseñada para ser amigable y predictiva. Esta aplicación web 
@@ -137,16 +129,103 @@ const Proyectos = () => {
           Se concluyó enfocar la página en una fundación dedicada al cáncer 
           de mama, dirigida a aquellos que deseen brindar apoyo económico 
           a mujeres que lo necesiten."
-          herramientas={[
-            "HTML",
-            "JavaScript",
-            "CSS Flexbox",
-          ]}
+          herramientas={["HTML", "JavaScript", "CSS Flexbox"]}
           imagen={cardvalid}
           githubLink="https://github.com/PaolaOtamendi/DEV007-card-validation"
           demoLink="https://paolaotamendi.github.io/DEV007-card-validation/"
         />
+        <Proyecto
+          titulo="FlowiseAI - Chat with your files"
+          descripcion=" 
+          Empleando la herramienta de FlowiseAI se generaron dos chatbots, estas 
+          herramientas benefician actualmente para optimizar procesos, automatizar 
+          tareas y al aprovechar al maximo sus capacidades.
+          Chat with your files. Este chatbot permite a los usuarios cargar
+          a los usuarios un documento txt o pdf y analizar su contenido."
+          herramientas={["FlowIse", "JavaScript"]}
+          imagen={flowise}
+          githubLink="https://github.com/PaolaOtamendi/UPSK-AI-APPS-001-chat-with-your-files"
+          demoLink={null}
+        />
+        <Proyecto
+          titulo="FlowiseAI - Chat promt to json"
+          descripcion=" 
+          Empleando la herramienta de FlowiseAI se generaron dos chatbots de inteligencia
+          artificial.
+          Chat promt to json. Este chatbot es una aplicación que aprovecha
+          el encadenamiento de prompts para producir un resultado en formato JSON"
+          herramientas={["FlowIse", "JavaScript"]}
+          imagen={flowise}
+          githubLink="https://github.com/PaolaOtamendi/UPSK-AI-APPS-001-chat-with-your-files"
+          demoLink={null}
+        />
       </div>
+      <section className="contactome bg-black">
+      <Contactome />
+        {/* <h1 className="title">Contactame</h1>
+        <p className="texto mb-4 m-2 break-words">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                size="1xs"
+                style={{ color: "#52ffa5" }}
+                className="mr-2"
+              />
+              Email: paola_otamendi23@hotmail.com
+            </p>
+            <p className="texto mb-4 m-2 break-words">
+              <FontAwesomeIcon
+                icon={faPhone}
+                size="1xs"
+                style={{ color: "#52ffa5" }}
+                className="mr-2"
+              />
+              Teléfono: +(52) 844 273 50 64
+            </p>
+            <div className="contacto m-2 flex items-center">
+              <a
+                href="https://www.linkedin.com/in/paola-otamendi-frontenddeveloper/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="links m-2 break-words w-24 
+              bg-blue-500 
+              hover:bg-blue-700 
+              active:bg-blue-800
+              hover:text-white 
+              text-white font-bold py-2 px-4 rounded"
+              >
+                Linkedin
+              </a>
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                beat
+                size="2xl"
+                style={{ color: "#52ffa5" }}
+                className="linkedin"
+              />
+            </div>
+            <div className="contacto m-2 flex items-center">
+              <a
+                href="https://github.com/PaolaOtamendi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="links m-2 break-words w-24
+              bg-blue-500 
+              hover:bg-blue-700 
+              active:bg-blue-800 
+              hover:text-white
+              text-white font-bold py-2 px-4 rounded"
+              >
+                GitHub
+              </a>
+              <FontAwesomeIcon
+                icon={faGithub}
+                flip
+                size="2xl"
+                style={{ color: "#52ffa5" }}
+                className="github"
+              />
+            </div> */}
+      </section>
     </section>
   );
 };

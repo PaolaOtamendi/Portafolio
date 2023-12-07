@@ -79,12 +79,36 @@ export const BotonProject = ({ githubLink, demoLink }) => {
           <FontAwesomeIcon icon={faSquareGithub} size="lg" className="ml-1" />
         </button>
       </a>
-      <a href={demoLink} target="_blank" rel="noopener noreferrer">
-        <button className="button_href slide_href">
-          Abrir Demo
-          <FontAwesomeIcon icon={faPlay} size="sm" className="ml-1" />
-        </button>
-      </a>
+      {demoLink && (
+        <a href={demoLink} target="_blank" rel="noopener noreferrer">
+          <button className="button_href slide_href">
+            Abrir Demo
+            <FontAwesomeIcon icon={faPlay} size="sm" className="ml-1" />
+          </button>
+        </a>
+      )}
+    </div>
+  );
+};
+
+export const CopyEmail = () => {
+  const emailToCopy = "paola_otamendi23@hotmail.com";
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(emailToCopy).then(() => {
+      alert("Texto copiado al portapapeles.");
+    });
+  };
+
+  return (
+    <div className="flex justify-center mt-2">
+      <button
+        onClick={handleCopyClick}
+        className="bg-white w-36 h-11 m-2 uppercase font-arial font-bold hover:bg-blue-700 hover:text-white
+        rounded-lg cursor-pointer"
+      >
+        Copiar Email
+      </button>
     </div>
   );
 };

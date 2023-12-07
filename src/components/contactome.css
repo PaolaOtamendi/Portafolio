@@ -1,0 +1,40 @@
+.containerMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.meimage{
+    width: 5rem;
+    align-items: center;
+}
+
+.titleContac {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #32f57c;
+    letter-spacing: 0.05em;
+    max-width: 36rem;
+    margin-bottom: 0.5rem;
+}
+
+.textoContac {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: arial;
+    text-align: justify;
+    word-wrap: break-word;
+    margin: 0.5rem;
+}
+
+.titlecontain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

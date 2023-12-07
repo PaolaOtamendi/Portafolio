@@ -1,7 +1,3 @@
-/* body {
-    margin: 0;
-  } */
-
 .Me{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -33,7 +29,7 @@
     margin: 0;
 }
 
-/* Agregar reglas de estilo responsivas */
+
 @media (max-width: 768px) {
     .Me {
       grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
