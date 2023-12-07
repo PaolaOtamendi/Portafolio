@@ -2,8 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { BotonProject } from "./Boton.jsx";
 
-
-export const Proyecto = ({ titulo, descripcion, herramientas, imagen, githubLink, demoLink, }) => {
+export const Proyecto = ({
+  titulo,
+  descripcion,
+  herramientas,
+  imagen,
+  githubLink,
+  demoLink,
+}) => {
+  console.log("Valor de demoLink:", demoLink);
   return (
     <div className="proyecto">
       <h1 className="titleApp">{titulo}</h1>
