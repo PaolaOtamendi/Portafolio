@@ -142,7 +142,7 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faHtml5}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#ff6600" }}
               />
             </div>
@@ -151,7 +151,7 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faCss3Alt}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#0086b3" }}
               />
             </div>
@@ -160,13 +160,13 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faSquareJs}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#65b800" }}
               />
             </div>
           </div>
 
-          <div className="softwares p-4 animate__animated animate__backInLeft">
+          <div className="softwares p-1 animate__animated animate__backInLeft">
             <div className="icono">
               <p className="titeltools">React</p>
               <FontAwesomeIcon
@@ -250,7 +250,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="softskills p-4">
+          <div className="softskills p-1">
             <div className="icono">
               <p className="titeltools">Colaborativo</p>
               <FontAwesomeIcon
@@ -288,12 +288,6 @@ const AboutMe = () => {
             <BotonNext />
           </div>
         </div>
-        {/* <div
-        className="siguiente 
-      fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4"
-      >
-        <BotonNext />
-      </div> */}
       </section>
     </section>
   );
