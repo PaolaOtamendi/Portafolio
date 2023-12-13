@@ -45,7 +45,7 @@ const Home = () => {
         <img
           src={developImage}
           alt="develop"
-          className="developimage sm:w-full lg:w-1/2 h-auto mx-auto ml-0 sm:ml-2"
+          className="developimage h-auto mx-auto ml-0 sm:ml-2"
         />
         <div className="containernamelogo flex">
           <img
