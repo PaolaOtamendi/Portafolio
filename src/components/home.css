@@ -1,6 +1,36 @@
+.containerAbout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+    .containerAbout {
+    grid-template-columns: 1fr;
+    }
+}
+
+.iAm{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: justify;
+    color: #f4f4f4;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.siguiente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .containerlogo {
     position: relative;
-    overflow: hidden; /* Evita los desplazamientos verticales */
+    overflow: hidden; 
 }
 
 .containernamelogo {
@@ -10,6 +40,7 @@
     width: 48%;
 }
 
-.developimage{
+.developimage {
     width: 95%;
+    max-width: 100%; 
 }

@@ -39,7 +39,7 @@ const AboutMe = () => {
       <section className="Me bg-gradient-to-b from-purple-300 via-purple-400 to-black min-h-screen max-w-screen">
         <div className="section1 flex flex-col justify-center bg-black bg-black-800 bg-opacity-50">
           <div className="information1 p-4">
-            <h1 className="title">About Me!</h1>
+            <h1 className="title mt-8">About Me!</h1>
             <p className="texto m-2 break-words">
               💫🚀 Actualmente impulsada por los desafios, tome uno mas que fue
               mi transformación como Ingeniera Industrial con experiencia de 5
@@ -130,13 +130,10 @@ const AboutMe = () => {
               />
             </div>
           </div>
-          {/*           <div className="siguiente mb-4 flex items-center justify-center">
-            <BotonNext />
-          </div> */}
         </div>
 
         <div className="section2 flex flex-col justify-center items-center bg-black">
-          <h1 className="title animate__animated animate__bounceInDown">
+          <h1 className="title mt-8 animate__animated animate__bounceInDown">
             SKILLS
           </h1>
           <div className="lenguajes p-4">
