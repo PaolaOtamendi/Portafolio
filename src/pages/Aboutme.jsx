@@ -39,7 +39,7 @@ const AboutMe = () => {
       <section className="Me bg-gradient-to-b from-purple-300 via-purple-400 to-black min-h-screen max-w-screen">
         <div className="section1 flex flex-col justify-center bg-black bg-black-800 bg-opacity-50">
           <div className="information1 p-4">
-            <h1 className="title">About Me!</h1>
+            <h1 className="title mt-8">About Me!</h1>
             <p className="texto m-2 break-words">
               💫🚀 Actualmente impulsada por los desafios, tome uno mas que fue
               mi transformación como Ingeniera Industrial con experiencia de 5
@@ -130,13 +130,10 @@ const AboutMe = () => {
               />
             </div>
           </div>
-          {/*           <div className="siguiente mb-4 flex items-center justify-center">
-            <BotonNext />
-          </div> */}
         </div>
 
         <div className="section2 flex flex-col justify-center items-center bg-black">
-          <h1 className="title animate__animated animate__bounceInDown">
+          <h1 className="title mt-8 animate__animated animate__bounceInDown">
             SKILLS
           </h1>
           <div className="lenguajes p-4">
@@ -145,7 +142,7 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faHtml5}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#ff6600" }}
               />
             </div>
@@ -154,7 +151,7 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faCss3Alt}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#0086b3" }}
               />
             </div>
@@ -163,13 +160,13 @@ const AboutMe = () => {
               <FontAwesomeIcon
                 icon={faSquareJs}
                 beatFade
-                size="4x"
+                size="3x"
                 style={{ color: "#65b800" }}
               />
             </div>
           </div>
 
-          <div className="softwares p-4 animate__animated animate__backInLeft">
+          <div className="softwares p-1 animate__animated animate__backInLeft">
             <div className="icono">
               <p className="titeltools">React</p>
               <FontAwesomeIcon
@@ -253,7 +250,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="softskills p-4">
+          <div className="softskills p-1">
             <div className="icono">
               <p className="titeltools">Colaborativo</p>
               <FontAwesomeIcon
@@ -291,12 +288,6 @@ const AboutMe = () => {
             <BotonNext />
           </div>
         </div>
-        {/* <div
-        className="siguiente 
-      fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4"
-      >
-        <BotonNext />
-      </div> */}
       </section>
     </section>
   );
