@@ -8,18 +8,20 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 .softwares {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
 .softwares > * {
     margin: 0;
-    gap: 1rem;
+    gap: 1.1rem;
 }
 
 .softskills {
