@@ -90,13 +90,7 @@ const AboutMe = () => {
                 href="https://www.linkedin.com/in/paola-otamendi-frontenddeveloper/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="links m-2 break-words w-24 
-              bg-blue-500 
-              hover:bg-blue-700 
-              active:bg-blue-800
-              hover:text-white 
-              text-white font-bold py-2 px-4 rounded"
-              >
+                className="button_link m-2 break-words">
                 Linkedin
               </a>
               <FontAwesomeIcon

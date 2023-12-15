@@ -37,8 +37,7 @@ export const BotonCv = () => {
       rel="noopener noreferrer"
     >
       <button
-        className="transition ease-in-out delay-150 bg-white-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 hover:text-white duration-300
-          bg-white text-black text-lg rounded-lg p-2 font-bold m-3 flex items-center cursor-pointer"
+        className="button_cv"
       >
         Abrir mi CV
         <FontAwesomeIcon
