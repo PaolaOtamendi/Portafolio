@@ -48,7 +48,7 @@ const AboutMe = () => {
               adentrarme en el felizmente participando en Laboratoria, donde
               inicie mi desarrollo como Front end Developer.
             </p>
-            <p className="texto m-2 break-words text-white font-bold font-mono">
+            <p className="texto m-2 break-wordS">
               🌟Mi enfoque como Developer es desarrollar creativamente
               soluciones de valor para todas las personas que interactúan día a
               día con la tecnología.
@@ -98,20 +98,14 @@ const AboutMe = () => {
                 beat
                 size="2xl"
                 style={{ color: "#52ffa5" }}
-                className="linkedin"
-              />
+                className="linkedin"/>
             </div>
             <div className="contacto m-2 flex items-center">
               <a
                 href="https://github.com/PaolaOtamendi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="links m-2 break-words w-24
-              bg-blue-500 
-              hover:bg-blue-700 
-              active:bg-blue-800 
-              hover:text-white
-              text-white font-bold py-2 px-4 rounded"
+                className="button_link m-2 break-words"
               >
                 GitHub
               </a>
