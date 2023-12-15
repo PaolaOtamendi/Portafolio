@@ -46,7 +46,8 @@ const AboutMe = () => {
               años en Calidad y Mejora Continua a Developer, siempre tuve esa
               sensación por incursionarme en el mundo Dev, así que decidí
               adentrarme en el felizmente participando en Laboratoria, donde
-              inicie mi desarrollo como Front end Developer.
+              inicie mi desarrollo como Front end Developer, colabore y trabaje
+              en equipo en distintos proyectos.
             </p>
             <p className="texto m-2 break-wordS">
               🌟Mi enfoque como Developer es desarrollar creativamente
