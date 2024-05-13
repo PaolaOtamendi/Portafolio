@@ -3,37 +3,92 @@
     grid-template-columns: 60% 40%;
 }
 
-.lenguajes {
+.modificado {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-content: center;
+    grid-template-rows: 1fr;
+}
+
+.parte1 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: 1.5rem;
+}
+
+.titulo1, .tituloskills {
+    font-family: 'Roboto Slab';
+}
+
+.parte2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    /*margin: 1.5rem; ESto lo agrege extra*/
+}
+
+.stack {
+    margin-bottom: 1rem;
+}
+
+.containstack {
+    margin-top: 3rem; /*ESto lo agrege extra*/
+}
+
+
+/*.parte2 {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.stack {
+    margin-bottom: 1rem;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+}*/
+
+
+.lenguajes {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.lenguajes > * {
+    margin: 0.5rem;
 }
 
 .softwares {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    gap: 2.5rem;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.softwares > * {
-    margin: 0;
-    gap: 1.1rem;
 }
 
 .softskills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    gap: 2.5rem;
     justify-content: center;
-    margin: 0;
 }
-
 
 @media (max-width: 768px) {
     .Me {
+        grid-template-columns: 1fr;
+    }
+
+    .modificado {
         grid-template-columns: 1fr;
     }
 
@@ -55,6 +110,10 @@
         grid-template-columns: 1fr; 
     }
 
+    .modificado {
+        grid-template-columns: 1fr;
+    }
+
     .lenguajes,
     .softwares,
     .softskills {
@@ -71,15 +130,23 @@
 }
 
 .texto {
-    color: #ffffff;
+    color: #000000; /* Cambiar el color del texto a un gris oscuro */
     font-size: 1.05rem;
-    font-weight: 600;
-    font-family: arial;
+    font-weight: 700; /* Aumentar el peso de la fuente para hacerla más audaz */
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Agregar un sombreado sutil */
+}
+
+.texto strong {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #000000;
+    font-family: Arial;
 }
 
 .links{
-    color: #010101;
+    color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: arial;

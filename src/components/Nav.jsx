@@ -6,7 +6,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   return (
-    <div className="navBar flex flex-row justify-end bg-black bg-opacity-10 fixed top-0 w-full">
+    <div className="navBar sticky top-0 bg-black bg-opacity-10 w-full flex justify-end z-50">
       <Link to="/" className="p-2 m-2 text-white hover:text-pink-500">
         Inicio
         <FontAwesomeIcon

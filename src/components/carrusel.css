@@ -1,0 +1,51 @@
+
+/*.imagen {
+    width: 30rem;
+    height: 20rem;
+}
+
+.carrusel-container {
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    animation: desplazamiento 25s linear infinite;
+
+.imagen {
+    width: 20%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+@keyframes desplazamiento {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}*/
+
+.carrusel-container {
+    overflow: hidden; /* No es estrictamente necesario en este caso */
+  }
+  
+  .carrusel {
+    display: flex;
+    animation: desplazamiento 30s linear infinite; /* Ajustar según sea necesario */
+  }
+  
+  .imagen {
+    width: 30%;
+    height: auto;
+    margin: 1rem;
+  }
+  
+  @keyframes desplazamiento {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);}
+    }

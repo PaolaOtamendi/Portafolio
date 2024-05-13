@@ -12,6 +12,7 @@ import {
   faSquareJs,
   faTeamspeak,
   faLeanpub,
+  faJava
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -21,6 +22,11 @@ import {
   faPeopleGroup,
   faArrowsSplitUpAndLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
+import intell from "../assets/intellij.png";
+import visual from "../assets/visual.png";
+import jest from "../assets/jest.png";
+import firebase from "../assets/firebase.png";
 
 import "animate.css/animate.css";
 
@@ -54,6 +60,14 @@ export const Lenguajes = () => {
           style={{ color: "#65b800" }}
         />
       </div>
+      <div className="icono">
+        <p className="titeltools">Java</p>
+        <FontAwesomeIcon icon={faJava}
+        beatFade
+        size="3x" 
+        style={{ color: "#ff0000" }} 
+        />
+      </div>
     </div>
   );
 };
@@ -63,46 +77,47 @@ export const Softwares = () => {
     <div className="softwares p-1 animate__animated animate__backInLeft">
       <div className="icono">
         <p className="titeltools">React</p>
-        <FontAwesomeIcon 
-        icon={faReact} 
-        size="3x" 
-        style={{ color: "#00f080" }} />
+        <FontAwesomeIcon
+          icon={faReact}
+          size="3x"
+          style={{ color: "#00f080" }}
+        />
       </div>
       <div className="icono">
         <p className="titeltools">NodeJS</p>
-        <FontAwesomeIcon 
-        icon={faNode} 
-        size="3x" 
-        style={{ color: "#008a10" }} />
+        <FontAwesomeIcon icon={faNode} size="3x" style={{ color: "#008a10" }} />
       </div>
       <div className="icono">
         <p className="titeltools">Firebase</p>
-        <FontAwesomeIcon 
-        icon={faFireFlameCurved} 
-        size="3x" 
-        style={{ color: "#ff9500" }} />
+        <img src={firebase}
+        alt="firebase"
+        className=""
+        />
       </div>
       <div className="icono">
         <p className="titeltools">NPM</p>
-        <FontAwesomeIcon 
-        icon={faNpm} 
-        size="3x" 
-        style={{ color: "#d60000" }} />
+        <FontAwesomeIcon icon={faNpm} size="3x" style={{ color: "#d60000" }} />
       </div>
       <div className="icono">
         <p className="titeltools">JEST Test</p>
-        <FontAwesomeIcon
-          icon={faVialCircleCheck}
-          size="3x"
-          style={{ color: "#85002e" }}
+        <img src={jest}
+        alt="jest"
+        className=""
         />
       </div>
       <div className="icono">
         <p className="titeltools">VisualCode</p>
-        <FontAwesomeIcon 
-        icon={faCode} 
-        size="3x" 
-        style={{ color: "#00e66f" }} />
+        <img src={visual}
+        alt="visual"
+        className=""
+        />
+      </div>
+      <div className="icono">
+      <p className="titeltools">Intellij</p>
+        <img src={intell}
+        alt="intell"
+        className=""
+        />
       </div>
       <div className="icono">
         <p className="titeltools">GitHub</p>
@@ -140,42 +155,41 @@ export const Softwares = () => {
   );
 };
 
-
 export const Softskills = () => {
-    return (
-        <div className="softskills p-1">
-            <div className="icono">
-              <p className="titeltools">Colaborativo</p>
-              <FontAwesomeIcon
-                icon={faPeopleGroup}
-                size="2x"
-                style={{ color: "#49bc95" }}
-              />
-            </div>
-            <div className="icono">
-              <p className="titeltools">Escucha</p>
-              <FontAwesomeIcon
-                icon={faTeamspeak}
-                size="2x"
-                style={{ color: "#49bc95" }}
-              />
-            </div>
-            <div className="icono">
-              <p className="titeltools">Scrum</p>
-              <FontAwesomeIcon
-                icon={faArrowsSplitUpAndLeft}
-                size="2x"
-                style={{ color: "#49bc95" }}
-              />
-            </div>
-            <div className="icono">
-              <p className="titeltools">Autonomo</p>
-              <FontAwesomeIcon
-                icon={faLeanpub}
-                size="2x"
-                style={{ color: "#49bc95" }}
-              />
-            </div>
-          </div>
-    )
-}
+  return (
+    <div className="softskills p-1">
+      <div className="icono">
+        <p className="titeltools">Colaborativo</p>
+        <FontAwesomeIcon
+          icon={faPeopleGroup}
+          size="2x"
+          style={{ color: "#49bc95" }}
+        />
+      </div>
+      <div className="icono">
+        <p className="titeltools">Escucha</p>
+        <FontAwesomeIcon
+          icon={faTeamspeak}
+          size="2x"
+          style={{ color: "#49bc95" }}
+        />
+      </div>
+      <div className="icono">
+        <p className="titeltools">Scrum</p>
+        <FontAwesomeIcon
+          icon={faArrowsSplitUpAndLeft}
+          size="2x"
+          style={{ color: "#49bc95" }}
+        />
+      </div>
+      <div className="icono">
+        <p className="titeltools">Autonomo</p>
+        <FontAwesomeIcon
+          icon={faLeanpub}
+          size="2x"
+          style={{ color: "#49bc95" }}
+        />
+      </div>
+    </div>
+  );
+};

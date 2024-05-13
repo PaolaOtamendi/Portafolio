@@ -16,7 +16,7 @@ export const Contactome = () => {
       <p className="textoContac">
         <FontAwesomeIcon
           icon={faEnvelope}
-          size="1xs"
+          size="xs"
           style={{ color: "#52ffa5" }}
           className="mr-2"
         />
@@ -26,7 +26,7 @@ export const Contactome = () => {
       <p className="textoContac">
         <FontAwesomeIcon
           icon={faPhone}
-          size="1xs"
+          size="xs"
           style={{ color: "#52ffa5" }}
           className="mr-2"
         />

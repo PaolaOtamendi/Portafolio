@@ -3,7 +3,7 @@ import { Contactome } from "/src/components/Contactome.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
-import burguer from "../assets/burguer.png";
+import burguer from "../assets/images/burguer.png";
 import movie from "../assets/movie.png";
 import social from "../assets/social.png";
 import mdlinks from "../assets/mdlinks.png";
