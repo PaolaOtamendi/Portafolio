@@ -3,6 +3,7 @@ import developImage from "../assets/dev1.png";
 import frontEnd from "../assets/frontE.png";
 import "./home.css";
 import { BotonLets } from "/src/components/Boton.jsx";
+import { Link } from "react-router-dom";
 import "animate.css/animate.css";
 
 //Segundas importaciones cambios

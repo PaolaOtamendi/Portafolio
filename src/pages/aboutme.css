@@ -11,7 +11,7 @@
 .parte1 {
     display: grid;
     grid-template-columns: 55% 45%;
-    margin: 1.5rem;
+    margin: 2.5rem;
 }
 
 .titulo1, .tituloskills {
@@ -173,6 +173,6 @@
 } 
 
 .carrusel-proyectos {
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
