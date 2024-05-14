@@ -1,97 +1,74 @@
-import burguer from "../assets/images/burguer.png";
-import movie from "../assets/movie.png";
-import social from "../assets/social.png";
-import mdlinks from "../assets/mdlinks.png";
-import datalovers from "../assets/datalovers.png";
-import cardvalid from "../assets/cardvalid.png";
-import flowise from "../assets/flowise.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faCircleChevronLeft,
+    faCircleChevronRight
+} from "@fortawesome/free-solid-svg-icons";
 
+import { proyectos } from "../assets/data";
 import { useState, useEffect, useRef } from "react";
 
-import "./carrusel.css"; // Suponiendo que tu archivo CSS se llama carrusel.css
+import "./carrusel.css";
 
 export const Carrusel = () => {
-    const [posicionActual, setPosicionActual] = useState(0);
-  
-    const elementosCarrusel = [
-      { src: burguer, alt: "imagen1" },
-      { src: movie, alt: "imagen2" },
-      { src: social, alt: "imagen3" },
-      { src: mdlinks, alt: "imagen4" },
-      { src: datalovers, alt: "imagen5" },
-      { src: cardvalid, alt: "imagen6" },
-      { src: flowise, alt: "imagen7" },
-    ];
-  
-    // Clonar la primera imagen y agregarla al final para crear un bucle
-    const elementosConLoop = [...elementosCarrusel, elementosCarrusel[0]];
-    const anchoTotal = elementosConLoop.length * 200;
-  
-    const moverAPosicion = (posicion) => {
-      setPosicionActual(posicion);
-      carouselTrackRef.current.style.transform = `translateX(-${posicion * 200}px)`;
-    };
-  
-    const carouselTrackRef = useRef(null);
-  
+
+    const listRef = useRef();
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     useEffect(() => {
-      if (carouselTrackRef.current) {
-        carouselTrackRef.current.style.width = `${anchoTotal}px`;
-  
-        // Inicialmente, establecer la posición en la primera imagen clonada (longitud - 1)
-        moverAPosicion(elementosConLoop.length - 1);
-  
-        const intervaloMovimiento = setInterval(() => {
-          if (posicionActual < elementosConLoop.length - 2) {
-            moverAPosicion(posicionActual + 1);
-          } else {
-            // Al llegar al final, volver a la primera imagen clonada
-            moverAPosicion(0);
-          }
-        }, 3000);
-  
-        return () => clearInterval(intervaloMovimiento);
-      }
-    }, [carouselTrackRef, anchoTotal]);
-  
-    return (
-      <section className="contenedor-carrusel">
-        <h1>Hola soy el carrusel</h1>
-        <div className="carrusel" ref={carouselTrackRef}>
-          {elementosConLoop.map((elemento, indice) => (
-            <div className="elemento-carrusel" key={indice}>
-              <img src={elemento.src} alt={elemento.alt} />
+        const listNode = listRef.current;
+        const imgNode = listNode.querySelectorAll("li > img")[currentIndex]
+
+        if(imgNode) {
+            imgNode.scrollIntoView({
+                behavios: "smooth"
+            });
+        }
+    }, [currentIndex]);
+
+    const scrollToImage = (direction) => {
+        if(direction == 'prev') {
+            setCurrentIndex(curr => {
+                const isFirsSlide = currentIndex === 0;
+                return  isFirsSlide ? 0 : curr - 1;
+            })
+        } else {
+            const isLastSlide = currentIndex === proyectos.length - 1;
+            if(!isLastSlide) {
+                setCurrentIndex(curr => curr + 1);
+            }
+        }
+    }
+
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex);
+    }
+
+    return <div className="main-container">
+        <div className="slider-container">
+            <div className="leftArrow" onClick={() => scrollToImage('prev')}>
+                <FontAwesomeIcon icon={faCircleChevronLeft} style={{color: "#ff00bb",}} /></div>
+            <div className="rightArrow" onClick={() => scrollToImage('next')}>
+            <FontAwesomeIcon icon={faCircleChevronRight} style={{color: "#ff00bb",}} /></div>
+            <div className="container-images">
+                <ul ref={listRef}>
+                    {
+                        proyectos.map((item) => {
+                            return <li key={item.id} style={{ display: "block" }}>
+                                <img className="imag" src={item.image} />
+                            </li>
+                        })
+                    }
+                </ul>
             </div>
-          ))}
+                    <div className="dots-container">
+                        {
+                        proyectos.map((_, idx) => (
+                            <div key={idx} className={`dot-container-item ${idx === currentIndex ? "active" : ""}`}
+                            onClick={() => goToSlide(idx)}>
+                                &#9865;
+                            </div>))
+                        }
+                    </div>
         </div>
-      </section>
-    );
-  };
-
-
-/*export const Carrusel = () => {
-  return (
-    <section className="carrusel-container">
-      <h1 className="text-white">Hola soy el carrusel</h1>
-      <div className="carrusel">
-        <img className="imagen" src={burguer} alt="image" />
-
-        <img className="imagen" src={movie} alt="image" />
-
-        <img className="imagen" src={social} alt="image" />
-
-        <img className="imagen" src={mdlinks} alt="image" />
-
-        <img className="imagen" src={datalovers} alt="image" />
-
-        <img className="imagen" src={cardvalid} alt="image" />
-
-        <img className="imagen" src={flowise} alt="image" />
-
-        <img className="imagen" src={mdlinks} alt="image" />
-
-        <img className="imagen" src={mdlinks} alt="image" />
-      </div>
-    </section>
-  );
-};*/
+    </div>
+};

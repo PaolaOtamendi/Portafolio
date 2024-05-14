@@ -1,51 +1,66 @@
-
-/*.imagen {
-    width: 30rem;
-    height: 20rem;
+.main-container {
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
 }
 
-.carrusel-container {
+.slider-container {
+    position: relative;
+    height: 100%;
+}
+
+.container-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #eee;
     overflow: hidden;
 }
 
-.carrusel {
-    display: flex;
-    animation: desplazamiento 25s linear infinite;
-
-.imagen {
-    width: 20%;
-    height: auto;
-    margin: 0.5rem;
+.imag {
+    width: 500px;
+    height: 280px;
 }
 
-@keyframes desplazamiento {
-    0% {
-    transform: translateX(0);
-    }
-    100% {
-    transform: translateX(-100%);
-    }
-}*/
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff00e1;
+    z-index: 1;
+    cursor: pointer;
+}
 
-.carrusel-container {
-    overflow: hidden; /* No es estrictamente necesario en este caso */
-  }
-  
-  .carrusel {
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #00d32a;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dots-container {
     display: flex;
-    animation: desplazamiento 30s linear infinite; /* Ajustar según sea necesario */
-  }
-  
-  .imagen {
-    width: 30%;
-    height: auto;
-    margin: 1rem;
-  }
-  
-  @keyframes desplazamiento {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);}
-    }
+    justify-content: center;
+}
+
+.dot-container-item {
+    margin: 8px 3px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center; 
+}
+
+div.active {
+    background: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}

@@ -149,7 +149,7 @@ export const AboutMe = () => {
   </div>*/}
         </div>
 
-        <div className="carruselproyectos">
+        <div className="carrusel-proyectos">
         <Carrusel />
         </div>
 

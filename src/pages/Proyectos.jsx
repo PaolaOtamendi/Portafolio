@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 import burguer from "../assets/images/burguer.png";
-import movie from "../assets/movie.png";
-import social from "../assets/social.png";
-import mdlinks from "../assets/mdlinks.png";
-import datalovers from "../assets/datalovers.png";
-import cardvalid from "../assets/cardvalid.png";
-import flowise from "../assets/flowise.png";
+import movie from "../assets/images/movie.png";
+import social from "../assets/images/social.png";
+import mdlinks from "../assets/images/mdlinks.png";
+import datalovers from "../assets/images/datalovers.png";
+import cardvalid from "../assets/images/cardvalid.png";
+import flowise from "../assets/images/flowise.png";
 import { Proyecto } from "/src/components/Proyecto.jsx";
 
 import "./proyectos.css";
@@ -91,8 +91,7 @@ const Proyectos = () => {
 
         <Proyecto
           titulo="MD-Links"
-          descripcion="
-          Herramienta CLI que analiza documentos Markdown para proporcionar estadísticas 
+          descripcion="Herramienta CLI que analiza documentos Markdown para proporcionar estadísticas 
           sobre enlaces, incluyendo enlaces válidos e inválidos, cantidad total 
           de enlaces y rutas de documentos vinculados. Su propósito es facilitar 
           la obtención de datos valiosos sin comprometer la integridad de la 
