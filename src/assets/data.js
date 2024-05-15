@@ -58,7 +58,7 @@ export const proyectos = [
         titulo: "FlowiseAI - Chat with your files",
         descripcion: "Empleando la herramienta de FlowiseAI se generaron dos chatbots, estas herramientas benefician actualmente para optimizar procesos, automatizar tareas y al aprovechar al máximo sus capacidades. Chat with your files. Este chatbot permite a los usuarios cargar a los usuarios un documento txt o pdf y analizar su contenido.",
         herramientas: ["FlowIse", "JavaScript"],
-        image: "src/assets/images/flowise.png",
+        image: "src/assets/images/filesflowise.png",
         githubLink: "https://github.com/PaolaOtamendi/UPSK-AI-APPS-001-chat-with-your-files",
         demoLink: null
     },
@@ -67,7 +67,7 @@ export const proyectos = [
         titulo: "FlowiseAI - Chat promt to json",
         descripcion: "Empleando la herramienta de FlowiseAI se generaron dos chatbots de inteligencia artificial. Chat promt to json. Este chatbot es una aplicación que aprovecha el encadenamiento de prompts para producir un resultado en formato JSON",
         herramientas: ["FlowIse", "JavaScript"],
-        image: "src/assets/images/flowise.png",
+        image: "src/assets/images/jsonflowise.png",
         githubLink: "https://github.com/PaolaOtamendi/UPSK-AI-APPS-001-chat-with-your-files",
         demoLink: null
     }

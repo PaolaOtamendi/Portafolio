@@ -22,7 +22,7 @@ export const AboutMe = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when component mounts or location changes
+    window.scrollTo(0, 0);
   }, [location]);
 
 
