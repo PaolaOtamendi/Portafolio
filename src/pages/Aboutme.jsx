@@ -5,6 +5,7 @@ import {
   faLocationDot,
   faPhone,
   faEnvelope,
+  faDownLong
 } from "@fortawesome/free-solid-svg-icons";
 
 import { BotonCv, BotonNext } from "/src/components/Boton.jsx";
@@ -75,7 +76,7 @@ export const AboutMe = () => {
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   size="lg"
-                  style={{ color: "#52ffa5" }}
+                  style={{ color: "#00ff91" }}
                   className="mr-2"
                 />
                 Email: <strong>paola_otamendi23@hotmail.com</strong>
@@ -84,7 +85,7 @@ export const AboutMe = () => {
                 <FontAwesomeIcon
                   icon={faPhone}
                   size="lg"
-                  style={{ color: "#52ffa5" }}
+                  style={{ color: "#00ff91" }}
                   className="mr-2"
                 />
                 Teléfono: <strong>+(52) 844 273 50 64</strong>
@@ -93,7 +94,7 @@ export const AboutMe = () => {
                 <FontAwesomeIcon
                   icon={faLocationDot}
                   size="lg"
-                  style={{ color: "#52ffa5" }}
+                  style={{ color: "#00ff91" }}
                   className="mr-2"
                 />
                 Dirección: <strong>Saltillo, Coahuila, México</strong>
@@ -104,17 +105,15 @@ export const AboutMe = () => {
                 href="https://www.linkedin.com/in/paola-otamendi-frontenddeveloper/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button_link m-2 break-words"
-              >
-                Linkedin
-              </a>
-              <FontAwesomeIcon
+                className="button_link m-2 break-words">
+                LinkedIn
+                <FontAwesomeIcon
                 icon={faLinkedin}
-                beat
-                size="2xl"
-                style={{ color: "#52ffa5" }}
-                className="linkedin"
-              />
+                fade
+                size="xl"
+                style={{ color: "#00ff91" }}
+                className="linkedin ml-2" />
+              </a>
             </div>
             <div className="contacto m-2 flex items-center">
               <a
@@ -124,14 +123,14 @@ export const AboutMe = () => {
                 className="button_link m-2 break-words"
               >
                 GitHub
-              </a>
-              <FontAwesomeIcon
+                <FontAwesomeIcon
                 icon={faGithub}
-                flip
-                size="2xl"
-                style={{ color: "#52ffa5" }}
-                className="github"
+                fade
+                size="xl"
+                style={{ color: "#00ff91" }}
+                className="github ml-2"
               />
+              </a>
             </div>
           </div>
 
@@ -142,6 +141,7 @@ export const AboutMe = () => {
           <div className="containstack">
           <h1 className="tituloskills font-bold text-6xl m-6 animate__animated animate__bounceInDown">
           Stack Tecnológico
+          <FontAwesomeIcon icon={faDownLong} bounce size="sm" style={{ color: "#00ff91" }}  className="ml-2" />
           </h1>
           </div>
           <div className="parte2 justify-center items-center bg-black">

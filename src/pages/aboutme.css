@@ -23,7 +23,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    /*margin: 1.5rem; ESto lo agrege extra*/
 }
 
 .stack {
@@ -31,34 +30,12 @@
 }
 
 .containstack {
-    margin-top: 3rem; /*ESto lo agrege extra*/
+    margin-top: 3rem;
 }
-
-
-/*.parte2 {
-    display: flex;
-    overflow-x: hidden;
-}
-
-.stack {
-    margin-bottom: 1rem;
-    animation: slide 10s linear infinite;
-}
-
-@keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%); 
-    }
-}*/
-
 
 .lenguajes {
     display: flex;
     flex-direction: row;
-    /*flex-wrap: wrap;*/
     gap: 0.5rem;
     justify-content: center;
 }
@@ -70,7 +47,6 @@
 .softwares {
     display: flex;
     flex-direction: row;
-    /*flex-wrap: wrap;*/
     gap: 2.5rem;
     justify-content: center;
 }
@@ -78,7 +54,6 @@
 .softskills {
     display: flex;
     flex-direction: row;
-    /*flex-wrap: wrap;*/
     gap: 2.5rem;
     justify-content: center;
 }
@@ -130,12 +105,11 @@
 }
 
 .texto {
-    color: #000000; /* Cambiar el color del texto a un gris oscuro */
+    color: #000000;
     font-size: 1.05rem;
-    font-weight: 700; /* Aumentar el peso de la fuente para hacerla más audaz */
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Agregar un sombreado sutil */
 }
 
 .texto strong {
