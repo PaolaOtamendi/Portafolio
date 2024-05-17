@@ -3,6 +3,25 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    max-width: 100%; /* Asegura que el contenedor no sea más ancho que el viewport */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 1rem 1rem;
+}
+
+/*@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/assets/fonts/RobotoSlab-Regular.woff2') format('woff2'),
+    url('/assets/fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+.welcome {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.firsttext {
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 640px) {
@@ -11,7 +30,14 @@
     }
 }
 
-.iAm{
+@media screen and (max-width: 768px) { /* Cambié el punto de quiebre a 768px */
+    .containerAbout {
+        grid-template-columns: 1fr; /* Cambio a una sola columna en pantallas pequeñas */
+    }
+}
+
+
+.entryiAm {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -19,8 +45,17 @@
     color: #f4f4f4;
     padding-right: 1rem;
     border-radius: 0.5rem;
-
 }
+
+/*.entryiAm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}*/
 
 .siguiente{
     display: flex;
@@ -28,7 +63,7 @@
     justify-content: center;
 }
 
-.containerlogo {
+/*.containerlogo {
     position: relative;
     overflow: hidden; 
 }
@@ -41,6 +76,32 @@
 }
 
 .developimage {
-    width: 95%;
-    max-width: 100%; 
+    width: 92%;
+    max-width: 95%;
+    max-height: 95%; 
+}*/
+
+.containerlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%; /* Asegura que el contenedor no sea más ancho que el viewport */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+@media screen and (max-width: 768px) {
+    .containerlogo {
+      max-width: 90%; /* Ajusta el valor según tu preferencia de diseño */
+    }
+}
+
+.developimage {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
 }

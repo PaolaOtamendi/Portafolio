@@ -41,8 +41,38 @@
 
 .button_cv {
   transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2.5px solid #d80286;
+  border-radius: 1rem; 
+  padding: 0.5rem 0.5rem; 
+  font-weight: bold;
+  margin: 0.70rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button_cv:hover {
+  transform: translateY(-1px);
+  scale: 1.1;
+  background-color: #d80286;
+  color: #fff;
+}
+
+.texto-button {
+  color: #000000;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.5rem;
+}
+
+/*.button_cv {
+  transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
+  background-color: #d80286;
+  color: #fff;
   font-size: 1.2rem; 
   border-radius: 0.5rem; 
   padding: 0.5rem 0.5rem; 
@@ -56,16 +86,17 @@
 .button_cv:hover {
   transform: translateY(-1px);
   scale: 1.1;
-  background-color: #004fa4;
-  color: #fff;
-}
+  background-color: #fff;
+  color: #000;
+}*/
 
 .button_link {
   transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out;
-  background-color: #fff;
-  color: #000;
-  font-size: 1.2rem; 
-  border-radius: 0.5rem; 
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2.5px solid #d80286;
+  border-radius: 1rem; 
   padding: 0.5rem 1.5rem;
   font-weight: bold;
   margin: 0.70rem;
@@ -73,12 +104,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 7rem;
+  width: 10rem;
 }
 
 .button_link:hover {
   transform: translateY(-1px);
   scale: 1.1;
-  background-color: #004fa4;
+  background-color: #d80286;
   color: #fff;
 }

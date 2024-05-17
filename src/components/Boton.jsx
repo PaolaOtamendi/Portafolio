@@ -34,12 +34,9 @@ export const BotonCv = () => {
     <a
       href="https://drive.google.com/file/d/1nUUtPc4V9PU-Xlqvn9sAvehZHRUyZSzD/view"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button
-        className="button_cv"
-      >
-        Abrir mi CV
+      rel="noopener noreferrer">
+      <button className="button_cv">
+        "Explora mi CV"
         <FontAwesomeIcon
           icon={faFileArrowDown}
           fade
@@ -60,7 +57,7 @@ export const BotonNext = () => {
           <FontAwesomeIcon
             icon={faHandSparkles}
             fade
-            style={{ color: "#3dffcf" }}
+            style={{ color: "#00ff91" }}
             className="ml-2"
           />
         </button>
