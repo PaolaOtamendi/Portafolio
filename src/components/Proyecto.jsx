@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { BotonProject } from "./Boton.jsx";
+import "./proyecto.css";
 
 export const Proyecto = ({
   titulo,
@@ -13,6 +14,8 @@ export const Proyecto = ({
   console.log("Valor de demoLink:", demoLink);
   return (
     <div className="proyecto">
+
+
       <h1 className="titleApp">{titulo}</h1>
       <div className="dataproyecto">
         <div className="containerdata">

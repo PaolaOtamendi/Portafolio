@@ -1,6 +1,14 @@
 import { Navbar } from "/src/components/Nav.jsx";
 import { Contactome } from "/src/components/Contactome.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Proyecto } from "/src/components/Proyecto.jsx";
+
+import { proyectos } from "../assets/data";
+
+import "./proyectos.css";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 import burguer from "../assets/images/burguer.png";
@@ -9,21 +17,71 @@ import social from "../assets/images/social.png";
 import mdlinks from "../assets/images/mdlinks.png";
 import datalovers from "../assets/images/datalovers.png";
 import cardvalid from "../assets/images/cardvalid.png";
-import flowise from "../assets/images/flowise.png";
-import { Proyecto } from "/src/components/Proyecto.jsx";
+import flowise from "../assets/images/flowise.png";*/
 
-import "./proyectos.css";
 
 const Proyectos = () => {
-  return (
-    <section className="all bg-black min-h-screen max-w-screen">
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+
+  return(
+    <section className="all bg-purple-400 min-h-screen max-w-screen">
       <Navbar />
       <div className="containtitle">
-        <h1 className="title">
+        <h1 className="title-proyectos font-bold text-black text-7xl m-6">
           Proyectos
-          <FontAwesomeIcon icon={faThumbsUp} flip className="ml-3" />
+        </h1>
+        <h1 className="intro-proyectos">
+          "¡Bienvenido a mi rincón de proyectos! Aquí encontrarás creatividad en cada detalle."
         </h1>
       </div>
+
+      <section className="contain-proyectos grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        {proyectos.map((proyecto) => (
+          <Proyecto
+          key= {proyecto.id}
+          titulo= {proyecto.titulo}
+          descripcion= {proyecto.descripcion}
+          herramientas= {proyecto.herramientas}
+          imagen= {proyecto.image}
+          githubLink= {proyecto.githubLink}
+          demoLink= {proyecto.demoLink}
+          />
+        ))}
+        </section>
+
+        <section className="contactome bg-black">
+        <Contactome />
+      </section>
+
+    </section>
+
+    
+  );
+
+  /*return (
+    <section className="all bg-purple-400 min-h-screen max-w-screen">
+      <Navbar />
+      <div className="containtitle">
+        <h1 className="title-proyectos font-bold text-black text-7xl m-6">
+          Proyectos
+        </h1>
+        <h1 className="intro-proyectos">
+          "¡Bienvenido a mi rincón de proyectos! Aquí encontrarás creatividad en cada detalle."
+          </h1>
+      </div>
+      
+      <section className="contain-proyectos">
+        <div>Aqui van los proyectos
+
+        </div>
+      </section>
+
+
       <div className="proyectos">
         <Proyecto
           titulo="BurguerQueen - Api Client"
@@ -162,7 +220,7 @@ const Proyectos = () => {
       <Contactome />
       </section>
     </section>
-  );
+  );*/
 };
 
 export default Proyectos;
