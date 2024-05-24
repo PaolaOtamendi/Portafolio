@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { BotonProject } from "./Boton.jsx";
 import "./proyecto.css";
+import { useState } from "react";
 
 export const Proyecto = ({
   titulo,
@@ -11,35 +12,44 @@ export const Proyecto = ({
   githubLink,
   demoLink,
 }) => {
-  console.log("Valor de demoLink:", demoLink);
+
+  const [mostrarHerramientas, setMostrarHerramientas] = useState(false);
+
+  const toggleMostrarHerramientas = () => {
+    setMostrarHerramientas(!mostrarHerramientas);
+  };
+
   return (
     <div className="proyecto">
 
+      <div className="titleApp">
+      <h1>{titulo}</h1>
+      </div>
 
-      <h1 className="titleApp">{titulo}</h1>
+      <div className="contain-image">
+      <img src={imagen} alt={titulo} className="image" />
+      <button className="button-tools" onClick={toggleMostrarHerramientas}>"Mostrar Stack"</button>
+      {mostrarHerramientas && (
+            <div className="containerdata">
+              {herramientas.map((herramienta, index) => (
+                <p key={index} className="tool">
+                  {herramienta}
+                </p>
+              ))}
+            </div>
+        )}
+      </div>
+
       <div className="dataproyecto">
-        <div className="containerdata">
-          <p className="description">{descripcion}</p>
-          <div className="herramientas">
-            {herramientas.map((herramienta, index) => (
-              <p key={index} className="tool">
-                <FontAwesomeIcon
-                  icon={faSquareCheck}
-                  style={{ color: "#ac1ee0" }}
-                  className="mr-3"
-                />
-                {herramienta}
-              </p>
-            ))}
-          </div>
-        </div>
-        <div className="containerimage">
-          <img src={imagen} alt={titulo} className="image" />
+        <div className="description">
+          <p>{descripcion}</p>
         </div>
       </div>
+
       <div className="containbutton">
-        <BotonProject githubLink={githubLink} demoLink={demoLink} />
+      <BotonProject githubLink={githubLink} demoLink={demoLink} />
       </div>
+
     </div>
   );
 };

@@ -72,14 +72,15 @@ export const BotonProject = ({ githubLink, demoLink }) => {
       <a href={githubLink} target="_blank" rel="noopener noreferrer">
         <button className="button_href slide_href">
           Github
-          <FontAwesomeIcon icon={faSquareGithub} size="lg" className="ml-1" />
+          <FontAwesomeIcon icon={faSquareGithub} size="lg" style={{ color: "#00ff91" }}
+                className="ml-2" />
         </button>
       </a>
       {demoLink && (
         <a href={demoLink} target="_blank" rel="noopener noreferrer">
           <button className="button_href slide_href">
             Abrir Demo
-            <FontAwesomeIcon icon={faPlay} size="sm" className="ml-1" />
+            <FontAwesomeIcon icon={faPlay} size="sl" style={{ color: "#00ff91" }} className="ml-1" />
           </button>
         </a>
       )}
