@@ -11,24 +11,19 @@
     align-items: center;
 }
 
-.titleContac {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #32f57c;
-    letter-spacing: 0.05em;
-    max-width: 36rem;
-    margin-bottom: 0.5rem;
+.texto-contacto {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
-.textoContac {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 1.1rem;
-    font-weight: 600;
-    font-family: arial;
-    text-align: justify;
-    word-wrap: break-word;
-    margin: 0.5rem;
+.texto-contacto strong {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: Arial;
 }
 
 .titlecontain {

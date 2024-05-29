@@ -16,9 +16,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
-  faVialCircleCheck,
-  faCode,
-  faFireFlameCurved,
   faPeopleGroup,
   faArrowsSplitUpAndLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +34,6 @@ export const Lenguajes = () => {
         <p className="titeltools">HTML</p>
         <FontAwesomeIcon
           icon={faHtml5}
-          beatFade
           size="3x"
           style={{ color: "#ff6600" }}
         />
@@ -46,7 +42,6 @@ export const Lenguajes = () => {
         <p className="titeltools">CSS</p>
         <FontAwesomeIcon
           icon={faCss3Alt}
-          beatFade
           size="3x"
           style={{ color: "#0086b3" }}
         />
@@ -55,7 +50,6 @@ export const Lenguajes = () => {
         <p className="titeltools">JavaScript</p>
         <FontAwesomeIcon
           icon={faSquareJs}
-          beatFade
           size="3x"
           style={{ color: "#65b800" }}
         />
@@ -63,7 +57,6 @@ export const Lenguajes = () => {
       <div className="icono">
         <p className="titeltools">Java</p>
         <FontAwesomeIcon icon={faJava}
-        beatFade
         size="3x" 
         style={{ color: "#ff0000" }} 
         />
@@ -163,15 +156,15 @@ export const Softskills = () => {
         <FontAwesomeIcon
           icon={faPeopleGroup}
           size="2x"
-          style={{ color: "#49bc95" }}
+          style={{ color: "#00ff91" }}
         />
       </div>
       <div className="icono">
-        <p className="titeltools">Escucha</p>
+        <p className="titeltools">Escucha Activa</p>
         <FontAwesomeIcon
           icon={faTeamspeak}
           size="2x"
-          style={{ color: "#49bc95" }}
+          style={{ color: "#00ff91" }}
         />
       </div>
       <div className="icono">
@@ -179,7 +172,7 @@ export const Softskills = () => {
         <FontAwesomeIcon
           icon={faArrowsSplitUpAndLeft}
           size="2x"
-          style={{ color: "#49bc95" }}
+          style={{ color: "#00ff91" }}
         />
       </div>
       <div className="icono">
@@ -187,7 +180,7 @@ export const Softskills = () => {
         <FontAwesomeIcon
           icon={faLeanpub}
           size="2x"
-          style={{ color: "#49bc95" }}
+          style={{ color: "#00ff91" }}
         />
       </div>
     </div>

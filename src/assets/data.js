@@ -70,5 +70,32 @@ export const proyectos = [
         image: "src/assets/images/jsonflowise.png",
         githubLink: "https://github.com/PaolaOtamendi/UPSK-AI-APPS-001-chat-with-your-files",
         demoLink: null
+    },
+    {
+        id: 9,
+        titulo: "Siemens - Chatbot",
+        descripcion: "En este proyecto para Siemens, desarrollado durante un hackatón, utilizamos Flowise para crear un chatbot de inteligencia artificial. Este chatbot ayuda en la búsqueda de empleos y ofrece soporte a los usuarios registrados en la página de Jobs.",
+        herramientas: ["FlowIse", "JavaScript"],
+        image: "src/assets/images/siemenschat.png",
+        githubLink: "https://github.com/PaolaOtamendi/Siemens_project",
+        demoLink: null
+    },
+    {
+        id: 10,
+        titulo: "Guess The Number",
+        descripcion: "Este juego interactivo para el terminal enfrenta a la jugadora contra el ordenador. Ambos se turnan para adivinar un número aleatorio entre 1 y 100, utilizando las pistas de intentos previos para saber si estaban demasiado altos o bajos.",
+        herramientas: ["Java"],
+        image: "src/assets/images/guessthenumber.png",
+        githubLink: "https://github.com/PaolaOtamendi/UPSK-JAVA-003-guess-the-number",
+        demoLink: null
+    },
+    {
+        id: 11,
+        titulo: "Fleet Management Api",
+        descripcion: "El proyecto se enfoco en desarrollar una API REST para un software de gestión de flotas que rastrea la ubicación de casi 10,000 taxis. Implementando técnicas para almacenar y consultar datos, asegurando una experiencia de usuario óptima.",
+        herramientas: ["Java"],
+        image: "src/assets/images/fleetapi.png",
+        githubLink: "https://github.com/PaolaOtamendi/UPSK-JAVA-003-guess-the-number",
+        demoLink: null
     }
 ];

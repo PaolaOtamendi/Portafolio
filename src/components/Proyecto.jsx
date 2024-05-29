@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { BotonProject } from "./Boton.jsx";
 import "./proyecto.css";
 import { useState } from "react";
