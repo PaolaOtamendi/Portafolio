@@ -1,117 +1,172 @@
-.Me{
+.contain-section2 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    /*grid-template-rows: 1fr;*/
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.modificado {
-    display: grid;
-    grid-template-rows: 1fr;
-}
-
-.parte1 {
+.part1 {
     display: grid;
     grid-template-columns: 55% 45%;
-    margin: 2.5rem;
-}
-
-.titulo1, .tituloskills {
-    font-family: 'Roboto Slab';
-}
-
-.parte2 {
-    display: flex;
-    flex-direction: row;
+    /*margin: 2.5rem;
+    flex-wrap: wrap;*/
+    gap: 2rem;
+    margin: 2.5rem 1rem;
     flex-wrap: wrap;
+}
+
+.contain-aboutme, .contain-contact {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.stack {
-    margin-bottom: 1rem;
-}
-
-.containstack {
-    margin-top: 3rem;
-}
-
-.lenguajes {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
     justify-content: center;
+    text-align: center;
 }
 
-.lenguajes > * {
-    margin: 0.5rem;
+.title-part1, .title-skills  {
+    font-family: 'Roboto Slab';
+    font-weight: bold;
 }
 
-.softwares {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: center;
-}
-
-.softskills {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: center;
-}
-
-@media (max-width: 768px) {
-    .Me {
-        grid-template-columns: 1fr;
-    }
-
-    .modificado {
-        grid-template-columns: 1fr;
-    }
-
-    .lenguajes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .softwares {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .softskills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .Me {
-        grid-template-columns: 1fr; 
-    }
-
-    .modificado {
-        grid-template-columns: 1fr;
-    }
-
-    .lenguajes,
-    .softwares,
-    .softskills {
-        grid-template-columns: 1fr; 
-    }
-}
-
-.texto {
+.text {
     color: #000000;
     font-size: 1.05rem;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    word-wrap: break-word;
 }
 
-.texto strong {
+.text strong {
     font-size: 1.05rem;
     font-weight: 800;
     color: #000000;
     font-family: Arial;
 }
 
-.links{
+.contain-part2 {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contain-stack {
+    margin-top: 3rem;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack {
+    margin-bottom: 1rem;
+}
+
+.carrusel-projects {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .part1 {
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    .softwares, .softskills, .lenguajes {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .softwares > *, .softskills > *, .lenguajes > * {
+        flex-basis: calc(10% - 2rem);
+        margin: 1rem;
+    }
+
+    .title-part1, .title-skills {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .carrusel-projects {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .part1 {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto;
+    }
+
+    .title-part1, .title-skills {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .carrusel-projects {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .part1 {
+        grid-template-columns: 1fr;
+    }
+
+    .title-part1, .title-skills {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .text {
+        font-size: 1rem;
+    }
+
+    .carrusel-projects {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .part1 {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+    .title-part1, .title-skills {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .carrusel-projects {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/*.links{
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
@@ -121,24 +176,4 @@
     padding: 0.3rem;
     border-radius: 0.4rem;
     
-}
-
-.icono {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titeltools {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: monospace;
-    text-align: justify;
-    margin-top: 0.5rem;
-} 
-
-.carrusel-proyectos {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
+}*/

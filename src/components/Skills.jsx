@@ -25,6 +25,7 @@ import visual from "../assets/visual.png";
 import jest from "../assets/jest.png";
 import firebase from "../assets/firebase.png";
 
+import "./skills.css";
 import "animate.css/animate.css";
 
 export const Lenguajes = () => {
