@@ -1,34 +1,29 @@
-/*import developImage from "../assets/devW.png";*/
-import developImage from "../assets/dev1.png";
-import frontEnd from "../assets/frontE.png";
+
+import pruebadev from "../assets/prueba9.jpg";
 import "./home.css";
 import { BotonLets } from "/src/components/Boton.jsx";
-import { Link } from "react-router-dom";
 import "animate.css/animate.css";
 
-//Segundas importaciones cambios
 import { Navbar } from "/src/components/Nav.jsx";
 
 const Home = () => {
   return (
-    <section className="All bg-purple-400 min-h-screen max-w-screen">
+    <section className="contain-all bg-purple-400 min-h-screen max-w-screen">
     <Navbar />
 
-      <section className="containerAbout">
-        <div className="text1">
-          <div className="containWelcome">
-            <h1 className="welcome font-bold text-black text-7xl m-6">
+      <section className="contain-section1">
+        <div className="contain-text">
+            <h1 className="title-welcome text-7xl m-6">
               Hola!, Bienvenido a mi portafolio
             </h1>
-          </div>
 
-          <div className="entryiAm bg-black bg-black-800 bg-opacity-50 animate__animated animate__backInDown">
-            <div className="myname font-arial font-bold text-white text-4xl m-3 flex">
-              <h1>Paola Otamendi ;)</h1>
+          <div className="contain-iam bg-black bg-black-800 bg-opacity-50 animate__animated animate__backInDown">
+            <div className="my-name text-4xl m-3 flex">
+              <h1>Mi nombre es Paola Otamendi ;)</h1>
             </div>
-            <div className="container text-xl m-3">
-              <div className="firsttext mt-3">
-                <p className="">
+            <div className="contain-info text-xl m-3">
+              <div className="first-text mt-3">
+                <p>
                   "Desarrolladora Web e Ingeniera 👩‍💻👷‍♀️, conformada por
                   curiosidad e impulso por el aprendizaje continuo. Apasionada
                   por las soluciones creativas y lógicas, creyente en
@@ -36,24 +31,24 @@ const Home = () => {
                   agregado."
                 </p>
               </div>
-              <div className="secondtext mt-3">
-                <p className="font-bold text-2xl font-mono text-green-400">
+              <div className="second-text mt-3">
+                <p className="font-bold text-2xl text-green-400">
                   ¡Conoce más sobre mí y trabajemos como un equipo! 🤸
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="siguiente relative bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+          <div className="boton-next mb-4">
             <BotonLets />
           </div>
         </div>
 
-        <div className="containerlogo relative flex-1 ">
+        <div className="contain-logo">
           <img
-            src={developImage}
+            src={pruebadev}
             alt="develop"
-            className="developimage h-auto mx-auto ml-0"
+            className="develop-image h-auto mx-auto ml-0"
             />
         </div>
       </section>

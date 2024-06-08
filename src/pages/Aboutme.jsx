@@ -31,35 +31,35 @@ export const AboutMe = () => {
   }, [location]);
 
   return (
-    <section className="bg-purple-400">
+    <section className="contain-all bg-purple-400">
       <Navbar />
       {/*Modificacion de vistas e informacion */}
-      <section className="modificado">
-        <section className="seccion1">
-          <div className="parte1">
-            <div className="AboutMe flex flex-col items-center justify-center text-center">
-              <div className="titulointro flex flex-row">
-                <h1 className="titulo1 font-bold text-black text-6xl m-6">
+      <section className="contain-section2">
+        <section className="contain-part1">
+          <div className="part1">
+            <div className="contain-aboutme">
+              <div className="title-intro">
+                <h1 className="title-part1 text-black text-6xl m-6">
                   Acerca de mí
                 </h1>
               </div>
 
-              <div className="textointro">
-                <p className="texto m-2 break-words">
+              <div className="contain-textintro">
+                <p className="text m-2">
                   💫🚀 Actualmente impulsada por los desafíos, tomé uno más:{" "}
                   <strong>
                     mi transformación de Ingeniera Industrial, con 5 años de
                     experiencia en Calidad y Mejora Continua, a Desarrolladora.
                   </strong>
                 </p>
-                <p className="texto m-2 break-words">
+                <p className="text m-2">
                   Siempre tuve esa sensación de adentrarme en el de la
                   programación, así que decidí sumergirme felizmente
                   participando en Laboratoria, donde comencé mi desarrollo como
                   Desarrolladora Frontend, colaborando y trabajando en equipo en
                   diversos proyectos.
                 </p>
-                <p className="texto m-2 break-words">
+                <p className="text m-2">
                   Además, recientemente{" "}
                   <strong>
                     completé mi primer curso en Java y actualmente estoy
@@ -67,19 +67,19 @@ export const AboutMe = () => {
                   </strong>
                 </p>
               </div>
-              <div className="botonintro">
+              <div className="contain-buttoncv">
                 <BotonCv />
               </div>
             </div>
 
-            <div className="Contactame flex flex-col items-center justify-center text-center">
-              <div className="titlecontain">
-                <h1 className="titulo1 font-bold text-black text-6xl m-6">
+            <div className="contain-contact">
+              <div className="title-intro">
+                <h1 className="title-part1 text-black text-6xl m-6">
                   Contactame
                 </h1>
               </div>
-              <div className="contactos2">
-                <p className="texto mb-4 m-2 break-words">
+              <div className="contain-info">
+                <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     size="lg"
@@ -88,7 +88,7 @@ export const AboutMe = () => {
                   />
                   Email: <strong>paola_otamendi23@hotmail.com</strong>
                 </p>
-                <p className="texto mb-4 m-2 break-words">
+                <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faPhone}
                     size="lg"
@@ -97,7 +97,7 @@ export const AboutMe = () => {
                   />
                   Teléfono: <strong>+(52) 844 273 50 64</strong>
                 </p>
-                <p className="texto mb-4 m-2 break-words">
+                <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     size="lg"
@@ -107,19 +107,19 @@ export const AboutMe = () => {
                   Dirección: <strong>Saltillo, Coahuila, México</strong>
                 </p>
               </div>
-              <div className="contacto m-2 flex items-center">
+              <div className="button-linkedin m-2 flex items-center">
                 <BotonLinkedin />
               </div>
-              <div className="contacto m-2 flex items-center">
+              <div className="button-github m-2 flex items-center">
                 <BotonGithub />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="seccion2 bg-black text-white text-center">
-          <div className="containstack">
-            <h1 className="tituloskills font-bold text-6xl m-6 animate__animated animate__bounceInDown">
+        <section className="contain-part2">
+          <div className="contain-stack">
+            <h1 className="title-skills text-6xl m-6 animate__animated animate__bounceInDown">
               Stack Tecnológico
               <FontAwesomeIcon
                 icon={faDownLong}
@@ -130,7 +130,7 @@ export const AboutMe = () => {
               />
             </h1>
           </div>
-          <div className="parte2 justify-center items-center bg-black">
+          <div className="part2">
             <div className="stack">
               <Lenguajes />
             </div>
@@ -142,11 +142,11 @@ export const AboutMe = () => {
             </div>
           </div>
 
-          <div className="carrusel-proyectos">
+          <div className="carrusel-projects">
             <Carrusel />
           </div>
 
-          <div className="siguiente m-4 flex items-center justify-center">
+          <div className="button-projects">
             <BotonNext />
           </div>
         </section>

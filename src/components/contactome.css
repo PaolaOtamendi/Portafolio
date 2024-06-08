@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.titulo1 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
 .meimage{
     width: 5rem;
     align-items: center;
@@ -17,6 +21,7 @@
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+    text-align: center;
 }
 
 .texto-contacto strong {
