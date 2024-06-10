@@ -25,6 +25,8 @@
 .title-part1, .title-skills  {
     font-family: 'Roboto Slab';
     font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text {
@@ -39,8 +41,12 @@
 .text strong {
     font-size: 1.05rem;
     font-weight: 800;
-    color: #000000;
+    color: #040404;
     font-family: Arial;
+}
+
+.strong1 {
+    color: #ffffff;
 }
 
 .contain-part2 {
