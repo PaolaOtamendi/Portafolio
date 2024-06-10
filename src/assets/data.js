@@ -8,7 +8,7 @@ import filesImage from './images/filesflowise.png';
 import jsonImage from './images/jsonflowise.png';
 import siemensImage from './images/siemenschat.png';
 import guessImage from './images/guess.png';
-import fleetImage from './images/fleetapi.png';
+import fleetImage from './images/fleet.png';
 
 export const proyectos = [
     {
