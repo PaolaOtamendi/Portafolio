@@ -22,28 +22,25 @@
     height: 280px;
 }
 
-.leftArrow {
+.leftArrow, .rightArrow {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 32px;
-    font-size: 50px;
+    /*left: 32px;*/
+    font-size: 3.5rem;
     font-weight: 700;
     color: #ff00e1;
     z-index: 1;
     cursor: pointer;
+    user-select: none;
+}
+
+.leftArrow {
+    left: -45px;
 }
 
 .rightArrow {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 32px;
-    font-size: 50px;
-    font-weight: 700;
-    color: #ff00e1;
-    z-index: 1;
-    cursor: pointer;
+    right: -45px;
 }
 
 .dots-container {
@@ -55,7 +52,8 @@
     margin: 8px 3px;
     cursor: pointer;
     font-size: 12px;
-    text-align: center; 
+    text-align: center;
+    user-select: none;
 }
 
 div.active {

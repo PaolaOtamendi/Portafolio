@@ -26,6 +26,7 @@ export const Carrusel = () => {
     }, [currentIndex]);
 
     const scrollToImage = (direction) => {
+        event.preventDefault();
         if(direction == 'prev') {
             setCurrentIndex(curr => {
                 const isFirsSlide = currentIndex === 0;
@@ -40,15 +41,21 @@ export const Carrusel = () => {
     }
 
     const goToSlide = (slideIndex) => {
+        event.preventDefault();
         setCurrentIndex(slideIndex);
     }
 
     return <div className="main-container">
         <div className="slider-container">
+            
             <div className="leftArrow" onClick={() => scrollToImage('prev')}>
-                <FontAwesomeIcon icon={faCircleChevronLeft} style={{color: "#ff00bb",}} /></div>
+                <FontAwesomeIcon icon={faCircleChevronLeft} style={{color: "#ff00bb",}} />
+            </div>
+
             <div className="rightArrow" onClick={() => scrollToImage('next')}>
-            <FontAwesomeIcon icon={faCircleChevronRight} style={{color: "#ff00bb",}} /></div>
+            <FontAwesomeIcon icon={faCircleChevronRight} style={{color: "#ff00bb",}} />
+            </div>
+
             <div className="container-images">
                 <ul ref={listRef}>
                     {
@@ -60,15 +67,16 @@ export const Carrusel = () => {
                     }
                 </ul>
             </div>
-                    <div className="dots-container">
-                        {
-                        proyectos.map((_, idx) => (
-                            <div key={idx} className={`dot-container-item ${idx === currentIndex ? "active" : ""}`}
-                            onClick={() => goToSlide(idx)}>
-                                &#9865;
-                            </div>))
-                        }
-                    </div>
+
+            <div className="dots-container">
+                {
+                    proyectos.map((_, idx) => (
+                        <div key={idx} className={`dot-container-item ${idx === currentIndex ? "active" : ""}`}
+                        onClick={() => goToSlide(idx)}>
+                            &#9865;
+                        </div>))
+                }
+            </div>
         </div>
     </div>
 };
