@@ -1,10 +1,13 @@
+import burgerImage from './images/burger.png';
+import movieImage from './images/movie.png';
+
 export const proyectos = [
     {
         id: 1, 
-        titulo: "BurguerQueen - Api Client",
+        titulo: "BurgerQueen - Api Client",
         descripcion: "Aplicación para un restaurante de hamburguesas, desarrollada con React, que permite al administrador gestionar usuarios e inventario de manera eficiente. Integra una API local para la operación.",
         herramientas: ["HTML", "JavaScript", "CSS Grid", "REACT", "API", "JEST"],
-        image: "src/assets/burguer.png",
+        image: burgerImage,
         githubLink: "https://github.com/PaolaOtamendi/DEV007-burger-queen-api-client",
         demoLink: "https://dev-007-burger-queen-api-client-beta.vercel.app/"
     },
@@ -13,7 +16,7 @@ export const proyectos = [
         titulo: "Movie Challenge",
         descripcion: "Aplicación desarrollada con React y Tailwind CSS, y una API de peliculas. Incluye funciones como filtro de búsqueda y reutilización de componentes para ofrecer una experiencia atractiva y simplificada para explorar contenido cinematográfico.",
         herramientas: ["HTML", "JavaScript", "CSS Flex", "Tailwind CSS", "REACT", "API"],
-        image: "src/assets/images/movie.png",
+        image: movieImage,
         githubLink: "https://github.com/PaolaOtamendi/DEV005-movie-challenge-fw",
         demoLink: "https://dev-005-movie-challenge-fw-flame.vercel.app/"
     },

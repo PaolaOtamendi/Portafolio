@@ -33,13 +33,12 @@ export const AboutMe = () => {
   return (
     <section className="contain-all bg-purple-400">
       <Navbar />
-      {/*Modificacion de vistas e informacion */}
       <section className="contain-section2">
         <section className="contain-part1">
           <div className="part1">
             <div className="contain-aboutme">
               <div className="title-intro">
-                <h1 className="title-part1 text-black text-6xl m-6">
+                <h1 className="title-part1 text-6xl m-6">
                   Acerca de mí
                 </h1>
               </div>
@@ -74,7 +73,7 @@ export const AboutMe = () => {
 
             <div className="contain-contact">
               <div className="title-intro">
-                <h1 className="title-part1 text-black text-6xl m-6">
+                <h1 className="title-part1 text-6xl m-6">
                   Contactame
                 </h1>
               </div>
