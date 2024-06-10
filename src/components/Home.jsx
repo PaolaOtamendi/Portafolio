@@ -48,7 +48,7 @@ const Home = () => {
           <img
             src={pruebadev}
             alt="develop"
-            className="develop-image h-auto mx-auto ml-0"
+            className="develop-image h-auto mx-auto"
             />
         </div>
       </section>

@@ -107,10 +107,10 @@ export const AboutMe = () => {
                   Dirección: <strong>Saltillo, Coahuila, México</strong>
                 </p>
               </div>
-              <div className="button-linkedin m-2 flex items-center">
+              <div className="button-linkedin">
                 <BotonLinkedin />
               </div>
-              <div className="button-github m-2 flex items-center">
+              <div className="button-github">
                 <BotonGithub />
               </div>
             </div>
