@@ -7,7 +7,7 @@ import cardImage from './images/cardvalid.png';
 import filesImage from './images/filesflowise.png';
 import jsonImage from './images/jsonflowise.png';
 import siemensImage from './images/siemenschat.png';
-import guessImage from './images/guessthenumber.png';
+import guessImage from './images/guess.png';
 import fleetImage from './images/fleetapi.png';
 
 export const proyectos = [
