@@ -12,7 +12,6 @@ import dev from "../assets/devwoman.png";
 export const Contactome = () => {
   return (
     <div className="containerMe">
-      {/*A partir de aqui estoy haciendo cambios*/}
       <div className="titlecontain">
         <h1 className="titulo1 font-bold text-white text-6xl m-6">
           Contactame

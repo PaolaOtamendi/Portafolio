@@ -1,14 +1,11 @@
 .contain-section2 {
     display: grid;
-    /*grid-template-rows: 1fr;*/
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .part1 {
     display: grid;
     grid-template-columns: 55% 45%;
-    /*margin: 2.5rem;
-    flex-wrap: wrap;*/
     gap: 2rem;
     margin: 2.5rem 1rem;
     flex-wrap: wrap;
@@ -181,15 +178,3 @@
 .button-linkedin, .button-github {
     margin: 0.5rem;
 }
-
-/*.links{
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: arial;
-    text-align: justify;
-    background-color: #fefefe;
-    padding: 0.3rem;
-    border-radius: 0.4rem;
-    
-}*/
