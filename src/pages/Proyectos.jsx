@@ -21,7 +21,7 @@ const Proyectos = () => {
     <section className="all bg-purple-400 min-h-screen max-w-screen">
       <Navbar />
       <div className="containtitle">
-        <h1 className="title-proyectos font-bold text-black text-7xl m-6">
+        <h1 className="title-proyectos text-7xl m-6">
           Proyectos
         </h1>
         <h1 className="intro-proyectos">
