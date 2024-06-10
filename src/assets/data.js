@@ -4,7 +4,7 @@ export const proyectos = [
         titulo: "BurguerQueen - Api Client",
         descripcion: "Aplicación para un restaurante de hamburguesas, desarrollada con React, que permite al administrador gestionar usuarios e inventario de manera eficiente. Integra una API local para la operación.",
         herramientas: ["HTML", "JavaScript", "CSS Grid", "REACT", "API", "JEST"],
-        image: "src/assets/images/burguer.png",
+        image: "src/assets/burguer.png",
         githubLink: "https://github.com/PaolaOtamendi/DEV007-burger-queen-api-client",
         demoLink: "https://dev-007-burger-queen-api-client-beta.vercel.app/"
     },
