@@ -62,3 +62,27 @@ div.active {
     height: 15px;
     border-radius: 50%;
 }
+
+@media (max-width: 480px) {
+    .main-container {
+        height: 180px;
+        width: 300px;
+    }
+
+    .imag {
+        height: 180px;
+        width: 300px;
+    }
+
+    .leftArrow, .rightArrow {
+        font-size: 2.5rem;
+    }
+
+    .leftArrow {
+        left: -1.5rem;
+    }
+
+    .rightArrow {
+        right: -1.5rem;
+    }
+}
