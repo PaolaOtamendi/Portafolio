@@ -13,7 +13,7 @@ const Home = () => {
 
       <section className="contain-section1">
         <div className="contain-text">
-            <h1 className="title-welcome text-7xl m-6">
+            <h1 className="title-welcome">
               Hola!, Bienvenido a mi portafolio
             </h1>
 
