@@ -47,6 +47,11 @@
 }
 
 .contain-part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: #000000;
     color: #ffffff;
     text-align: center;
@@ -78,6 +83,10 @@
 .carrusel-projects {
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.button-linkedin, .button-github {
+    margin: 0.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -140,7 +149,7 @@
     }
 
     .title-part1, .title-skills {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     
@@ -148,20 +157,18 @@
         font-size: 1rem;
     }
 
-    .carrusel-projects {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+    .text strong {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .part1 {
         grid-template-columns: 1fr;
-        margin: 1rem;
     }
 
     .title-part1, .title-skills {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     
@@ -169,12 +176,12 @@
         font-size: 0.9rem;
     }
 
+    .text strong {
+        font-size: 0.9rem;
+    }
+
     .carrusel-projects {
         margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
     }
-}
-
-.button-linkedin, .button-github {
-    margin: 0.5rem;
 }
