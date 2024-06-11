@@ -18,6 +18,9 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
     color: #000000;
+    margin: 1rem; /* Cambio de m-6 a 1 rem de margin*/
+    font-size: 4.5rem; /* Cambio de text-7xl*/
+    line-height: 1;
 }
 
 .contain-iam {
