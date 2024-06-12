@@ -38,7 +38,7 @@ export const AboutMe = () => {
           <div className="part1">
             <div className="contain-aboutme">
               <div className="title-intro">
-                <h1 className="title-part1 text-6xl m-6">
+                <h1 className="title-part1">
                   Acerca de mí
                 </h1>
               </div>
@@ -73,7 +73,7 @@ export const AboutMe = () => {
 
             <div className="contain-contact">
               <div className="title-intro">
-                <h1 className="title-part1 text-6xl m-6">
+                <h1 className="title-part1">
                   Contactame
                 </h1>
               </div>
@@ -118,7 +118,7 @@ export const AboutMe = () => {
 
         <section className="contain-part2">
           <div className="contain-stack">
-            <h1 className="title-skills text-6xl m-6 animate__animated animate__bounceInDown">
+            <h1 className="title-skills animate__animated animate__bounceInDown">
               Stack Tecnológico
               <FontAwesomeIcon
                 icon={faDownLong}
