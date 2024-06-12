@@ -17,7 +17,7 @@ const Home = () => {
               Hola!, Bienvenido a mi portafolio
             </h1>
 
-          <div className="contain-iam bg-black bg-black-800 bg-opacity-50 animate__animated animate__backInDown">
+          <div className="contain-iam bg-black bg-black-800 bg-opacity-25 animate__animated animate__backInDown">
             <div className="my-name text-4xl m-3 flex">
               <h1>Mi nombre es Paola Otamendi ;)</h1>
             </div>
