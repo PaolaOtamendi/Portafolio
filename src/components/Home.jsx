@@ -32,7 +32,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="second-text mt-3">
-                <p className="font-bold text-2xl text-green-400">
+                <p className="font-bold text-xl text-green-400">
                   ¡Conoce más sobre mí y trabajemos como un equipo! 🤸
                 </p>
               </div>
