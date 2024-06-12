@@ -24,6 +24,9 @@
     font-weight: bold;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem;
 }
 
 .text {
