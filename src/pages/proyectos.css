@@ -1,6 +1,5 @@
 .title-proyectos {
     font-family: 'Roboto Slab';
-    /*color: #100614;*/
     color: #ffffff;
     font-weight: bold;
     font-size: 4rem;
@@ -14,7 +13,6 @@
     color: #ffffff;
     font-weight: bold;
     font-size: 1.4rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: #8C4CEB;
     margin-bottom: 1rem;
 }
@@ -59,7 +57,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .title-proyectos {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 
     .intro-proyectos {
@@ -74,7 +72,7 @@
 
 @media (max-width: 480px) {
     .title-proyectos {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .intro-proyectos {
