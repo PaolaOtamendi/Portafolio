@@ -1,7 +1,7 @@
 .contain-section2 {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-    background-color: #8C4CEB;
+    /*background-color: #8C4CEB;*/
 }
 
 .part1 {
@@ -44,7 +44,7 @@
     font-size: 1.05rem;
     font-weight: 800;
     color: #bcff12;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);*/
 }
 
 .contain-part2 {
