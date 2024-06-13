@@ -81,8 +81,8 @@ export const AboutMe = () => {
                 <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    size="lg"
-                    style={{ color: "#00ff91" }}
+                    size="xl"
+                    style={{ color: "#fff" }}
                     className="mr-2"
                   />
                   Email: <strong>paola_otamendi23@hotmail.com</strong>
@@ -90,8 +90,8 @@ export const AboutMe = () => {
                 <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faPhone}
-                    size="lg"
-                    style={{ color: "#00ff91" }}
+                    size="xl"
+                    style={{ color: "#fff" }}
                     className="mr-2"
                   />
                   Teléfono: <strong>+(52) 844 273 50 64</strong>
@@ -99,8 +99,8 @@ export const AboutMe = () => {
                 <p className="text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faLocationDot}
-                    size="lg"
-                    style={{ color: "#00ff91" }}
+                    size="xl"
+                    style={{ color: "#fff" }}
                     className="mr-2"
                   />
                   Dirección: <strong>Saltillo, Coahuila, México</strong>

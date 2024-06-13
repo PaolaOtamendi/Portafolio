@@ -49,11 +49,11 @@ export const Carrusel = () => {
         <div className="slider-container">
             
             <div className="leftArrow" onClick={() => scrollToImage('prev')}>
-                <FontAwesomeIcon icon={faCircleChevronLeft} style={{color: "#ff00bb",}} />
+                <FontAwesomeIcon icon={faCircleChevronLeft} style={{color: "#d80286",}} />
             </div>
 
             <div className="rightArrow" onClick={() => scrollToImage('next')}>
-            <FontAwesomeIcon icon={faCircleChevronRight} style={{color: "#ff00bb",}} />
+            <FontAwesomeIcon icon={faCircleChevronRight} style={{color: "#d80286",}} />
             </div>
 
             <div className="container-images">
