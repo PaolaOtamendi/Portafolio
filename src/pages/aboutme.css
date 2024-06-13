@@ -33,7 +33,7 @@
 .text {
     color: #ffffff;
     font-size: 1.05rem;
-    font-weight: 500;
+    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     word-wrap: break-word;
@@ -44,7 +44,8 @@
     font-size: 1.05rem;
     font-weight: 800;
     color: #bcff12;
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);*/
+    background-color: #8C4CEB;
+    text-shadow: none;
 }
 
 .contain-part2 {
