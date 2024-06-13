@@ -19,10 +19,11 @@
 .title-welcome {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     margin: 1rem; /* Cambio de m-6 a 1 rem de margin*/
     font-size: 4.5rem; /* Cambio de text-7xl*/
     line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);
 }
 
 .contain-iam {
@@ -54,6 +55,9 @@
 
 .first-text, .second-text ,.my-name {
     font-family: 'Montserrat', sans-serif;
+}
+
+.first-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);
 }
 
