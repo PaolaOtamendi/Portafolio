@@ -1,7 +1,11 @@
 .title-proyectos {
     font-family: 'Roboto Slab';
-    color: #000000;
+    /*color: #100614;*/
+    color: #ffffff;
     font-weight: bold;
+    font-size: 4rem;
+    margin: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .intro-proyectos {
@@ -11,6 +15,10 @@
     font-weight: bold;
     font-size: 1.4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #8C4CEB;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .containtitle {
@@ -28,13 +36,18 @@
     justify-content: center;
     gap: 0.5rem;
     max-width: 75rem; 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .dataproyecto {
-        grid-template-columns: 1fr 1fr;
-    }
+.contain-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.contactome {
+    background-color: black;
 }
 
 .button {
@@ -44,4 +57,41 @@
     color: #ffffff;
     font-weight: bold;
     border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title-proyectos {
+        font-size: 4.5rem;
+    }
+
+    .intro-proyectos {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .contain-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .title-proyectos {
+        font-size: 3rem;
+    }
+
+    .intro-proyectos {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contain-proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contain-proyectos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

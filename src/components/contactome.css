@@ -8,6 +8,10 @@
 
 .titulo1 {
     font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 3.5rem;
+    margin: 1rem;
 }
 
 .meimage{
@@ -37,4 +41,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    .titulo1 {
+        font-size: 3rem;
+    }
+    
+    .meimage{
+        width: 3.5rem;
+        align-items: center;
+    }
 }
