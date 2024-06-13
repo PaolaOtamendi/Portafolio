@@ -13,7 +13,7 @@ export const Contactome = () => {
   return (
     <div className="containerMe">
       <div className="titlecontain">
-        <h1 className="titulo1 font-bold text-white text-6xl m-6">
+        <h1 className="titulo1">
           Contactame
         </h1>
         <img src={dev} alt="dev" className="meimage" />
