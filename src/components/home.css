@@ -19,7 +19,7 @@
 .title-welcome {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color: #100614;
     margin: 1rem; /* Cambio de m-6 a 1 rem de margin*/
     font-size: 4.5rem; /* Cambio de text-7xl*/
     line-height: 1;
@@ -42,7 +42,7 @@
 
 .my-name {
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.9rem;
     line-height: 1;
     margin: 1rem;
