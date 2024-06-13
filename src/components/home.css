@@ -20,10 +20,9 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
     color: #100614;
-    margin: 1rem; /* Cambio de m-6 a 1 rem de margin*/
-    font-size: 4.5rem; /* Cambio de text-7xl*/
+    margin: 1rem;
+    font-size: 4.5rem;
     line-height: 1;
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);*/
 }
 
 .contain-iam {
@@ -36,7 +35,6 @@
     padding-right: 1rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    /*background-color: #5c007881;*/
     background-color: #8C4CEB;
 }
 
@@ -48,6 +46,11 @@
     margin: 1rem;
 }
 
+.first-text {
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+}
+
 .second-text {
     color: #bcff12;
     font-size: 1.2rem;
@@ -56,10 +59,6 @@
 .first-text, .second-text ,.my-name {
     font-family: 'Montserrat', sans-serif;
 }
-
-/*.first-text {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.297);
-}*/
 
 .boton-next {
     display: flex;
@@ -92,7 +91,7 @@
 
     .contain-section1 {
         grid-template-columns: 1fr;
-        margin-top: 2rem;
+        margin-top: 3.5rem;
     }
 
     .title-welcome {
@@ -123,7 +122,7 @@
     }
 
     .title-welcome {
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-align: center;
     
     }
@@ -163,11 +162,13 @@
 
     .my-name {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .first-text,
     .second-text {
         font-size: 1rem;
+        text-align: center;
     }
 
     .second-text {

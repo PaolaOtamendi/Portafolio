@@ -78,7 +78,7 @@ export const AboutMe = () => {
                 </h1>
               </div>
               <div className="contain-info">
-                <p className="text mb-4 m-2">
+                <p className="text contact-text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     size="xl"
@@ -87,7 +87,7 @@ export const AboutMe = () => {
                   />
                   Email: <strong>paola_otamendi23@hotmail.com</strong>
                 </p>
-                <p className="text mb-4 m-2">
+                <p className="text contact-text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faPhone}
                     size="xl"
@@ -96,7 +96,7 @@ export const AboutMe = () => {
                   />
                   Teléfono: <strong>+(52) 844 273 50 64</strong>
                 </p>
-                <p className="text mb-4 m-2">
+                <p className="text contact-text mb-4 m-2">
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     size="xl"

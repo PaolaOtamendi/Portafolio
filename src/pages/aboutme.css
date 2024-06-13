@@ -1,7 +1,6 @@
 .contain-section2 {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-    /*background-color: #8C4CEB;*/
 }
 
 .part1 {
@@ -37,6 +36,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     word-wrap: break-word;
+    letter-spacing: 0.05rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -110,7 +110,7 @@
     }
 
     .title-part1, .title-skills {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         text-align: center;
     }
     
@@ -132,7 +132,7 @@
     }
 
     .title-part1, .title-skills {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         text-align: center;
     }
     
@@ -184,6 +184,10 @@
 
     .text strong {
         font-size: 0.9rem;
+    }
+
+    .contact-text {
+        text-align: center;
     }
 
     .carrusel-projects {
