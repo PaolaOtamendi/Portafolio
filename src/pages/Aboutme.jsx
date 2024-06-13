@@ -48,11 +48,11 @@ export const AboutMe = () => {
                   💫🚀 Actualmente impulsada por los desafíos, tomé uno más:{" "}
                   <strong>
                     mi transformación de Ingeniera Industrial, con 5 años de
-                    experiencia en Calidad y Mejora Continua, a Desarrolladora.
+                    experiencia en Calidad y Mejora Continua, a Desarrolladora Web.
                   </strong>
                 </p>
                 <p className="text m-2">
-                  Siempre tuve esa sensación de adentrarme en el de la
+                  Siempre tuve esa sensación de adentrarme en el mundo de la
                   programación, así que decidí sumergirme felizmente
                   participando en Laboratoria, donde comencé mi desarrollo como
                   Desarrolladora Frontend, colaborando y trabajando en equipo en
