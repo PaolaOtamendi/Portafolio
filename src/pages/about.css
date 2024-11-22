@@ -1,0 +1,178 @@
+.section__resume--home {
+    display         : flex;
+    flex-direction  : column;
+    /*flex-direction: column;*/
+    justify-content : center;
+    align-items     : center;
+}
+
+/* Prueba con cards*/
+.section_resume-cards {
+    display              : flex;
+    flex-direction       : column;
+    justify-content      : space-around;
+    align-items          : normal;
+    gap                  : 2rem;
+    padding-top          : 5.7rem;
+    /* padding-top       : 8rem; */
+    /* padding           : 0%; */
+    /* padding           : 10rem 2rem 5rem 2rem; */
+    /*border             : 1px solid #bcff12;*/
+}
+
+.card {
+    height       : auto;
+    /*width      : 30rem;*/
+    /*max-width  : 45rem;*/
+    max-width    : 50rem;
+    border-radius: 1.5rem;
+}
+
+.car_color {
+    background-color: #211522;
+}
+
+.card_title-color {
+    padding       : 0.5rem;
+    font-family   : 'Roboto Slab', sans-serif;
+    font-weight   : bold;
+    /* font-size  : 2.5rem; */
+    font-size     : 2rem;
+    color         : #fff;
+    text-align    : center;
+}
+
+.card_title {
+    padding       : 0.5rem;
+    font-family   : 'Roboto Slab', sans-serif;
+    font-weight   : bold;
+    /* font-size  : 2.5rem; */
+    font-size     : 2rem;
+    color         : #211522;
+    text-align    : center;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size  : 1.1rem;
+}
+
+.style_about {
+    /* background-color: #e0e0e0; */
+    padding            : 10px;
+    line-height        : 1.5rem;
+    /* text-align      : justify; */
+    text-align         : center;
+}
+
+.style_about strong {
+    font-size          : 1.05rem;
+    font-weight        : 500;
+    color              : #bcff12;
+    /* background-color: #8C4CEB;
+    background-color   : #484554;
+    background-color   : #484073; */
+    background-color   : #533568;
+    text-shadow        : none;
+}
+
+.experience_list,
+.education_list {
+    display       : flex;
+    flex-direction: column;
+    gap           : 2rem;
+    width         : 100%;
+    padding       : 0%;
+}
+
+.style_experience,
+.style_education {
+    background-color: #e0e0e0;
+    background-color: #3736a6;
+    background-color: #484073;
+    background-color: #533568;
+    color           : #fff;
+    padding         : 10px;
+    border-radius   : 5px;
+    line-height     : 1rem;
+}
+
+.item_position,
+.item_institution {
+    font-size  : 1.2rem;
+    font-family: 'Roboto Slab', sans-serif;
+    color      : #bcff12;
+    line-height: 1.5rem;
+    text-align : left;
+}
+
+@media (min-width: 1025px) {
+    .section_resume-cards {
+        display              : flex;
+        flex-direction       : row;
+        /* padding-top       : 8rem; */
+        /* padding-top       : 4.5rem; */
+        padding-top          : 6rem;
+    }
+
+    .card {
+        /*height: 40rem;*/
+        width: 100%;
+    }
+
+    .card_title {
+        font-size: 2.5rem;
+    }
+
+    .card_title-color {
+        font-size: 2.5rem;
+    }
+
+    .style_about {
+        /* background-color: #e0e0e0; */
+        line-height  : 1.8rem;
+        text-align   : justify;
+        margin-bottom: 0.5rem;
+    }
+
+    .style_about strong {
+        font-size: 1.05rem;
+    }
+}
+
+/* @media (min-width: 1280px) {
+    .section_resume-cards {
+        padding-top: 6rem;
+    }
+} */
+
+/*dejamos por los background colors */
+.containe_resume {
+    /*background-color: #483f43;*/
+    /*background-color: #6f558a;*/
+    /*background-color: #100614;*/
+    /*background-color: #955595;*/
+    /*background-color: #A89AD9;*/
+    background-color: #3A3959;
+    background-color: #3736a6;
+    background-color: #484554;
+    background-color: #483f76;
+    background-color: #3736a6;
+    background-color: #262053;
+    background-color: #211522;
+    background-color: #484554;
+    background-color: #f0f0f0;
+    width           : 90rem;
+    height          : auto;
+    margin-top      : 5rem;
+    border          : 1px solid #211522;
+    border-radius   : 0.5rem;
+    padding         : 1rem;
+}
+
+/* Phone */
+/* @media only screen and (max-width: 640px) {
+    .section_resume-cards {
+        padding: 0%;
+    }
+} */

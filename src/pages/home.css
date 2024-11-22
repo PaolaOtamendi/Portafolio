@@ -1,177 +1,203 @@
-.contain-section1{
-    display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    grid-template-columns: 55% 45%;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: 1rem;
+.contain-all {
+    background-color: #afa2de;
 }
 
-.contain-text {
-    display: flex;
-    flex-direction: column;
+.contain_section-welcome {
+    display              : grid;
+    grid-template-columns: 1fr;
+    align-items          : center;
+    justify-content      : center;
+    padding              : 2rem;
+    gap                  : 2rem;
+}
+
+.section_welcome {
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
 }
 
-.title-welcome {
+.container__text-header {
+    padding-bottom: 1rem;
+}
+
+.text__header-title-welcome {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
-    color: #100614;
-    margin: 1rem;
-    font-size: 4.5rem;
+    color      : #100614;
+    font-size  : 2.3rem;
+    text-align : center;
     line-height: 1;
 }
 
-.contain-iam {
-    display: flex;
+.text__header-title-welcome .break-line {
+    display: block;
+    /* Cambia a bloque en móviles para crear el salto */
+}
+
+.container__text-description {
+    display       : flex;
     flex-direction: column;
-    margin: 1rem;
-    text-align: justify;
-    font-weight: 800;
-    color: #ffffff;
-    padding-right: 1rem;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    background-color: #8C4CEB;
+    gap           : 1rem;
 }
 
-.my-name {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1.9rem;
-    line-height: 1;
-    margin: 1rem;
-}
-
-.first-text {
-    line-height: 1.5;
-    letter-spacing: 0.05rem;
-}
-
-.second-text {
-    color: #bcff12;
-    font-size: 1.2rem;
-}
-
-.first-text, .second-text ,.my-name {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.boton-next {
-    display: flex;
-    position: relative;
-    bottom: 0%;
-    align-items: center;
+.text__description-name {
+    padding-top    : 1rem;
+    padding-bottom : 0.5rem;
+    display        : flex;
     justify-content: center;
-    margin-top: 2rem;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size  : 1.5rem;
+    line-height: 1;
+    color      : black;
+    background : #bcff12;
+    width      : fit-content;
+}
+
+.introduction {
+    font-family: 'Montserrat', sans-serif;
+    font-size  : 1.1rem;
+    text-align : center;
+    line-height: 1.5;
+    color      : black;
+    font-weight: 800;
+}
+
+.worktogether {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    font-size  : 1.1rem;
+    text-align : center;
+    color      : #520072;
+}
+
+.iam {
+    font-family     : 'Montserrat', sans-serif;
+    font-weight     : bold;
+    font-size       : 1rem;
+    line-height     : 1;
+    color           : black;
+    background-color: #bcff12;
+}
+
+.container__socials-contacts {
+    display        : flex;
+    justify-content: center;
+    gap            : 2rem;
+    padding-top    : 1rem;
 }
 
 .contain-logo {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    align-items    : center;
+    height         : 100%;
+    max-width      : 100%;
+    margin         : 0 auto;
 }
 
 .develop-image {
-    width: 70%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-    border-radius: 5rem 10rem;
+    /* width        : 35%; */
+    width           : 15rem;
+    height          : 15rem;
+    height          : auto;
+    margin          : 0;
+    padding         : 0;
+    object-fit      : contain;
+    /* border-radius: 5rem 10rem; */
+    border-radius   : 4rem;
 }
 
-@media screen and (max-width: 1024px) {
+.contain_section-resume {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding: 2rem;
+    background     : linear-gradient(to bottom, #afa2de, #9387c1, #776ca4, #5d5389, #433b6e);
+}
 
-    .contain-section1 {
-        grid-template-columns: 1fr;
-        margin-top: 3.5rem;
+.contain_section-skills {
+    background-color: #433b6e;
+}
+
+.contain_section-next {
+    background-color: #433b6e;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    padding-bottom  : 5rem;
+}
+
+/* Phone */
+@media only screen and (max-width: 640px) {
+    .container__socials-contacts {
+        flex-direction: column;
+        align-items   : center;
     }
+}
 
-    .title-welcome {
-        font-size: 4.5rem;
+/* Tablet - Portatiles */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .text__header-title-welcome {
+        font-size : 3rem;
         text-align: center;
     }
-    
-    .my-name {
-        font-size: 2rem;
-    }
-    
-    .first-text,
-    .second-text {
-        font-size: 1.5rem;
+
+    .name {
+        font-size: 1.7rem;
     }
 
-    .develop-image {
-        width: 50%;
-        margin-top: 2.5rem;
+    .contain-text {
+        padding-left : 4rem;
+        padding-right: 4rem;
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .contain-section1 {
-        grid-template-columns: 1fr;
-        margin-top: 0;
+/* Desktop*/
+@media (min-width: 1025px) {
+    .contain_section-welcome {
+        /* grid-template-columns: 55% 45%; */
+        grid-template-columns: 60% 40%;
+        max-width            : 100%;
+        padding              : 4rem 4rem;
+        padding-bottom: 5.5rem;
+        /* gap               : 0; */
+        gap                  : 2rem;
     }
 
-    .title-welcome {
+    .text__header-title-welcome {
         font-size: 3.5rem;
-        text-align: center;
-    
     }
 
-    .my-name {
-        font-size: 1.5rem;
+    .text__header-title-welcome .break-line {
+        display       : inline;
+        /* Por defecto: mantén el texto en línea */
     }
 
-    .first-text,
-    .second-text {
-        font-size: 1.5rem;
+    .name {
+        font-size: 1.9rem;
     }
 
-    .second-text {
-        letter-spacing:-0.02rem;
+    .introduction {
+        font-size : 1.2rem;
+        text-align: justify;
+    }
+
+    .worktogether {
+        font-size: 1.2rem;
+    }
+
+    .container__socials-contacts {
+        flex-direction: row;
     }
 
     .develop-image {
-        width: 85%;
-        margin: 1.5rem;
-    }
-
-    .contain-logo {
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .contain-section1 {
-        grid-template-columns: 1fr;
-        margin-top: 0;
-    }
-
-    .title-welcome {
-        font-size: 2.8rem;
-    }
-
-    .my-name {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .first-text,
-    .second-text {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .second-text {
-        letter-spacing:-0.02rem;
+        /* width: 70%; */
+        width : 22rem;
+        height: 22rem;
     }
 }

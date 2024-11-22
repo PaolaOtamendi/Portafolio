@@ -1,4 +1,4 @@
-export const Aboutme = [
+export const aboutMe = [
     {
         title: "About me",
         description:
@@ -9,14 +9,14 @@ export const Aboutme = [
     }
 ];
 
-export const Experience = [
+export const myExperience = [
     {
         title: "Experiencia profesional",
         items : [
             {
                 company: "IT Globers",
                 position: "Trainee Front End",
-                duration: "2024 periodo de 2 meses"
+                duration: "2024 periodo de 4 meses"
             },
             {
                 company: "Magna",
@@ -27,14 +27,14 @@ export const Experience = [
     }
 ];
 
-export const Education = [
+export const myEducation = [
     {
         title: "Educación",
         items: [
             {
                 institution: "Laboratoria",
                 degree: "Front End Developer",
-                year: "Abril 2023 a Septiembre 2023"
+                year: "Abril 2023 a Sep. 2023"
             },
             {
                 institution: "Instituto Tecnologico de Saltillo",

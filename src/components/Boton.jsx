@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
-  faFileArrowDown,
-  faHandSparkles,
-  faPlay,
+  faPlay
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faSquareGithub,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { FaFileDownload, FaFileCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 import "./botones.css";
@@ -39,16 +38,11 @@ export const BotonCv = () => {
       href="https://drive.google.com/file/d/1jcPgdG1YR54y5z3edWjbvTzojaKlhxV6/view"
       target="_blank"
       rel="noopener noreferrer"
+      className="ref"
     >
       <button className="button_cv">
-        "Explora mi CV"
-        <FontAwesomeIcon
-          icon={faFileArrowDown}
-          fade
-          size="lg"
-          style={{ color: "#00ff91" }}
-          className="ml-2"
-        />
+        Explora mi CV
+        <FaFileDownload color="#bcff12" />
       </button>
     </a>
   );
@@ -97,15 +91,10 @@ export const BotonGithub = () => {
 export const BotonNext = () => {
   return (
     <div>
-      <Link to="/Proyectos">
+      <Link to="/Proyectos" className="ref">
         <button className="button_slide slide_down flex">
           Proyectos
-          <FontAwesomeIcon
-            icon={faHandSparkles}
-            fade
-            style={{ color: "#00ff91" }}
-            className="ml-2"
-          />
+          <FaFileCode color="#bcff12" />
         </button>
       </Link>
     </div>

@@ -1,0 +1,61 @@
+.projects_carrusel {
+    padding-bottom: 0.5rem;
+    /*border      : 1px solid black;*/
+}
+
+.carrusel_contain {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    border-radius  : 1rem;
+}
+
+.image_carrusel {
+    width        : 100%;
+    height       : 20rem !important;
+    /*object-fit : cover;*/
+    border       : 2px solid #fff;
+    border-radius: 1rem;
+}
+
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-button-prev {
+    display: none;
+}
+
+/* Phone */
+@media (max-width: 640px) {
+
+    /* Estilos para teléfonos */
+    .carrusel_contain {
+        width: 85%;
+    }
+
+    .image {
+        height: 15rem !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    /* Estilos para tablets */
+    .carrusel_contain {
+        width: 75%;
+    }
+
+    .image {
+        height: 20rem !important;
+    }
+}
+
+/* Desktop*/
+@media (min-width: 1025px) {
+    .carrusel_contain {
+        width: 50%;
+    }
+}

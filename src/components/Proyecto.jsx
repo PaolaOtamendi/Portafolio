@@ -3,51 +3,62 @@ import "./proyecto.css";
 import { useState } from "react";
 
 export const Proyecto = ({
-  titulo,
-  descripcion,
-  herramientas,
-  imagen,
+  title,
+  description,
+  stack,
+  image,
   githubLink,
   demoLink,
 }) => {
+  const [mostrarstack, setMostrarstack] = useState(false);
 
-  const [mostrarHerramientas, setMostrarHerramientas] = useState(false);
-
-  const toggleMostrarHerramientas = () => {
-    setMostrarHerramientas(!mostrarHerramientas);
+  const toggleMostrarstack = () => {
+    setMostrarstack(!mostrarstack);
   };
 
   return (
-    <div className="proyecto">
+    <div className="infocard_project">
+      <div className="infocard_project-image">
+        <h1 className="project_title">{title}</h1>
+        <img src={image} alt={title} className="project_image" />
 
-      <div className="titleApp">
-      <h1>{titulo}</h1>
-      </div>
+        {/* <div className="project_stack">
+          {stack.map((herramienta, index) => (
+            <span key={index} className="stack_tool1">
+              {herramienta}
+              {index < stack.length - 1 && ', '}
+            </span>
+          ))}
+        </div> */}
 
-      <div className="contain-image">
-      <img src={imagen} alt={titulo} className="image" />
-      <button className="button-tools" onClick={toggleMostrarHerramientas}>"Mostrar Stack"</button>
-      {mostrarHerramientas && (
+        <div className="project_stack">
+          {stack.map((herramienta, index) => (
+            <p key={index} className="stack_tool">
+              {herramienta}
+            </p>
+          ))}
+        </div>
+        {/*<button className="button-tools" onClick={toggleMostrarstack}>"Mostrar Stack"</button>
+      {mostrarstack && (
             <div className="containerdata">
-              {herramientas.map((herramienta, index) => (
+              {stack.map((herramienta, index) => (
                 <p key={index} className="tool">
                   {herramienta}
                 </p>
               ))}
             </div>
-        )}
+        )}*/}
       </div>
 
-      <div className="dataproyecto">
-        <div className="description">
-          <p>{descripcion}</p>
+      <div className="infocard_project-data">
+        <div className="project_data">
+          <p>{description}</p>
         </div>
       </div>
 
-      <div className="containbutton">
-      <BotonProject githubLink={githubLink} demoLink={demoLink} />
+      <div className="infocard_project-buttons">
+        <BotonProject githubLink={githubLink} demoLink={demoLink} />
       </div>
-
     </div>
   );
 };

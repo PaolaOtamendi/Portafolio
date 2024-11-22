@@ -14,8 +14,8 @@ import {
   BotonGithub,
 } from "/src/components/Boton.jsx";
 
-import { Lenguajes, Softwares, Softskills } from "/src/components/Skills.jsx";
-import { Carrusel } from "/src/components/Carrusel.jsx";
+/*import { Lenguajes, Softwares, Softskills } from "/src/components/Skills.jsx";*/
+/*import { Carrusel } from "/src/components/Carrusel.jsx";*/
 import { Navbar } from "/src/components/Nav.jsx";
 import "./aboutme.css";
 import "animate.css/animate.css";

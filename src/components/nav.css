@@ -1,4 +1,94 @@
+.navBar {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 1.5rem;
+}
+
+.contain_intro-name {
+    display       : flex;
+    flex-direction: row;
+    gap           : 0.5rem;
+}
+
+.intro_name-nav {
+    font-family  : 'League Spartan', 'Montserrat', sans-serif;
+    font-size    : 1.5rem;
+    font-weight  : bold;
+    color        : #fff;
+    padding-left : 1rem;
+    margin-bottom: 0%;
+}
+
+.scroll_navbar {
+    display     : flex;
+    padding-left: 0%;
+}
+
+.colored-dot {
+    color    : #8a2be2;
+    font-size: 2rem;
+}
+
 .nav-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    display        : flex;
+    font-family    : 'League Spartan', 'Montserrat', sans-serif;
+    font-weight    : bold;
+    font-size      : 1rem;
+    text-decoration: none;
+    color          : #fff;
+    transition     : color 0.3s ease;
+    gap            : 1rem;
+}
+
+.nav-text:hover {
+    color: #8a2be2;
+}
+
+/* Mobile Nav */
+.mobile-menu {
+    top             : 70px !important;
+    z-index         : 51;
+    background-color: #211522;
+}
+
+.dropdown-enter {
+    opacity   : 0;
+    transform : scale(0.95);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.dropdown-enter-active {
+    opacity  : 1;
+    transform: scale(1);
+}
+
+.dropdown-exit {
+    opacity   : 1;
+    transform : scale(1);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.dropdown-exit-active {
+    opacity  : 0;
+    transform: scale(0.95);
+}
+
+.menu-button {
+    padding         : 0.5rem;
+    border-radius   : 50%;
+    background-color: #fff;
+}
+
+/* Desktop*/
+@media (min-width: 1025px) {
+    .nav-text {
+        font-size: 1.1rem;
+        gap      : 0.5rem;
+    }
+
+    .intro_name-nav {
+        margin-bottom: 1rem;
+    }
 }
