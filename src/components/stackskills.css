@@ -18,13 +18,16 @@
     /*border     : 1px solid #211522;*/
     font-family: 'Roboto Slab', sans-serif;
     text-align : center;
-    font-size  : 3rem;
+    /* font-size  : 3rem; */
+    font-size: 2rem;
 }
 
 .contain_skills-intro {
     font-family: 'Montserrat', sans-serif;
     text-align : center;
     font-size: 1.1rem;
+    /* color: #d80286; */
+    /* color: #3dbc1a; */
 }
 
 .containe_stack-skills {
@@ -39,7 +42,8 @@
     background-color: black;
     border-radius   : 1.5rem;
     padding         : 2rem;
-    gap             : 2rem;
+    /* gap             : 2rem; */
+    gap             : 2.5rem;
 }
 
 .categories_skills {
@@ -56,7 +60,8 @@
     align-items          : center;
     /*display            : grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-    gap                  : 2rem;
+    /* gap                  : 2rem; */
+    gap: 4.5rem;
     /*border               : 1px solid #dd25f6;*/
     flex-wrap            : wrap;
     padding              : 0%;
@@ -67,6 +72,7 @@
     flex-direction : column;
     align-items    : center;
     justify-content: center;
+    cursor: pointer;
     /*border         : 1px solid #fff;*/
 }
 
@@ -74,6 +80,23 @@
     font-family: 'Montserrat', sans-serif;
     text-align : center;
     font-size  : 0.9rem;
+}
+
+.tippy_item {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.custom-tooltip {
+    /* background-color: #9e17ff !important; */
+    background-color: #bcff12 !important;
+    font-size: 1rem !important;
+    /* color: #bcff12 !important; */
+    color: #2a2454 !important;
+    /* color: #d80286 !important; */
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Phone */

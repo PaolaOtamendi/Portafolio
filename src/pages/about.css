@@ -21,15 +21,17 @@
 }
 
 .card {
-    height       : auto;
-    /*width      : 30rem;*/
-    /*max-width  : 45rem;*/
-    max-width    : 50rem;
-    border-radius: 1.5rem;
+    height          : auto;
+    /*width         : 30rem;*/
+    /*max-width     : 45rem;*/
+    max-width       : 50rem;
+    /* border-radius: 1.5rem; */
+    border-radius   : 8px;
 }
 
 .car_color {
     background-color: #211522;
+    background-color: #100614;
 }
 
 .card_title-color {
@@ -37,7 +39,8 @@
     font-family   : 'Roboto Slab', sans-serif;
     font-weight   : bold;
     /* font-size  : 2.5rem; */
-    font-size     : 2rem;
+    /* font-size     : 1.5rem; */
+    font-size: 2rem;
     color         : #fff;
     text-align    : center;
 }
@@ -47,18 +50,20 @@
     font-family   : 'Roboto Slab', sans-serif;
     font-weight   : bold;
     /* font-size  : 2.5rem; */
-    font-size     : 2rem;
+    /* font-size     : 1.5rem; */
+    font-size: 2rem;
     color         : #211522;
     text-align    : center;
 }
 
 .card-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size  : 1.1rem;
+    font-family   : 'Montserrat', sans-serif;
+    /* font-size  : 0.9rem; */
 }
 
 .style_about {
     /* background-color: #e0e0e0; */
+    font-size          : 0.9rem;
     padding            : 10px;
     line-height        : 1.5rem;
     /* text-align      : justify; */
@@ -66,7 +71,8 @@
 }
 
 .style_about strong {
-    font-size          : 1.05rem;
+    font-size          : 0.9rem;
+    /* font-size       : 1rem; */
     font-weight        : 500;
     color              : #bcff12;
     /* background-color: #8C4CEB;
@@ -87,14 +93,16 @@
 
 .style_experience,
 .style_education {
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0;
     background-color: #3736a6;
-    background-color: #484073;
-    background-color: #533568;
-    color           : #fff;
-    padding         : 10px;
-    border-radius   : 5px;
-    line-height     : 1rem;
+    background-color: #484073; */
+    /* background-color: #533568; */
+    /* background-color: #533568; */
+    font-size    : 0.8rem;
+    color        : #fff;
+    padding      : 10px;
+    border-radius: 5px;
+    line-height  : 1rem;
 }
 
 .item_position,
@@ -104,6 +112,24 @@
     color      : #bcff12;
     line-height: 1.5rem;
     text-align : left;
+    display    : flex;
+    gap        : 10px;
+}
+
+.item_company,
+.item_degree {
+    font-size: 0.9rem;
+}
+
+.item_description {
+    line-height: 1.8rem;
+}
+
+.item_duration {
+    color    : #533568;
+    color    : #985cc3;
+    color    : #af6cdf;
+    font-size: 1rem;
 }
 
 @media (min-width: 1025px) {
@@ -121,11 +147,11 @@
     }
 
     .card_title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .card_title-color {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .style_about {
@@ -136,7 +162,7 @@
     }
 
     .style_about strong {
-        font-size: 1.05rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -153,14 +179,14 @@
     /*background-color: #100614;*/
     /*background-color: #955595;*/
     /*background-color: #A89AD9;*/
-    background-color: #3A3959;
+    /* background-color: #3A3959;
     background-color: #3736a6;
     background-color: #484554;
     background-color: #483f76;
     background-color: #3736a6;
     background-color: #262053;
     background-color: #211522;
-    background-color: #484554;
+    background-color: #484554; */
     background-color: #f0f0f0;
     width           : 90rem;
     height          : auto;

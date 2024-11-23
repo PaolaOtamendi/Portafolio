@@ -5,19 +5,23 @@ export const skills = [
         items: [
             {
                 skill: "Trabajo Colaborativo",
-                icon: "equipo"
+                icon: "equipo",
+                experience: "Avanzado"
             },
             {
                 skill: "Escucha Activa",
-                icon: "escucha"
+                icon: "escucha",
+                experience: "Avanzado"
             },
             {
-                skill: "scrum",
-                icon: "scrum"
+                skill: "SCRUM",
+                icon: "scrum",
+                experience: "Avanzado"
             },
             {
                 skill: "Autoaprendizaje",
-                icon: "aprendizaje"
+                icon: "aprendizaje",
+                experience: "Avanzado"
             }
         ]
     },
@@ -26,20 +30,24 @@ export const skills = [
         title: "lenguages",
         items: [
             {
-                skill: "HTML",
-                icon: "html"
+                skill: "HTML5",
+                icon: "html",
+                experience: "Avanzado"
             },
             {
-                skill: "CSS",
-                icon: "css"
+                skill: "CSS3",
+                icon: "css",
+                experience: "Intermedio"
             },
             {
                 skill: "JavaScript",
-                icon: "js"
+                icon: "js",
+                experience: "Intermedio"
             },
             {
                 skill: "Java",
-                icon: "java"
+                icon: "java",
+                experience: "Básico"
             }
         ]
     },
@@ -49,60 +57,99 @@ export const skills = [
         items: [
             {
                 skill: "ReactJs",
-                icon: "react"
+                icon: "react",
+                experience: "Intermedio"
             },
             {
                 skill: "vtexIO",
-                icon: "vtexio"
+                icon: "vtexio",
+                experience: "Intermedio"
             },
             {
                 skill: "NodeJS",
-                icon: "nodejs"
+                icon: "nodejs",
+                experience: "Intermedio"
             },
             {
                 skill: "Firebase",
-                icon: "firebase"
+                icon: "firebase",
+                experience: "Intermedio"
             },
             {
                 skill: "JEST",
-                icon: "jest"
+                icon: "jest",
+                experience: "Intermedio"
             },
             {
                 skill: "GitHub",
-                icon: "github"
+                icon: "github",
+                experience: "Intermedio"
             },
             {
                 skill: "Git",
-                icon: "git"
+                icon: "git",
+                experience: "Avanzado"
             },
             {
                 skill: "VisualCode",
-                icon: "visualcode"
+                icon: "visualcode",
+                experience: "Avanzado"
             },
             {
                 skill: "Intellij",
-                icon: "intellij"
+                icon: "intellij",
+                experience: "Avanzado"
             },
             {
                 skill: "NPM",
-                icon: "npm"
+                icon: "npm",
+                experience: "Intermedio"
             },
             {
                 skill: "Figma",
-                icon: "figma"
+                icon: "figma",
+                experience: "Intermedio"
             },
             {
                 skill: "MarkDown",
-                icon: "markdown"
+                icon: "markdown",
+                experience: "Básico"
             },
             {
                 skill: "Tailwind CSS",
-                icon: "tailwind"
+                icon: "tailwind",
+                experience: "Intermedio"
             },
             {
                 skill: "BootStrap",
-                icon: "bootstrap"
+                icon: "bootstrap",
+                experience: "Intermedio"
             },
+            {
+                skill: "Radix",
+                icon: "radix",
+                experience: "Intermedio"
+            },
+            {
+                skill: "SpringBoot",
+                icon: "springboot",
+                experience: "Básico"
+            },
+            {
+                skill: "PostgreSQL",
+                icon: "postgresql",
+                experience: "Básico"
+            },
+            {
+                skill: "SQL",
+                icon: "sql",
+                experience: "Básico"
+            },
+            {
+                skill: "Swagger",
+                icon: "swagger",
+                experience: "Básico"
+            }
         ]
     }
 ];

@@ -16,12 +16,14 @@ export const myExperience = [
             {
                 company: "IT Globers",
                 position: "Trainee Front End",
-                duration: "2024 periodo de 4 meses"
+                description: "Desarrollé dos proyectos de e-commerce utilizando VTEX IO y componentes personalizados con React. Colaboré bajo metodología SCRUM para optimizar entregas en un entorno ágil.",
+                duration: "4 meses (2024)"
             },
             {
                 company: "Magna",
                 position: "Ingeniero de Calidad y Mejora",
-                duration: "De 2017 a 2022"
+                description: "Lideré proyectos de calidad y mejora continua, implementando soluciones estratégicas con apoyo de TI y equipos multidisciplinarios. Mejorando la eficiencia operativa y estándares de calidad.",
+                duration: "5 años (2017-2022)"
             }
         ]
     }
@@ -34,12 +36,19 @@ export const myEducation = [
             {
                 institution: "Laboratoria",
                 degree: "Front End Developer",
-                year: "Abril 2023 a Sep. 2023"
+                description: "Me formé como desarrolladora web colaborando en proyectos bajo la metodología SCRUM, utilizando JavaScript, HTML, CSS, React, y herramientas como Node.js, Firebase, Git y Figma.",
+                year: "6 meses (2023)"
             },
             {
                 institution: "Instituto Tecnologico de Saltillo",
-                degree: "Ingenieria Industrial",
-                year: "De 2013 a 2017"
+                degree: "Ingeniería Industrial",
+                description: "Desarrollé habilidades en análisis de procesos, calidad y estadística, fortaleciendo mi capacidad lógica y enfoque en soluciones industriales.",
+                year: "4 años (2031-2017)"
+            },
+            {
+                institution: "Lenguajes",
+                degree: "Ingles",
+                year: "B1 - Intermedate"
             }
         ]
     }

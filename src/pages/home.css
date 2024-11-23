@@ -68,11 +68,14 @@
 }
 
 .worktogether {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto Slab', sans-serif;
     padding-top: 1rem;
     font-size  : 1.1rem;
+    /* font-size: 1rem; */
     text-align : center;
-    color      : #520072;
+    /* color      : #520072; */
+    color: #d80286;
 }
 
 .iam {
@@ -183,7 +186,7 @@
     }
 
     .introduction {
-        font-size : 1.2rem;
+        font-size : 1.1rem;
         text-align: justify;
     }
 
