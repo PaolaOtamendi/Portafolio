@@ -1,8 +1,4 @@
 .section_stack-skills {
-    background-color: #211522;
-    background-color: black;
-    background-color: #2a2454;
-    background-color: #3537a6;
     background-color: #433b6e;
     display         : flex;
     flex-direction  : column;
@@ -10,39 +6,30 @@
     justify-content : center;
     align-items     : center;
     padding         : 6rem 2rem 2rem 2rem;
-    /*border          : 2px solid #211522;*/
 }
 
 .contain_skills-title {
     padding    : 2rem 2rem 1rem 2rem;
-    /*border     : 1px solid #211522;*/
     font-family: 'Roboto Slab', sans-serif;
     text-align : center;
-    /* font-size  : 3rem; */
-    font-size: 2rem;
+    font-size  : 2rem;
 }
 
 .contain_skills-intro {
     font-family: 'Montserrat', sans-serif;
     text-align : center;
-    font-size: 1.1rem;
-    /* color: #d80286; */
-    /* color: #3dbc1a; */
+    font-size  : 1.1rem;
 }
 
 .containe_stack-skills {
-    /*display: grid;
-    grid-template-columns: 1fr;*/
     display         : flex;
     flex-direction  : column;
     flex-wrap       : wrap;
     align-items     : center;
     justify-content : center;
-    /*border          : 1px solid #13b53b;*/
     background-color: black;
     border-radius   : 1.5rem;
     padding         : 2rem;
-    /* gap             : 2rem; */
     gap             : 2.5rem;
 }
 
@@ -50,21 +37,16 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
-    /*border         : 1px solid #1420d0;*/
 }
 
 .list_skills {
-    display              : flex;
-    flex-direction       : row;
-    justify-content      : center;
-    align-items          : center;
-    /*display            : grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-    /* gap                  : 2rem; */
-    gap: 4.5rem;
-    /*border               : 1px solid #dd25f6;*/
-    flex-wrap            : wrap;
-    padding              : 0%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    gap            : 4.5rem;
+    flex-wrap      : wrap;
+    padding        : 0%;
 }
 
 .item_skills {
@@ -72,50 +54,47 @@
     flex-direction : column;
     align-items    : center;
     justify-content: center;
-    cursor: pointer;
-    /*border         : 1px solid #fff;*/
+    cursor         : pointer;
 }
 
 .name_skills {
     font-family: 'Montserrat', sans-serif;
     text-align : center;
     font-size  : 0.9rem;
+    transition : color 0.3s ease;
+}
+
+.name_skills:hover {
+    color: #bcff12;
+}
+
+.name_skills.active {
+    color: #bcff12;
 }
 
 .tippy_item {
-    display: flex;
-    gap: 0.3rem;
+    display    : flex;
+    gap        : 0.3rem;
     align-items: center;
 }
 
 .custom-tooltip {
-    /* background-color: #9e17ff !important; */
     background-color: #bcff12 !important;
-    font-size: 1rem !important;
-    /* color: #bcff12 !important; */
-    color: #2a2454 !important;
-    /* color: #d80286 !important; */
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-size       : 1rem !important;
+    color           : #2a2454 !important;
+    font-weight     : 600;
+    font-family     : 'Montserrat', sans-serif;
+}
+
+.tooltip_content {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
 }
 
 /* Phone */
 @media (max-width: 640px) {
-    /* Estilos para teléfonos */
     .contain_skills-title {
-        padding    : 0%;
+        padding: 0%;
     }
 }
-
-/* Tablet */
-@media (min-width: 641px) and (max-width: 1024px) {
-    /* Estilos para tablets */
-
-
-    /*.list_skills {
-        flex-direction: column;
-    }*/
-}
-
-/* Desktop*/
-@media (min-width: 1025px) {}

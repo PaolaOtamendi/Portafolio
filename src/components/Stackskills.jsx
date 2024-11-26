@@ -1,6 +1,5 @@
 import { skills } from "../constanst/skills";
 import {
-  FaBook,
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
@@ -32,11 +31,10 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 import "./stackskills.css";
-// import Tooltip from "@mui/material/Tooltip";
-// import IconButton from "@mui/material/IconButton";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { FaStar } from "react-icons/fa";
+import { useState } from "react";
 
 const iconMapSkills = {
   equipo: <RiTeamFill size="40" color="#00ff91" />,
@@ -69,6 +67,13 @@ const iconMapSkills = {
 };
 
 export const StackSkills = () => {
+  const [activeSkill, setActiveSkill] = useState(null);
+
+  const handleSkillClick = (skillName) => {
+    // setActiveSkill(skillName);
+    setActiveSkill((prev) => (prev === skillName ? null : skillName));
+  };
+
   return (
     <section className="section_stack-skills">
       <div className="contain_title-skills">
@@ -83,12 +88,13 @@ export const StackSkills = () => {
             <ul className="list_skills">
               {category.items.map((item, index) => (
                 <li key={index} className="item_skills">
-                  {/* <p className="icon_skills">{iconMapSkills[item.icon]}</p> */}
                   <Tippy
                     content={
                       <span className="tippy_item">
                         <FaStar size="15" />
-                        <strong style={{ color: "#100614" }}>Nivel:</strong>{" "}
+                        <strong style={{ color: "#100614" }}>
+                          Nivel:
+                        </strong>{" "}
                         {item.experience}
                       </span>
                     }
@@ -99,9 +105,20 @@ export const StackSkills = () => {
                     theme="light"
                     animation="fade"
                   >
-                    <p className="icon_skills">{iconMapSkills[item.icon]}</p>
+                    <div
+                      className="tooltip_content"
+                      onClick={() => handleSkillClick(item.skill)}
+                    >
+                      <p className="icon_skills">{iconMapSkills[item.icon]}</p>
+                      <p
+                        className={`name_skills ${
+                          activeSkill === item.skill ? "active" : ""
+                        }`}
+                      >
+                        {item.skill}
+                      </p>
+                    </div>
                   </Tippy>
-                  <p className="name_skills">{item.skill}</p>
                 </li>
               ))}
             </ul>

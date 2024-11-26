@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 
-// Componente Root
+// Componente Root //Componente no necesario
 const Tabs = TabsPrimitive.Root;
 
 const TabsList = React.forwardRef(({ ...props }, ref) => (

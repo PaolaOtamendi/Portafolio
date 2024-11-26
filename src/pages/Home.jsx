@@ -8,7 +8,8 @@ import { Resume } from "./About";
 import { SocialsLinks } from "../components/Socials";
 import { BotonCv } from "/src/components/Boton.jsx";
 import { StackSkills } from "/src/components/StackSkills.jsx"
-import { ProjectCarrusel } from "../components/Projectcarrusel";
+import { ProjectCarrusel } from "../components/Projectcarrusel.jsx";
+import { FooterHome } from "/src/components/Footer.jsx"
 
 const Home = () => {
   return (
@@ -18,7 +19,6 @@ const Home = () => {
       <section className="contain_section-welcome">
         <div className="section_welcome">
           <div className="container__text-header">
-            {/*<p className="text__header-title-dev">Frot End Developer</p>*/}
             <h1 className="text__header-title-welcome">Hola!, <span className="break-line">Mi nombre es:</span></h1>
           </div>
           <div className="container__text-description">
@@ -64,6 +64,7 @@ const Home = () => {
       <section className="contain_section-next">
       <BotonNext />
       </section>
+      <FooterHome />
     </section>
   );
 };

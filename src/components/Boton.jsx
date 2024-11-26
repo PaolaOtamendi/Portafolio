@@ -8,11 +8,13 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { FaFileDownload, FaFileCode } from "react-icons/fa";
+import { FaFileDownload, FaFileCode, FaGithubAlt } from "react-icons/fa";
+import { IoPlayForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import "./botones.css";
 
+// No necesario
 export const BotonLets = () => {
   return (
     <div>
@@ -48,6 +50,7 @@ export const BotonCv = () => {
   );
 };
 
+// No necesario
 export const BotonLinkedin = () => {
   return (
     <a
@@ -68,6 +71,7 @@ export const BotonLinkedin = () => {
   );
 };
 
+// No necesario
 export const BotonGithub = () => {
   return (
     <a
@@ -106,25 +110,15 @@ export const BotonProject = ({ githubLink, demoLink }) => {
     <div className="containbutton">
       <a href={githubLink} target="_blank" rel="noopener noreferrer">
         <button className="button_href slide_href">
-          Github
-          <FontAwesomeIcon
-            icon={faSquareGithub}
-            size="lg"
-            style={{ color: "#00ff91" }}
-            className="ml-2"
-          />
+          Código
+          <FaGithubAlt color="#bcff12"/>
         </button>
       </a>
       {demoLink && (
         <a href={demoLink} target="_blank" rel="noopener noreferrer">
           <button className="button_href slide_href">
             Abrir Demo
-            <FontAwesomeIcon
-              icon={faPlay}
-              size="sl"
-              style={{ color: "#00ff91" }}
-              className="ml-1"
-            />
+            <IoPlayForward color="#bcff12"/>
           </button>
         </a>
       )}
@@ -132,6 +126,7 @@ export const BotonProject = ({ githubLink, demoLink }) => {
   );
 };
 
+// No necesario
 export const CopyEmail = () => {
   const emailToCopy = "paola_otamendi23@hotmail.com";
   const handleCopyClick = () => {

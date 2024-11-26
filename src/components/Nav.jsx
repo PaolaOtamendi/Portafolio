@@ -1,10 +1,3 @@
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
-} from "@headlessui/react";
 import { Link } from "react-router-dom";
 import Scrollspy from "react-scrollspy";
 import {
@@ -15,7 +8,6 @@ import {
   FaTools,
 } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
-import { Fragment } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import "./nav.css";
@@ -60,85 +52,6 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {/* Menú para mobile */}
-      {/* <Menu as="div" className="relative lg:hidden">
-        <MenuButton className="menu-button">
-        <IoMenu size="20" color="#8a2be2" />
-        </MenuButton>
-
-        <Transition
-          as={Fragment}
-          enter="transition ease-out duration-100"
-          enterFrom="transform opacity-0 scale-95"
-          enterTo="transform opacity-100 scale-100"
-          leave="transition ease-in duration-75"
-          leaveFrom="transform opacity-100 scale-100"
-          leaveTo="transform opacity-0 scale-95"
-        >
-          <MenuItems
-            className="mobile-menu bg-gray-800 p-4 rounded-lg shadow-lg"
-            anchor="bottom"
-          >
-            <MenuItem>
-              {({ active }) => (
-                <Link
-                  to="/"
-                  className={`nav-text m-2 ${active ? "bg-blue-500" : ""}`}
-                >
-                  <FaHome size="20" color="#8a2be2" />
-                  Home
-                </Link>
-              )}
-            </MenuItem>
-            <MenuItem>
-              {({ active }) => (
-                <a
-                  href="#home"
-                  className={`nav-text m-2 ${active ? "bg-blue-500" : ""}`}
-                >
-                  <FaLaptopCode size="20" color="#8a2be2" />
-                  About
-                </a>
-              )}
-            </MenuItem>
-            <MenuItem>
-              {({ active }) => (
-                <a
-                  href="#resumen"
-                  className={`nav-text m-2 ${active ? "bg-blue-500" : ""}`}
-                >
-                  <FaUserAstronaut size="20" color="#8a2be2" />
-                  Resumen
-                </a>
-              )}
-            </MenuItem>
-            <MenuItem>
-              {({ active }) => (
-                <a
-                  href="#stack"
-                  className={`nav-text m-2 ${active ? "bg-blue-500" : ""}`}
-                >
-                  <FaTools size="20" color="#8a2be2" />
-                  Stack
-                </a>
-              )}
-            </MenuItem>
-            <MenuItem>
-              {({ active }) => (
-                <Link
-                  to="/Proyectos"
-                  className={`nav-text m-2 ${active ? "bg-blue-500" : ""}`}
-                >
-                  <FaFolderOpen size="20" color="#8a2be2" />
-                  Proyectos
-                </Link>
-              )}
-            </MenuItem>
-          </MenuItems>
-        </Transition>
-      </Menu> */}
-
-      {/* Prueba con radix */}
       {/* Menú para mobile */}
       <DropdownMenu.Root>
         <DropdownMenu.Trigger className="menu-button lg:hidden">

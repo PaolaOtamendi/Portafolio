@@ -23,6 +23,7 @@ import "animate.css/animate.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+// Este componente tampoco es necesario
 export const AboutMe = () => {
   const location = useLocation();
 

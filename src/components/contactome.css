@@ -1,66 +1,58 @@
 .contact_to-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    text-align     : center;
     justify-content: center;
 }
 
 .contain_title-tome {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
     justify-content: center;
-    text-align: center;
+    text-align     : center;
 }
 
 .title_to-me {
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 3rem;
-    margin: 1rem;
+    font-family   : 'Roboto Slab', sans-serif;
+    font-weight   : bold;
+    color         : #ffffff;
+    font-size     : 2.3rem;
+    margin        : 1rem;
     padding-bottom: 1.5rem;
 }
 
 .me_image {
-    width: 5rem;
+    width      : 4.5rem;
     align-items: center;
 }
 
 .contain_contact-tome {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 0rem 2rem;
+    gap           : 2rem;
+    padding       : 0rem 2rem;
 }
 
 .texto-contacto {
-    color: #ffffff;
-    font-size: 1.05rem;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    text-align: justify;
-    text-align: center;
+    gap           : 0.5rem;
+    color         : #ffffff;
+    font-size     : 1.05rem;
+    font-weight   : 700;
+    font-family   : 'Montserrat', sans-serif;
+    text-align    : justify;
+    text-align    : center;
     padding-bottom: 3rem;
 }
-
-/*.texto-contacto strong {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: #ffffff;
-    font-family: Arial;
-}*/
-
-
 
 @media (max-width: 480px) {
     .title_to-me {
         font-size: 2rem;
     }
-    
+
     .me_image {
-        width: 3.5rem;
+        width      : 3.5rem;
         align-items: center;
     }
 }

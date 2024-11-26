@@ -1,4 +1,5 @@
 import { Navbar } from "/src/components/Nav.jsx";
+import { FooterHome } from "/src/components/Footer.jsx"
 import { Contactome } from "/src/components/Contactome.jsx";
 import { Proyecto } from "/src/components/Proyecto.jsx";
 import { useEffect } from "react";
@@ -42,6 +43,7 @@ const Proyectos = () => {
       <section className="contactome">
         <Contactome />
       </section>
+      <FooterHome />
     </section>
   );
 };

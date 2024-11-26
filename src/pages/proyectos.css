@@ -3,11 +3,11 @@
 }
 
 .title-proyectos {
-    font-family: 'Roboto Slab';
-    color      : #ffffff;
-    font-weight: bold;
-    font-size  : 3rem;
-    margin     : 1rem;
+    font-family   : 'Roboto Slab';
+    color         : #ffffff;
+    font-weight   : bold;
+    font-size     : 2.3rem;
+    margin        : 1rem;
 }
 
 .intro-proyectos {
@@ -46,24 +46,18 @@
     background-color: black;
 }
 
-.button {
+/* .button {
     margin          : 1rem;
     padding         : 0.5rem;
     background-color: #15b060;
     color           : #ffffff;
     font-weight     : bold;
     border-radius   : 0.5rem;
-}
+} */
 
 /* Phone */
 @media (max-width: 640px) {
-    /* Estilos para teléfonos */
-    .title-proyectos {
-        font-size: 2.5rem;
-    }
-
     .intro-proyectos {
-        font-size : 1rem;
         text-align: center;
     }
 
@@ -75,13 +69,12 @@
 
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
-    /* Estilos para tablets */
     .title-proyectos {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .intro-proyectos {
-        font-size : 1.3rem;
+        font-size : 1.1rem;
         text-align: center;
     }
 
@@ -91,41 +84,12 @@
 }
 
 /* Desktop*/
-@media (min-width: 1025px) {}
-
-/*@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1025px) {
     .title-proyectos {
         font-size: 3.5rem;
     }
 
     .intro-proyectos {
-        font-size : 1.3rem;
-        text-align: center;
-    }
-
-    .contain-proyectos {
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.1rem;
     }
 }
-
-@media (max-width: 480px) {
-    .title-proyectos {
-        font-size: 2.5rem;
-    }
-
-    .intro-proyectos {
-        font-size : 1rem;
-        text-align: center;
-    }
-
-    .contain-proyectos {
-        display              : grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (min-width: 1024px) {
-    .contain-proyectos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}*/

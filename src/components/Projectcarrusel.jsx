@@ -15,6 +15,10 @@ export const ProjectCarrusel = () => {
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2 }, // Tablets
+            1024: { slidesPerView: 3 }, // Desktop
+          }}
           navigation = {{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
