@@ -37,7 +37,7 @@ export const BotonLets = () => {
 export const BotonCv = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1jcPgdG1YR54y5z3edWjbvTzojaKlhxV6/view"
+      href="https://drive.google.com/file/d/1D3HCrCqqg0NBYRVNREOoDidHKXfG9Emq/view"
       target="_blank"
       rel="noopener noreferrer"
       className="ref"

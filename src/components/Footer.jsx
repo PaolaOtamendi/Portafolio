@@ -8,8 +8,8 @@ export const FooterHome = () => {
         <section className="footer_page">
             <div className="footer_page-contain">
                 <p className="footer_text">
-                    <FaCopyright size="20" color="#8a2be2" /> 2024 Creado por 
-                    <strong className="footer_text-strong"><TbDeviceImacStar size="20" color="#8a2be2" /> PaolaOtamendi.Dev</strong>
+                    <FaCopyright size="15" color="#8a2be2" /> 2024 Creado por 
+                    <strong className="footer_text-strong"><TbDeviceImacStar size="15" color="#8a2be2" /> PaolaOtamendi.Dev</strong>
                 </p>
             </div>
         </section>

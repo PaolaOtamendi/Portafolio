@@ -1,65 +1,65 @@
 .section__resume--home {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
 }
 
+
 .section_resume-cards {
-    display              : flex;
-    flex-direction       : column;
-    justify-content      : space-around;
-    align-items          : normal;
-    gap                  : 2rem;
-    padding-top          : 5.7rem;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : normal;
+    gap            : 2rem;
+    padding-top    : 5.7rem;
 }
 
 .card {
-    height          : auto;
-    max-width       : 50rem;
-    border-radius   : 8px;
+    height       : auto;
+    max-width    : 50rem;
+    border-radius: 8px;
 }
 
 .car_color {
-    background-color: #211522;
     background-color: #100614;
 }
 
 .card_title-color {
-    padding          : 0.5rem;
-    font-family      : 'Roboto Slab', sans-serif;
-    font-weight      : bold;
-    font-size        : 2rem;
-    color            : #fff;
-    text-align       : center;
+    padding    : 0.5rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size  : 2rem;
+    color      : #fff;
+    text-align : center;
 }
 
 .card_title {
-    padding          : 0.5rem;
-    font-family      : 'Roboto Slab', sans-serif;
-    font-weight      : bold;
-    font-size        : 2rem;
-    color            : #211522;
-    text-align       : center;
+    padding    : 0.5rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size  : 2rem;
+    color      : #211522;
+    text-align : center;
 }
 
 .card-text {
-    font-family   : 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .style_about {
-    font-size          : 0.9rem;
-    padding            : 10px;
-    line-height        : 1.5rem;
-    text-align         : center;
+    font-size  : 0.9rem;
+    padding    : 10px;
+    line-height: 1.5rem;
+    text-align : center;
 }
 
 .style_about strong {
-    font-size          : 0.9rem;
-    font-weight        : 500;
-    color              : #bcff12;
-    background-color   : #533568;
-    text-shadow        : none;
+    font-size       : 0.9rem;
+    font-weight     : 500;
+    color           : #bcff12;
+    background-color: #533568;
+    text-shadow     : none;
 }
 
 .experience_list,
@@ -101,17 +101,15 @@
 }
 
 .item_duration {
-    color    : #533568;
-    color    : #985cc3;
     color    : #af6cdf;
     font-size: 1rem;
 }
 
 @media (min-width: 1025px) {
     .section_resume-cards {
-        display              : flex;
-        flex-direction       : row;
-        padding-top          : 6rem;
+        display       : flex;
+        flex-direction: row;
+        padding-top   : 6rem;
     }
 
     .card {
@@ -136,13 +134,3 @@
         font-size: 0.9rem;
     }
 }
-
-/* .containe_resume {
-    background-color: #f0f0f0;
-    width           : 90rem;
-    height          : auto;
-    margin-top      : 5rem;
-    border          : 1px solid #211522;
-    border-radius   : 0.5rem;
-    padding         : 1rem;
-} */

@@ -9,12 +9,28 @@ import {
 } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-
+import { useEffect, useState } from "react";
 import "./nav.css";
 
 export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="navBar sticky top-0 bg-black bg-opacity-10 w-full z-50">
+    // <div className="navBar sticky top-0 bg-black bg-opacity-10 w-full z-50">
+    <div
+      className={`navBar sticky top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-black/10 backdrop-blur-sm" : "bg-black/10"
+      }`}
+    >
       <div className="contain_intro-name">
         <p className="intro_name-nav">
           OtamendiDev<span className="colored-dot">.</span>
