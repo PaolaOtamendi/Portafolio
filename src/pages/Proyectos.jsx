@@ -1,11 +1,15 @@
-import { Navbar } from "/src/components/Nav.jsx";
-import { FooterHome } from "/src/components/Footer.jsx"
-import { Contactome } from "/src/components/Contactome.jsx";
-import { Proyecto } from "/src/components/Proyecto.jsx";
+// import { Navbar } from "/src/components/Nav.jsx";
+import { Navbar } from "../components/Nav/Nav.jsx";
+// import { FooterHome } from "/src/components/Footer.jsx"
+import { FooterHome } from "../components/Footer/Footer.jsx";
+// import { Contactome } from "/src/components/Contactome.jsx";
+import { Contactome } from "../components/Contacme/Contactome.jsx";
+// import { Proyecto } from "/src/components/Proyecto.jsx";
+import { Proyecto } from "../components/Project/Proyecto.jsx";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { myProjects } from "../constanst/projects";
-import "./proyectos.css";
+import "../styles/pages/proyectos.css";
 
 const Proyectos = () => {
   const location = useLocation();

@@ -1,4 +1,4 @@
-import { BotonProject } from "./Boton.jsx";
+import { BotonProject } from "../Buttons/Boton.jsx";
 import "./proyecto.css";
 import { HiCodeBracketSquare } from "react-icons/hi2";
 

@@ -1,38 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faStar,
-  faPlay
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faSquareGithub,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
 import { FaFileDownload, FaFileCode, FaGithubAlt } from "react-icons/fa";
 import { IoPlayForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
-
 import "./botones.css";
+// import "../styles/components/botones.css";
 
-// No necesario
-export const BotonLets = () => {
-  return (
-    <div>
-      <Link to="/Me">
-        <button className="button_slide slide_down flex">
-          Let´s Go!
-          <FontAwesomeIcon
-            icon={faStar}
-            spin
-            size="lg"
-            style={{ color: "#00ff91" }}
-            className="ml-2"
-          />
-        </button>
-      </Link>
-    </div>
-  );
-};
 
 export const BotonCv = () => {
   return (
@@ -46,48 +17,6 @@ export const BotonCv = () => {
         Explora mi CV
         <FaFileDownload color="#bcff12" />
       </button>
-    </a>
-  );
-};
-
-// No necesario
-export const BotonLinkedin = () => {
-  return (
-    <a
-      href="https://www.linkedin.com/in/paola-otamendi-frontenddeveloper/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button_link m-2 break-words"
-    >
-      LinkedIn
-      <FontAwesomeIcon
-        icon={faLinkedin}
-        fade
-        size="xl"
-        style={{ color: "#00ff91" }}
-        className="linkedin ml-2"
-      />
-    </a>
-  );
-};
-
-// No necesario
-export const BotonGithub = () => {
-  return (
-    <a
-      href="https://github.com/PaolaOtamendi"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="button_link m-2 break-words"
-    >
-      GitHub
-      <FontAwesomeIcon
-        icon={faGithub}
-        fade
-        size="xl"
-        style={{ color: "#00ff91" }}
-        className="github ml-2"
-      />
     </a>
   );
 };
@@ -126,7 +55,7 @@ export const BotonProject = ({ githubLink, demoLink }) => {
   );
 };
 
-// No necesario
+// copy mail button
 export const CopyEmail = () => {
   const emailToCopy = "paola_otamendi23@hotmail.com";
   const handleCopyClick = () => {

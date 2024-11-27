@@ -1,4 +1,4 @@
-import { socialData } from "../constanst/socials";
+import { socialData } from "../../constanst/socials";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import "./socials.css";
 

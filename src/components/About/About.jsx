@@ -1,7 +1,8 @@
-import { myExperience, myEducation } from "../constanst/about";
+import { myExperience, myEducation } from "../../constanst/about";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./about.css";
+// import "../styles/components/about.css";
 import { SiRobotframework } from "react-icons/si";
 import { FaBook } from "react-icons/fa";
 

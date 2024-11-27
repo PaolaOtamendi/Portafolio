@@ -1,4 +1,4 @@
-import { skills } from "../constanst/skills";
+import { skills } from "../../constanst/skills";
 import {
   FaHtml5,
   FaCss3Alt,

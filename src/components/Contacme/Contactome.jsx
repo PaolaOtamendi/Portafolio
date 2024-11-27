@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-
 import "./contactome.css";
-import dev from "../assets/devwoman.png";
-import { SocialsLinks } from "../components/Socials";
+// import "../styles/components/contactome.css";
+// import dev from "../assets/devwoman.png";
+import dev from "../../assets/devwoman.png";
+// import { SocialsLinks } from "../Socials";
+import { SocialsLinks } from "../../components/Socials/Socials.jsx";
 
 export const Contactome = () => {
   return (

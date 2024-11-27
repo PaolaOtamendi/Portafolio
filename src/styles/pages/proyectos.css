@@ -1,5 +1,4 @@
 .all {
-    /* background-color: black; */
     background-color: #afa2de;
 }
 
@@ -14,7 +13,6 @@
 
 .intro-proyectos {
     font-family  : 'Montserrat', sans-serif;
-    /* color        : #ffffff; */
     color        : #100614;
     background   : #bcff12;
     font-size    : 1rem;

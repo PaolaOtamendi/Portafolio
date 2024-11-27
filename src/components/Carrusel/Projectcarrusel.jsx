@@ -1,4 +1,4 @@
-import { myProjects } from "../constanst/projects";
+import { myProjects } from "../../constanst/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ButtonsCarrusel } from "./ButtonsCarrusel";
 import "swiper/css";
