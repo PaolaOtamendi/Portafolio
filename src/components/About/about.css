@@ -47,19 +47,31 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
 .style_about {
-    font-size  : 0.9rem;
+    /* font-size  : 0.9rem; */
+    margin-bottom: 1rem;
+    font-size  : 0.95rem;
     padding    : 10px;
     line-height: 1.5rem;
     text-align : center;
 }
 
 .style_about strong {
-    font-size       : 0.9rem;
-    font-weight     : 500;
-    color           : #bcff12;
-    background-color: #533568;
-    text-shadow     : none;
+    /* font-size       : 0.9rem; */
+    font-size          : 0.95rem;
+    font-weight        : 600;
+    color              : #bcff12;
+    color              : #533568;
+    /* background-color: #533568;
+    background         : #4b4453;
+    background         : #9b89b3;
+    background         : #d5cabd; */
+    background         : #bcff12;
+    text-shadow        : none;
 }
 
 .experience_list,
@@ -73,7 +85,8 @@
 
 .style_experience,
 .style_education {
-    font-size    : 0.8rem;
+    /* font-size    : 0.8rem; */
+    font-size: 0.9rem;
     color        : #fff;
     padding      : 10px;
     border-radius: 5px;
@@ -82,13 +95,14 @@
 
 .item_position,
 .item_institution {
-    font-size  : 1.2rem;
-    font-family: 'Roboto Slab', sans-serif;
-    color      : #bcff12;
-    line-height: 1.5rem;
-    text-align : left;
-    display    : flex;
-    gap        : 10px;
+    display      : flex;
+    gap          : 10px;
+    margin-bottom: 1rem;
+    font-size    : 1.2rem;
+    font-family  : 'Roboto Slab', sans-serif;
+    color        : #bcff12;
+    line-height  : 1.5rem;
+    text-align   : left;
 }
 
 .item_company,
@@ -96,13 +110,19 @@
     font-size: 0.9rem;
 }
 
+.item_degree {
+    margin-bottom: 1rem;
+}
+
 .item_description {
-    line-height: 1.8rem;
+    line-height  : 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .item_duration {
-    color    : #af6cdf;
-    font-size: 1rem;
+    color        : #af6cdf;
+    font-size    : 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 1025px) {

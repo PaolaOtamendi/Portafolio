@@ -19,16 +19,16 @@ export const Proyecto = ({
         <div className="project_stack-contain">
           <p className="stack_label">
             <HiCodeBracketSquare size="20" color="#bcff12" />
-            Stack: [
+            Stack:
           </p>
           <div className="project_stack">
             {stack.map((herramienta, index) => (
               <p key={index} className="stack_tool">
-                "{herramienta}"{index < stack.length - 1 ? "," : ""}
+                {herramienta}{index < stack.length - 1 ? "," : ""}
               </p>
             ))}
           </div>
-          <p className="stack_label">]</p>
+          {/* <p className="stack_label">]</p> */}
         </div>
       </div>
 

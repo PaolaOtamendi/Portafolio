@@ -10,6 +10,7 @@ import { BotonCv } from "../components/Buttons/Boton.jsx";
 import { StackSkills } from "../components/Stacks/Stackskills.jsx";
 import { ProjectCarrusel } from "../components/Carrusel/Projectcarrusel.jsx";
 import { FooterHome } from "../components/Footer/Footer.jsx";
+import { TbHeartCode } from "react-icons/tb";
 
 
 const Home = () => {
@@ -28,13 +29,10 @@ const Home = () => {
             </div>
             <div className="text__description-intro">
               <p className="introduction">
-                "Soy Desarrolladora Web e Ingeniera, impulsada por la curiosidad
-                y un constante deseo de aprendizaje. Me especializo en crear
-                soluciones creativas y efectivas, desarrollando sitios web y
-                aplicaciones dinámicas que aportan valor agregado."
+              "Desarrolladora Web e Ingeniera apasionada por el aprendizaje continuo, especializada en crear soluciones creativas que transforman ideas en sitios web y aplicaciones funcionales."
               </p>
               <p className="worktogether font-bold">
-                ¡Conoce más sobre mí y trabajemos como un equipo! 🤸
+                ¡Conoce más sobre mí y trabajemos como un equipo!<span><TbHeartCode fontSize="20" color="#100614"/></span>
               </p>
             </div>
           </div>

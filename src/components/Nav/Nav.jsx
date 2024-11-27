@@ -80,31 +80,31 @@ export const Navbar = () => {
           >
             <motion-div></motion-div>
             <DropdownMenu.Item>
-              <Link to="/" className="nav-text m-2">
+              <Link to="/" className="nav-text m-4">
                 <FaHome size="20" color="#8a2be2" />
                 Home
               </Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
-              <a href="#home" className="nav-text m-2">
+              <a href="#home" className="nav-text m-4">
                 <FaLaptopCode size="20" color="#8a2be2" />
                 About
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
-              <a href="#resumen" className="nav-text m-2">
+              <a href="#resumen" className="nav-text m-4">
                 <FaUserAstronaut size="20" color="#8a2be2" />
                 Resumén
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
-              <a href="#stack" className="nav-text m-2">
+              <a href="#stack" className="nav-text m-4">
                 <FaTools size="20" color="#8a2be2" />
                 Stack
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
-              <Link to="/Proyectos" className="nav-text m-2">
+              <Link to="/Proyectos" className="nav-text m-4">
                 <FaFolderOpen size="20" color="#8a2be2" />
                 Proyectos
               </Link>
