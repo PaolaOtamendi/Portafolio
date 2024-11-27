@@ -41,7 +41,6 @@ export const Navbar = () => {
         <Link to="/" className="nav-text p-2 m-2">
           <FaHome size="20" color="#8a2be2" />
           Home
-          {/* <FaHome size="20" color="#8a2be2" /> */}
         </Link>
         <Scrollspy
           items={["home", "resumen", "stack"]}
@@ -52,23 +51,19 @@ export const Navbar = () => {
           <a href="#home" className="nav-text p-2 m-2">
             <FaLaptopCode size="20" color="#8a2be2" />
             About
-            {/* <FaLaptopCode size="20" color="#8a2be2" /> */}
           </a>
           <a href="#resumen" className="nav-text p-2 m-2">
             <FaUserAstronaut size="20" color="#8a2be2" />
             Resumén
-            {/* <FaUserAstronaut size="20" color="#8a2be2" /> */}
           </a>
           <a href="#stack" className="nav-text p-2 m-2">
             <FaTools size="20" color="#8a2be2" />
             Stack
-            {/* <FaTools size="20" color="#8a2be2" /> */}
           </a>
         </Scrollspy>
         <Link to="/Proyectos" className="nav-text p-2 m-2">
           <FaFolderOpen size="20" color="#8a2be2" />
           Proyectos
-          {/* <FaFolderOpen size="20" color="#8a2be2" /> */}
         </Link>
       </div>
 
