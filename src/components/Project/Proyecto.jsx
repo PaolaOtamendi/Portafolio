@@ -28,7 +28,6 @@ export const Proyecto = ({
               </p>
             ))}
           </div>
-          {/* <p className="stack_label">]</p> */}
         </div>
       </div>
 

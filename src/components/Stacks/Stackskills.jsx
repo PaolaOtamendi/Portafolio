@@ -90,7 +90,7 @@ export const StackSkills = () => {
                   <Tippy
                     content={
                       <span className="tippy_item">
-                        <FaStar size="15" />
+                        <FaStar size="12" />
                         <strong style={{ color: "#100614" }}>
                           Nivel:
                         </strong>{" "}

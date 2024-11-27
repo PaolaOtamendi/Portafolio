@@ -1,6 +1,5 @@
 .contain-all {
     background-color   : #afa2de;
-    /* background-color: #dcebf1; */
 }
 
 .contain_section-welcome {
@@ -8,7 +7,6 @@
     grid-template-columns: 1fr;
     align-items          : center;
     justify-content      : center;
-    /* padding              : 2rem; */
     padding: 2rem 1rem 2rem 1rem;
     gap                  : 2rem;
 }
@@ -89,14 +87,9 @@
     padding              : 0rem 0.5rem 0rem 0.5rem;
     width                : fit-content;
     font-family          : 'Roboto Slab', sans-serif;
-    /* padding-top       : 1rem; */
     font-size            : 1.1rem;
     text-align           : center;
-    /* color             : #d80286;
-    color                : black; */
     color                : #4b4453;
-    /* background        : #dcebf1;
-    border-radius        : 0.5rem; */
 }
 
 .iam {
@@ -138,7 +131,6 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
-    /* padding        : 2rem; */
     padding: 2rem 1rem 2rem 1rem;
     background     : linear-gradient(to bottom, #afa2de, #9387c1, #776ca4, #5d5389, #433b6e);
 }
@@ -216,7 +208,6 @@
 
     .introduction {
         font-size : 1.1rem;
-        /* text-align: justify; */
     }
 
     .worktogether {

@@ -48,11 +48,8 @@
 
 /* Mobile Nav */
 .mobile-menu {
-    top                : 70px !important;
-    z-index            : 51;
-    /* background-color: #211522; */
-    /* background-color   : #4b4453;
-    background-color: #3537a6; */
+    top             : 70px !important;
+    z-index         : 51;
     background-color: #40386b;
 }
 

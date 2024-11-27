@@ -1,12 +1,11 @@
 .section_stack-skills {
-    background-color   : #433b6e;
-    display            : flex;
-    flex-direction     : column;
-    gap                : 2rem;
-    justify-content    : center;
-    align-items        : center;
-    /* padding         : 6rem 2rem 2rem 2rem; */
-    padding            : 6rem 1rem 2rem 1rem;
+    background-color: #433b6e;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 2rem;
+    justify-content : center;
+    align-items     : center;
+    padding         : 6rem 1rem 2rem 1rem;
 }
 
 .contain_skills-title {
@@ -64,12 +63,11 @@
 }
 
 .name_skills {
-    font-family   : 'Montserrat', sans-serif;
-    text-align    : center;
-    /* font-size  : 0.9rem; */
-    font-size     : 0.95rem;
-    transition    : color 0.3s ease;
-    margin-bottom : 1rem;
+    font-family  : 'Montserrat', sans-serif;
+    text-align   : center;
+    font-size    : 0.95rem;
+    transition   : color 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .name_skills:hover {
@@ -81,9 +79,10 @@
 }
 
 .tippy_item {
-    display    : flex;
-    gap        : 0.3rem;
-    align-items: center;
+    display        : flex;
+    gap            : 0.3rem;
+    align-items    : center;
+    justify-content: center;
 }
 
 .custom-tooltip {
