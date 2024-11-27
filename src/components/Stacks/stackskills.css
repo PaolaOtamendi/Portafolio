@@ -1,0 +1,100 @@
+.section_stack-skills {
+    background-color: #433b6e;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 2rem;
+    justify-content : center;
+    align-items     : center;
+    padding         : 6rem 2rem 2rem 2rem;
+}
+
+.contain_skills-title {
+    padding    : 2rem 2rem 1rem 2rem;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align : center;
+    font-size  : 2rem;
+}
+
+.contain_skills-intro {
+    font-family: 'Montserrat', sans-serif;
+    text-align : center;
+    font-size  : 1.1rem;
+}
+
+.containe_stack-skills {
+    display         : flex;
+    flex-direction  : column;
+    flex-wrap       : wrap;
+    align-items     : center;
+    justify-content : center;
+    background-color: black;
+    border-radius   : 1.5rem;
+    padding         : 2rem;
+    gap             : 2.5rem;
+}
+
+.categories_skills {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.list_skills {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    gap            : 4.5rem;
+    flex-wrap      : wrap;
+    padding        : 0%;
+}
+
+.item_skills {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    cursor         : pointer;
+}
+
+.name_skills {
+    font-family: 'Montserrat', sans-serif;
+    text-align : center;
+    font-size  : 0.9rem;
+    transition : color 0.3s ease;
+}
+
+.name_skills:hover {
+    color: #bcff12;
+}
+
+.name_skills.active {
+    color: #bcff12;
+}
+
+.tippy_item {
+    display    : flex;
+    gap        : 0.3rem;
+    align-items: center;
+}
+
+.custom-tooltip {
+    background-color: #bcff12 !important;
+    font-size       : 1rem !important;
+    color           : #2a2454 !important;
+    font-weight     : 600;
+    font-family     : 'Montserrat', sans-serif;
+}
+
+.tooltip_content {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+/* Phone */
+@media (max-width: 640px) {
+    .contain_skills-title {
+        padding: 0%;
+    }
+}

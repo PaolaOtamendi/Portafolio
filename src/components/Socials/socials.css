@@ -1,0 +1,14 @@
+.contain_socials {
+    display        : flex;
+    flex-direction : row;
+    gap            : 1rem;
+    align-items    : center;
+    justify-content: center;
+}
+
+.social_button {
+    border          : 2px solid #fff;
+    padding         : 0.5rem;
+    border-radius   : 50%;
+    background-color: #fff;
+}

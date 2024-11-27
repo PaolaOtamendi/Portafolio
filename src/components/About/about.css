@@ -1,0 +1,136 @@
+.section__resume--home {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+
+.section_resume-cards {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : normal;
+    gap            : 2rem;
+    padding-top    : 5.7rem;
+}
+
+.card {
+    height       : auto;
+    max-width    : 50rem;
+    border-radius: 8px;
+}
+
+.car_color {
+    background-color: #100614;
+}
+
+.card_title-color {
+    padding    : 0.5rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size  : 2rem;
+    color      : #fff;
+    text-align : center;
+}
+
+.card_title {
+    padding    : 0.5rem;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size  : 2rem;
+    color      : #211522;
+    text-align : center;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.style_about {
+    font-size  : 0.9rem;
+    padding    : 10px;
+    line-height: 1.5rem;
+    text-align : center;
+}
+
+.style_about strong {
+    font-size       : 0.9rem;
+    font-weight     : 500;
+    color           : #bcff12;
+    background-color: #533568;
+    text-shadow     : none;
+}
+
+.experience_list,
+.education_list {
+    display       : flex;
+    flex-direction: column;
+    gap           : 2rem;
+    width         : 100%;
+    padding       : 0%;
+}
+
+.style_experience,
+.style_education {
+    font-size    : 0.8rem;
+    color        : #fff;
+    padding      : 10px;
+    border-radius: 5px;
+    line-height  : 1rem;
+}
+
+.item_position,
+.item_institution {
+    font-size  : 1.2rem;
+    font-family: 'Roboto Slab', sans-serif;
+    color      : #bcff12;
+    line-height: 1.5rem;
+    text-align : left;
+    display    : flex;
+    gap        : 10px;
+}
+
+.item_company,
+.item_degree {
+    font-size: 0.9rem;
+}
+
+.item_description {
+    line-height: 1.8rem;
+}
+
+.item_duration {
+    color    : #af6cdf;
+    font-size: 1rem;
+}
+
+@media (min-width: 1025px) {
+    .section_resume-cards {
+        display       : flex;
+        flex-direction: row;
+        padding-top   : 6rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card_title {
+        font-size: 2rem;
+    }
+
+    .card_title-color {
+        font-size: 2rem;
+    }
+
+    .style_about {
+        line-height  : 1.8rem;
+        text-align   : justify;
+        margin-bottom: 0.5rem;
+    }
+
+    .style_about strong {
+        font-size: 0.9rem;
+    }
+}
