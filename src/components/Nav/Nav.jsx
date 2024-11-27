@@ -86,31 +86,31 @@ export const Navbar = () => {
             <motion-div></motion-div>
             <DropdownMenu.Item>
               <Link to="/" className="nav-text m-4">
-                <FaHome size="20" color="#211522" />
+                <FaHome size="20" color="#afa2de" />
                 Home
               </Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#home" className="nav-text m-4">
-                <FaLaptopCode size="20" color="#211522" />
+                <FaLaptopCode size="20" color="#afa2de" />
                 About
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#resumen" className="nav-text m-4">
-                <FaUserAstronaut size="20" color="#211522" />
+                <FaUserAstronaut size="20" color="#afa2de" />
                 Resumén
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#stack" className="nav-text m-4">
-                <FaTools size="20" color="#211522" />
+                <FaTools size="20" color="#afa2de" />
                 Stack
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <Link to="/Proyectos" className="nav-text m-4">
-                <FaFolderOpen size="20" color="#211522" />
+                <FaFolderOpen size="20" color="#afa2de" />
                 Proyectos
               </Link>
             </DropdownMenu.Item>
