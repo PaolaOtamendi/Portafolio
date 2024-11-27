@@ -70,7 +70,6 @@ export const StackSkills = () => {
   const [activeSkill, setActiveSkill] = useState(null);
 
   const handleSkillClick = (skillName) => {
-    // setActiveSkill(skillName);
     setActiveSkill((prev) => (prev === skillName ? null : skillName));
   };
 

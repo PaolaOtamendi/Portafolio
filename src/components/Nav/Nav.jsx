@@ -25,7 +25,6 @@ export const Navbar = () => {
   }, []);
 
   return (
-    // <div className="navBar sticky top-0 bg-black bg-opacity-10 w-full z-50">
     <div
       className={`navBar sticky top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-black/10 backdrop-blur-sm" : "bg-black/10"

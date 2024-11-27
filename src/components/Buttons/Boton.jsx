@@ -2,7 +2,6 @@ import { FaFileDownload, FaFileCode, FaGithubAlt } from "react-icons/fa";
 import { IoPlayForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "./botones.css";
-// import "../styles/components/botones.css";
 
 
 export const BotonCv = () => {

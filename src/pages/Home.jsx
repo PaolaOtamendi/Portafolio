@@ -1,20 +1,14 @@
 import pruebadev from "../assets/prueba9.jpg";
-// import "./home.css";
 import "../styles/pages/home.css";
 import { BotonNext } from "../components/Buttons/Boton.jsx";
 import "animate.css/animate.css";
 
-// import { Navbar } from "/src/components/Nav.jsx";
 import { Navbar } from "../components/Nav/Nav.jsx";
 import { Resume } from "../components/About/About.jsx";
-// import { SocialsLinks } from "../components/Socials";
 import { SocialsLinks } from "../components/Socials/Socials.jsx";
 import { BotonCv } from "../components/Buttons/Boton.jsx";
-// import { StackSkills } from "/src/components/StackSkills.jsx";
 import { StackSkills } from "../components/Stacks/Stackskills.jsx";
-// import { ProjectCarrusel } from "../components/Projectcarrusel.jsx";
 import { ProjectCarrusel } from "../components/Carrusel/Projectcarrusel.jsx";
-// import { FooterHome } from "/src/components/Footer.jsx";
 import { FooterHome } from "../components/Footer/Footer.jsx";
 
 
