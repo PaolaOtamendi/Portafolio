@@ -39,8 +39,9 @@ export const Navbar = () => {
       {/* Menú para desktop */}
       <div className="intro_name-links hidden lg:flex">
         <Link to="/" className="nav-text p-2 m-2">
-          Home
           <FaHome size="20" color="#8a2be2" />
+          Home
+          {/* <FaHome size="20" color="#8a2be2" /> */}
         </Link>
         <Scrollspy
           items={["home", "resumen", "stack"]}
@@ -49,21 +50,25 @@ export const Navbar = () => {
           className="scroll_navbar"
         >
           <a href="#home" className="nav-text p-2 m-2">
-            About
             <FaLaptopCode size="20" color="#8a2be2" />
+            About
+            {/* <FaLaptopCode size="20" color="#8a2be2" /> */}
           </a>
           <a href="#resumen" className="nav-text p-2 m-2">
-            Resumén
             <FaUserAstronaut size="20" color="#8a2be2" />
+            Resumén
+            {/* <FaUserAstronaut size="20" color="#8a2be2" /> */}
           </a>
           <a href="#stack" className="nav-text p-2 m-2">
-            Stack
             <FaTools size="20" color="#8a2be2" />
+            Stack
+            {/* <FaTools size="20" color="#8a2be2" /> */}
           </a>
         </Scrollspy>
         <Link to="/Proyectos" className="nav-text p-2 m-2">
-          Proyectos
           <FaFolderOpen size="20" color="#8a2be2" />
+          Proyectos
+          {/* <FaFolderOpen size="20" color="#8a2be2" /> */}
         </Link>
       </div>
 
@@ -81,31 +86,31 @@ export const Navbar = () => {
             <motion-div></motion-div>
             <DropdownMenu.Item>
               <Link to="/" className="nav-text m-4">
-                <FaHome size="20" color="#8a2be2" />
+                <FaHome size="20" color="#211522" />
                 Home
               </Link>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#home" className="nav-text m-4">
-                <FaLaptopCode size="20" color="#8a2be2" />
+                <FaLaptopCode size="20" color="#211522" />
                 About
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#resumen" className="nav-text m-4">
-                <FaUserAstronaut size="20" color="#8a2be2" />
+                <FaUserAstronaut size="20" color="#211522" />
                 Resumén
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <a href="#stack" className="nav-text m-4">
-                <FaTools size="20" color="#8a2be2" />
+                <FaTools size="20" color="#211522" />
                 Stack
               </a>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
               <Link to="/Proyectos" className="nav-text m-4">
-                <FaFolderOpen size="20" color="#8a2be2" />
+                <FaFolderOpen size="20" color="#211522" />
                 Proyectos
               </Link>
             </DropdownMenu.Item>
