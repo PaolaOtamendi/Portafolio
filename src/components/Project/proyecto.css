@@ -41,16 +41,17 @@
 }
 
 .project_stack-contain {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    width          : 100%;
-    padding-top    : 0.5rem;
-    padding-left   : 1rem;
-    padding-right  : 1rem;
-    font-family    : 'Montserrat', sans-serif;
-    font-size      : 0.9rem;
-    gap            : 0.2rem;
+    display           : flex;
+    flex-direction    : column;
+    justify-content   : center;
+    width             : 100%;
+    /* padding-top    : 0.5rem;
+    padding-left      : 1rem;
+    padding-right     : 1rem; */
+    padding           : 0.5rem 1rem 0.5rem 1rem;
+    font-family       : 'Montserrat', sans-serif;
+    font-size         : 0.9rem;
+    gap               : 0.2rem;
 }
 
 .project_stack {
@@ -91,11 +92,12 @@
 }
 
 .project_data {
-    font-family : 'Montserrat', sans-serif;
-    font-size   : 0.9rem;
-    text-align  : center;
-    color       : #ffffff;
-    word-spacing: 1px;
+    font-family    : 'Montserrat', sans-serif;
+    /* font-size   : 0.9rem; */
+    font-size      : 0.95rem;
+    text-align     : center;
+    color          : #ffffff;
+    word-spacing   : 1px;
 }
 
 .project_data-text {
