@@ -5,7 +5,8 @@
     gap             : 2rem;
     justify-content : center;
     align-items     : center;
-    padding         : 6rem 2rem 2rem 2rem;
+    /* padding         : 6rem 2rem 2rem 2rem; */
+    padding         : 6rem 1rem 2rem 1rem;
 }
 
 .contain_skills-title {
@@ -19,6 +20,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align : center;
     font-size  : 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .containe_stack-skills {
@@ -62,6 +64,7 @@
     text-align : center;
     font-size  : 0.9rem;
     transition : color 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .name_skills:hover {
@@ -96,5 +99,19 @@
 @media (max-width: 640px) {
     .contain_skills-title {
         padding: 0%;
+    }
+}
+
+/* Tablet - Portatiles */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .section_stack-skills {
+        padding         : 6rem 2rem 2rem 2rem;
+    }
+}
+
+/* Desktop*/
+@media (min-width: 1025px) {
+    .section_stack-skills {
+        padding         : 6rem 2rem 2rem 2rem;
     }
 }
