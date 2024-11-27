@@ -62,7 +62,8 @@
 .name_skills {
     font-family: 'Montserrat', sans-serif;
     text-align : center;
-    font-size  : 0.9rem;
+    /* font-size  : 0.9rem; */
+    font-size    : 0.95rem;
     transition : color 0.3s ease;
     margin-bottom: 1rem;
 }
