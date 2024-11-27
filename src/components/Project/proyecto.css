@@ -5,15 +5,18 @@
         "image"
         "content"
         "buttons";
-    grid-template-rows   : auto;
-    gap                  : 1rem;
-    align-items          : center;
-    font-family          : 'Montserrat', sans-serif;
-    padding              : 0.5rem;
-    margin               : 0.5rem;
-    /* background        : linear-gradient(to bottom, #433b6e, #402a4c, #321c2f, #1f1218, #000000); */
-    background-color     : #202230;
-    border-radius        : 8px;
+    grid-template-rows      : auto;
+    gap                     : 1rem;
+    align-items             : center;
+    font-family             : 'Montserrat', sans-serif;
+    padding                 : 0.5rem;
+    /* margin               : 0.5rem; */
+    margin-bottom           : 0.5rem;
+    margin-top              : 0.5rem;
+    /* background           : linear-gradient(to bottom, #433b6e, #402a4c, #321c2f, #1f1218, #000000); */
+    background-color        : #202230;
+    /* background-color     : #262835; */
+    border-radius           : 8px;
 }
 
 .project_title {
@@ -143,5 +146,9 @@
 
     .project_image {
         height: 15rem;
+    }
+
+    .infocard_project {
+        margin: 0.5rem;
     }
 }

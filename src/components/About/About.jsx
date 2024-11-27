@@ -11,7 +11,7 @@ export const Resume = () => {
       <div className="section_resume-cards">
         <div className="card">
           <div className="card-body">
-            <h2 className="card_title">Acerca de mi</h2>
+            <h2 className="card_title">Sobre Mí</h2>
             <p className="card-text style_about">
               💫🚀 Impulsada por los desafíos, decidí dar un gran paso en mi
               carrera:{" "}
@@ -38,7 +38,7 @@ export const Resume = () => {
 
         <div className="card car_color">
           <div className="card-body">
-            <h2 className="card_title-color">Experiencia</h2>
+            <h2 className="card_title-color">Mi Trayectoria</h2>
             <p className="card-text">
               <ul className="experience_list">
                 {myExperience[0].items.map((item, index) => (
@@ -56,7 +56,7 @@ export const Resume = () => {
 
         <div className="card car_color">
           <div className="card-body">
-            <h2 className="card_title-color">Educación</h2>
+            <h2 className="card_title-color">Formación</h2>
             <p className="card-text">
               <ul className="education_list">
                 {myEducation[0].items.map((item, index) => (
