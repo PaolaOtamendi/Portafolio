@@ -1,5 +1,5 @@
 .contain-all {
-    background-color   : #afa2de;
+    background-color: #afa2de;
 }
 
 .contain_section-welcome {
@@ -7,7 +7,7 @@
     grid-template-columns: 1fr;
     align-items          : center;
     justify-content      : center;
-    padding: 2rem 1rem 2rem 1rem;
+    padding              : 2rem 1rem 2rem 1rem;
     gap                  : 2rem;
 }
 
@@ -22,8 +22,9 @@
 }
 
 .text__header-title-welcome {
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: bold;
+    /* font-family: 'Parkinsans', sans-serif; */
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 500;
     color      : #100614;
     font-size  : 2.3rem;
     text-align : center;
@@ -69,27 +70,27 @@
 
 .introduction {
     margin-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size  : 1.05rem;
-    text-align : center;
-    line-height: 1.5;
-    color      : black;
-    font-weight: 800;
+    font-family  : 'Montserrat', sans-serif;
+    font-size    : 1.05rem;
+    text-align   : center;
+    line-height  : 1.5;
+    color        : black;
+    font-weight  : 800;
 }
 
 .worktogether {
-    display              : flex;
-    flex-direction: column;
-    gap                  : 0.5rem;
-    align-items          : center;
-    justify-content      : center;
-    margin-bottom        : 1rem;
-    padding              : 0rem 0.5rem 0rem 0.5rem;
-    width                : fit-content;
-    font-family          : 'Roboto Slab', sans-serif;
-    font-size            : 1.1rem;
-    text-align           : center;
-    color                : #4b4453;
+    display        : flex;
+    flex-direction : column;
+    gap            : 0.5rem;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 1rem;
+    padding        : 0rem 0.5rem 0rem 0.5rem;
+    width          : fit-content;
+    font-family    : 'Sour Gummy', sans-serif;
+    font-size      : 1.1rem;
+    text-align     : center;
+    color          : #4b4453;
 }
 
 .iam {
@@ -131,7 +132,7 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
-    padding: 2rem 1rem 2rem 1rem;
+    padding        : 2rem 1rem 2rem 1rem;
     background     : linear-gradient(to bottom, #afa2de, #9387c1, #776ca4, #5d5389, #433b6e);
 }
 
@@ -167,7 +168,7 @@
     }
 
     .introduction {
-        font-size : 1.1rem;
+        font-size: 1.1rem;
     }
 
     .contain-text {
@@ -180,7 +181,7 @@
     }
 
     .contain_section-resume {
-        padding        : 2rem;
+        padding: 2rem;
     }
 }
 
@@ -207,11 +208,11 @@
     }
 
     .introduction {
-        font-size : 1.1rem;
+        font-size: 1.1rem;
     }
 
     .worktogether {
-        font-size: 1.2rem;
+        font-size     : 1.2rem;
         flex-direction: row;
     }
 
@@ -225,6 +226,6 @@
     }
 
     .contain_section-resume {
-        padding        : 2rem;
+        padding: 2rem;
     }
 }

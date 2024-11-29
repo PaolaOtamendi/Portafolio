@@ -3,8 +3,15 @@
     flex-direction : column;
     justify-content: center;
     align-items    : center;
+    padding-top    : 5rem;
 }
 
+.section__resume--intro {
+    display              : flex;
+    flex-direction       : column;
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap                  : 2rem;
+}
 
 .section_resume-cards {
     display        : flex;
@@ -16,9 +23,33 @@
 }
 
 .card {
-    height       : auto;
-    max-width    : 50rem;
-    border-radius: 8px;
+    height          : auto;
+    /* max-width    : 50rem; */
+    max-width       : 35rem;
+    border-radius   : 8px;
+}
+
+.card_intro {
+    display       : flex;
+    flex-direction: column;
+    gap           : 0.5rem;
+}
+
+.card_intro-title {
+    padding    : 0.5rem;
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: bold;
+    font-size  : 2rem;
+    color      : #211522;
+    text-align : center;
+}
+
+.card_intro-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size  : 1.1rem;
+    text-align : center;
+    color      : #4b4453;
 }
 
 .car_color {
@@ -27,7 +58,7 @@
 
 .card_title-color {
     padding    : 0.5rem;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Sour Gummy', sans-serif;
     font-weight: bold;
     font-size  : 2rem;
     color      : #fff;
@@ -52,11 +83,11 @@
 }
 
 .style_about {
-    margin-bottom: 1rem;
-    font-size    : 0.95rem;
-    padding      : 10px;
-    line-height  : 1.5rem;
-    text-align   : center;
+    margin-bottom   : 1rem;
+    font-size       : 0.95rem;
+    /* padding      : 10px; */
+    line-height     : 1.5rem;
+    text-align      : center;
 }
 
 .style_about strong {
@@ -90,8 +121,10 @@
     display      : flex;
     gap          : 10px;
     margin-bottom: 1rem;
-    font-size    : 1.2rem;
-    font-family  : 'Roboto Slab', sans-serif;
+    /* font-size    : 1.2rem; */
+    font-size    : 1.1rem;
+    /* font-family  : 'Roboto Slab', sans-serif; */
+    font-family  : 'Montserrat', sans-serif;
     color        : #bcff12;
     line-height  : 1.5rem;
     text-align   : left;
@@ -114,11 +147,42 @@
     margin-bottom: 1rem;
 }
 
+/* Tablet - Portatiles */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .section__resume--home {
+        padding-top: 8rem;
+    }
+
+    .section__resume--intro {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap                  : 2rem;
+    }
+
+    .card {
+        max-width: 50rem;
+    }
+}
+
 @media (min-width: 1025px) {
     .section_resume-cards {
         display       : flex;
         flex-direction: row;
         padding-top   : 6rem;
+    }
+
+    .section__resume--home {
+        padding-top: 10rem;
+    }
+
+    .section__resume--intro {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 2rem;
+    }
+
+    .card_intro-sub {
+        text-align: left;
     }
 
     .card {
@@ -134,12 +198,12 @@
     }
 
     .style_about {
-        line-height  : 1.8rem;
+        /* line-height  : 1.8rem; */
         text-align   : justify;
         margin-bottom: 0.5rem;
     }
 
-    .style_about strong {
-        font-size: 0.9rem;
-    }
+    /* .style_about strong {
+        font-size: 0.95rem;
+    } */
 }
