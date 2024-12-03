@@ -7,10 +7,9 @@
 }
 
 .section__resume--intro {
-    display              : flex;
-    flex-direction       : column;
-    /* grid-template-rows: repeat(3, 1fr); */
-    gap                  : 2rem;
+    display       : flex;
+    flex-direction: column;
+    gap           : 2rem;
 }
 
 .section_resume-cards {
@@ -83,11 +82,10 @@
 }
 
 .style_about {
-    margin-bottom   : 1rem;
-    font-size       : 0.95rem;
-    /* padding      : 10px; */
-    line-height     : 1.5rem;
-    text-align      : center;
+    margin-bottom: 1rem;
+    font-size    : 0.95rem;
+    line-height  : 1.5rem;
+    text-align   : center;
 }
 
 .style_about strong {
@@ -118,22 +116,15 @@
 
 .item_position,
 .item_institution {
-    display         : flex;
-    gap             : 10px;
-    margin-bottom   : 1rem;
-    /* font-size    : 1.2rem; */
-    font-size       : 1.1rem;
-    /* font-family  : 'Roboto Slab', sans-serif; */
-    font-family     : 'Montserrat', sans-serif;
-    color           : #bcff12;
-    line-height     : 1.5rem;
-    text-align      : left;
-}
-
-/* .item_degree {
-    font-size    : 0.9rem;
+    display      : flex;
+    gap          : 10px;
     margin-bottom: 1rem;
-} */
+    font-size    : 1.1rem;
+    font-family  : 'Montserrat', sans-serif;
+    color        : #bcff12;
+    line-height  : 1.5rem;
+    text-align   : left;
+}
 
 .item_description {
     line-height  : 1.8rem;
@@ -199,12 +190,7 @@
     }
 
     .style_about {
-        /* line-height  : 1.8rem; */
         text-align   : justify;
         margin-bottom: 0.5rem;
     }
-
-    /* .style_about strong {
-        font-size: 0.95rem;
-    } */
 }

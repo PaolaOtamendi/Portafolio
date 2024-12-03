@@ -57,33 +57,6 @@ export const Resume = () => {
         </div>
       </div>
       <div className="section_resume-cards">
-        {/* <div className="card">
-          <div className="card-body">
-            <h2 className="card_title">Sobre Mí</h2>
-            <p className="card-text style_about">
-              💫🚀 Impulsada por los desafíos, decidí dar un gran paso en mi
-              carrera:{" "}
-              <strong>
-                pasé de ser Ingeniera Industrial, con 5 años de experiencia en
-                Calidad y Mejora Continua, a Desarrolladora Web.
-              </strong>
-            </p>
-            <p className="card-text style_about">
-              Siempre tuve el deseo de explorar el mundo de la programación, y
-              lo hice realidad a través de Laboratoria, colaborando en equipo 
-              en diversos proyectos, lo que me permitió crecer 
-              tanto profesional como personalmente.
-            </p>
-            <p className="card-text style_about">
-              Recientemente{" "}
-              <strong>
-                completé mi primer curso en Java y sigo aprendiendo con
-                entusiasmo, profundizando en React y JavaScript.
-              </strong>
-            </p>
-          </div>
-        </div> */}
-
         <div className="card car_color">
           <div className="card-body">
             <h2 className="card_title-color">Mi Trayectoria</h2>

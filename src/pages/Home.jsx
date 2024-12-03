@@ -9,7 +9,7 @@ import { Resume } from "../components/About/About.jsx";
 import { SocialsLinks } from "../components/Socials/Socials.jsx";
 import { BotonCv } from "../components/Buttons/Boton.jsx";
 import { StackSkills } from "../components/Stacks/Stackskills.jsx";
-import { BentoStack } from "../components/Stacks/BentoStack.jsx";
+// import { BentoStack } from "../components/Stacks/BentoStack.jsx";
 import { ProjectCarrusel } from "../components/Carrusel/Projectcarrusel.jsx";
 import { FooterHome } from "../components/Footer/Footer.jsx";
 import { TbHeartCode } from "react-icons/tb";
