@@ -16,9 +16,9 @@ export const Resume = () => {
               💻 De Ingeniera a Desarrolladora Web:
             </h6>
             <p className="card-text style_about">
-              Con una sólida base como{" "}
+              Como{" "}
               <strong>
-                Ingeniera y 5 años de experiencia en Calidad y Mejora Continua
+                Ingeniera con 5 años de experiencia en Calidad y Mejora Continua
               </strong>
               , decidí transformar mi carrera para construir soluciones
               tecnológicas impactantes.
@@ -33,8 +33,8 @@ export const Resume = () => {
             </h6>
             <p className="card-text style_about">
               Mi curiosidad me llevo a <strong>Laboratoria</strong> donde
-              descubrí mi pasión por el desarrollo web, colaborando en proyectos
-              que{" "}
+              descubrí mi pasión por el <strong>desarrollo web,</strong>{" "}
+              colaborando en proyectos que{" "}
               <strong>
                 fortalecieron mis habilidades técnicas y de equipo.
               </strong>
@@ -49,9 +49,9 @@ export const Resume = () => {
             </h6>
             <p className="card-text style_about">
               Tras completar mi primer curso en <strong>Java,</strong> sigo
-              perfeccionando mis habilidades en{" "}
-              <strong>React y JavaScript,</strong> con entusiasmo en{" "}
-              <strong>constante aprendizaje</strong> por nuevos desafíos.
+              perfeccionándome en <strong>React y JavaScript,</strong> siempre
+              en <strong>constante aprendizaje</strong> y en busca de nuevos
+              desafíos.
             </p>
           </div>
         </div>

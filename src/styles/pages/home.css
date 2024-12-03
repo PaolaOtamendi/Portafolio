@@ -22,7 +22,6 @@
 }
 
 .text__header-title-welcome {
-    /* font-family: 'Parkinsans', sans-serif; */
     font-family: 'Sour Gummy', sans-serif;
     font-weight: 500;
     color      : #100614;
@@ -78,6 +77,11 @@
     font-weight  : 800;
 }
 
+.intro_strong strong {
+    color      : #433b6e;
+    font-weight: 600;
+}
+
 .worktogether {
     display        : flex;
     flex-direction : column;
@@ -107,6 +111,28 @@
     justify-content: center;
     gap            : 2rem;
     padding-top    : 1rem;
+}
+
+.contain__social-mail {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    gap            : 0.8rem;
+    padding        : 2rem 0rem 1rem 0rem;
+}
+
+.social_mail {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    gap             : 0.2rem;
+    margin-bottom   : 0%;
+    font-family     : 'Montserrat', sans-serif;
+    background-color: #776ca4;
+    color           : #100614;
+    padding         : 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius   : 0.8rem;
 }
 
 .contain-logo {
@@ -217,6 +243,11 @@
     }
 
     .container__socials-contacts {
+        flex-direction: row;
+    }
+
+    .contain__social-mail {
+        display       : flex;
         flex-direction: row;
     }
 

@@ -1,5 +1,5 @@
 import { FaFileDownload, FaFileCode, FaGithubAlt } from "react-icons/fa";
-import { IoPlayForward } from "react-icons/io5";
+import { IoPlayForward, IoCopy } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "./botones.css";
 
@@ -12,7 +12,7 @@ export const BotonCv = () => {
       rel="noopener noreferrer"
       className="ref"
     >
-      <button className="button_cv">
+      <button className="button_style button_cv">
         Explora mi CV
         <FaFileDownload color="#bcff12" />
       </button>
@@ -24,7 +24,7 @@ export const BotonNext = () => {
   return (
     <div>
       <Link to="/Proyectos" className="ref">
-        <button className="button_slide slide_down flex">
+        <button className="button_style button_slide">
           Proyectos
           <FaFileCode color="#bcff12" />
         </button>
@@ -37,14 +37,14 @@ export const BotonProject = ({ githubLink, demoLink }) => {
   return (
     <div className="containbutton">
       <a href={githubLink} target="_blank" rel="noopener noreferrer">
-        <button className="button_href slide_href">
+        <button className="button_style button_href">
           Código
           <FaGithubAlt color="#bcff12"/>
         </button>
       </a>
       {demoLink && (
         <a href={demoLink} target="_blank" rel="noopener noreferrer">
-          <button className="button_href slide_href">
+          <button className="button_style button_href">
             Abrir Demo
             <IoPlayForward color="#bcff12"/>
           </button>
@@ -64,9 +64,9 @@ export const CopyEmail = () => {
   };
 
   return (
-    <div className="flex justify-center mt-2">
-      <button onClick={handleCopyClick} className="button_href slide_href">
-        Copiar Email
+    <div className="flex justify-center">
+      <button onClick={handleCopyClick} className="button_style button_href-mail">
+      <IoCopy color="#bcff12" />Copy
       </button>
     </div>
   );
