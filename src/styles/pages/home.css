@@ -22,7 +22,7 @@
 }
 
 .text__header-title-welcome {
-    font-family: 'Sour Gummy', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-weight: 500;
     color      : #100614;
     font-size  : 2.3rem;
@@ -48,7 +48,7 @@
 }
 
 .name {
-    font-family  : 'Montserrat', sans-serif;
+    font-family  : "Montserrat", sans-serif;
     font-weight  : bold;
     font-size    : 1.5rem;
     line-height  : 1;
@@ -69,7 +69,7 @@
 
 .introduction {
     margin-bottom: 1rem;
-    font-family  : 'Montserrat', sans-serif;
+    font-family  : "Montserrat", sans-serif;
     font-size    : 1.05rem;
     text-align   : center;
     line-height  : 1.5;
@@ -78,7 +78,8 @@
 }
 
 .intro_strong strong {
-    color      : #433b6e;
+    /* color      : #433b6e; */
+    color      : #30237a;
     font-weight: 600;
 }
 
@@ -91,14 +92,15 @@
     margin-bottom  : 1rem;
     padding        : 0rem 0.5rem 0rem 0.5rem;
     width          : fit-content;
-    font-family    : 'Sour Gummy', sans-serif;
+    font-family    : "Sour Gummy", sans-serif;
     font-size      : 1.1rem;
     text-align     : center;
-    color          : #4b4453;
+    /* color          : #4b4453; */
+    color          : #30237a;
 }
 
 .iam {
-    font-family     : 'Montserrat', sans-serif;
+    font-family     : "Montserrat", sans-serif;
     font-weight     : bold;
     font-size       : 1rem;
     line-height     : 1;
@@ -123,16 +125,18 @@
 }
 
 .social_mail {
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    gap             : 0.2rem;
-    margin-bottom   : 0%;
-    font-family     : 'Montserrat', sans-serif;
-    background-color: #776ca4;
-    color           : #100614;
-    padding         : 0.2rem 0.5rem 0.2rem 0.5rem;
-    border-radius   : 0.8rem;
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    gap                : 0.2rem;
+    margin-bottom      : 0%;
+    font-family        : "Montserrat", sans-serif;
+    font-weight        : 600;
+    /* background-color: #776ca4; */
+    background-color   : #bcff12;
+    color              : #100614;
+    padding            : 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius      : 0.8rem;
 }
 
 .contain-logo {
@@ -159,7 +163,12 @@
     align-items    : center;
     justify-content: center;
     padding        : 2rem 1rem 2rem 1rem;
-    background     : linear-gradient(to bottom, #afa2de, #9387c1, #776ca4, #5d5389, #433b6e);
+    background     : linear-gradient(to bottom,
+            #afa2de,
+            #9387c1,
+            #776ca4,
+            #5d5389,
+            #433b6e);
 }
 
 .contain_section-skills {
