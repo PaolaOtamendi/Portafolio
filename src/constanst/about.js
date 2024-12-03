@@ -47,7 +47,7 @@ export const myEducation = [
             },
             {
                 institution: "Lenguajes",
-                degree: "Ingles",
+                description: "Ingles",
                 year: "B1 - Intermedate"
             }
         ]

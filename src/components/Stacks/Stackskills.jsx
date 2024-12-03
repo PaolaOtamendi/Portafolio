@@ -13,6 +13,7 @@ import {
   FaBootstrap,
   FaNpm,
   FaDatabase,
+  FaStar,
 } from "react-icons/fa";
 import { FaBookBookmark } from "react-icons/fa6";
 import { FaTeamspeak } from "react-icons/fa6";
@@ -33,7 +34,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import "./stackskills.css";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
-import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 
 const iconMapSkills = {

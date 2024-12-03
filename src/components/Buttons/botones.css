@@ -1,20 +1,22 @@
-.button_slide {
-  color           : #ffffff;
-  background-color: #100614;
-  border          : 2.5px solid #d80286;
-  border-radius   : 1rem;
-  padding         : 0.5rem 2rem;
+.button_style {
   display         : flex;
   align-items     : center;
   gap             : 0.5rem;
+  background-color: #100614;
+  border          : 2.3px solid #d80286;
+  border-radius   : 0.8rem;
   font-family     : 'Montserrat', sans-serif;
-  font-size       : 1.2rem;
   font-weight     : bold;
+  color           : #ffffff;
   cursor          : pointer;
-  box-shadow      : inset 0 0 0 0 #D80286;
   transition      : ease-out 0.4s;
 }
 
+.button_slide {
+  padding   : 0.5rem 2rem;
+  font-size : 1.2rem;
+  box-shadow: inset 0 0 0 0 #D80286;
+}
 
 .button_slide:hover {
   transform       : translateY(-1px);
@@ -23,33 +25,10 @@
   color           : #fff;
 }
 
-.containbutton {
-  display       : flex;
-  flex-direction: column;
-  align-items   : center;
-}
-
-.containbutton a {
-  text-decoration: none;
-}
-
-
 .button_href {
-  display         : flex;
-  gap             : 0.5rem;
-  align-items     : center;
-  color           : #ffffff;
-  background-color: #100614;
-  border          : 2.5px solid #d80286;
-  border-radius   : 0.8rem;
-  padding         : 0.2rem 1rem;
-  margin          : 1rem;
-  font-family     : 'Montserrat', sans-serif;
-  font-size       : 0.9rem;
-  font-weight     : normal;
-  font-weight     : bold;
-  cursor          : pointer;
-  transition      : ease-out 0.4s;
+  padding  : 0.2rem 1rem;
+  margin   : 1rem;
+  font-size: 0.9rem;
 }
 
 .button_href:hover {
@@ -59,21 +38,23 @@
   color           : #fff;
 }
 
-.button_cv {
-  display         : flex;
-  align-items     : center;
-  gap             : 0.5rem;
-  padding-top     : 1rem;
-  padding         : 0.5rem 0.5rem;
-  transition      : transform 0.3s ease-in-out, scale 0.3s ease-in-out;
-  background-color: #100614;
+.button_href-mail {
+  font-size: 0.9rem;
+  padding  : 0.2rem 1rem;
+}
+
+.button_href-mail:hover {
+  transform       : translateY(-1px);
+  scale           : 1.1;
+  background-color: #d80286;
   color           : #fff;
-  font-size       : 1rem;
-  font-family     : 'Montserrat', sans-serif;
-  border          : 2.5px solid #d80286;
-  border-radius   : 0.8rem;
-  font-weight     : bold;
-  cursor          : pointer;
+}
+
+.button_cv {
+  padding-top: 1rem;
+  padding    : 0.5rem 0.5rem;
+  transition : transform 0.3s ease-in-out, scale 0.3s ease-in-out;
+  font-size  : 1rem;
 }
 
 .button_cv:hover {
@@ -83,15 +64,18 @@
   color           : #fff;
 }
 
-.texto-button {
-  color      : #000000;
-  font-size  : 1.05rem;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-  margin-top : 0.5rem;
+.ref {
+  text-decoration: none;
 }
 
-.ref {
+/* Infocard button projects */
+.containbutton {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.containbutton a {
   text-decoration: none;
 }
 
